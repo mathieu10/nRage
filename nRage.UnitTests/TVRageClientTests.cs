@@ -9,27 +9,27 @@ namespace nRage.UnitTests
 {   
     public class TVRageClientTests
     {
-        // TODO: is it a series or a show? Or something else?
+        // TODO: is it a Show or a show? Or something else?
         [Fact]
-        public void CanSearchSeriesByTitle() { 
+        public void CanSearchShowByTitle() { 
             //http://services.tvrage.com/feeds/search.php?show=buffy
             throw new NotImplementedException();
         }
 
         [Fact]
-        public void CanFullSearchSeriesByTitle() { 
+        public void CanFullSearchShowByTitle() { 
             //http://services.tvrage.com/feeds/full_search.php?show=buffy
             throw new NotImplementedException();
         }
 
         [Fact]
-        public void CanGetSeriesInfoBySeriesID() {
+        public void CanGetShowInfoByShowID() {
             //http://services.tvrage.com/feeds/showinfo.php?sid=2930
             throw new NotImplementedException();
         }
 
         [Fact]
-        public void CanGetEpisodeListBySeriesID() { 
+        public void CanGetEpisodeListByShowID() { 
             //http://services.tvrage.com/feeds/episode_list.php?sid=2930
             throw new NotImplementedException();
         }
@@ -41,7 +41,7 @@ namespace nRage.UnitTests
         }
 
         [Fact]
-        public void CanGetSeriesInfoAndEpisodeListBySeriesID() { 
+        public void CanGetShowInfoAndEpisodeListByShowID() { 
             //http://services.tvrage.com/feeds/full_show_info.php?sid=2930
             throw new NotImplementedException();
         }
