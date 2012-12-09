@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contract\SearchResult.cs" />
+    <Compile Include="Contract\TVRage\ShowSearchResponse.cs" />
+    <Compile Include="Contract\TVRage\ShowSearchResult.cs" />
     <Compile Include="TVRageClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
