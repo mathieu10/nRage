@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace nRage.Contract.TVRage
 {
     [Serializable]
-    public class ShowSearchResult
+    public class ShowInfoResult
     {
 
         /// <summary>
