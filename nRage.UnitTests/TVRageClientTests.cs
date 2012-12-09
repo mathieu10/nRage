@@ -23,24 +23,29 @@ namespace nRage.UnitTests
         }
 
         [Fact]
-        public void CanViewSeriesByShowID() {
+        public void CanGetSeriesInfoBySeriesID() {
             //http://services.tvrage.com/feeds/showinfo.php?sid=2930
             throw new NotImplementedException();
         }
 
         [Fact]
-        public void CanViewEpisodeListBySeriesID() { 
+        public void CanGetEpisodeListBySeriesID() { 
             //http://services.tvrage.com/feeds/episode_list.php?sid=2930
             throw new NotImplementedException();
         }
 
         [Fact]
-        public void CanViewEpisodeByID() { 
+        public void CanGetEpisodeByEpisodeID() { 
             //http://services.tvrage.com/feeds/episodeinfo.php?sid=2930&ep=2x04
             throw new NotImplementedException();
         }
 
-        //http://services.tvrage.com/feeds/full_show_info.php?sid=2930 ??
+        [Fact]
+        public void CanGetSeriesInfoAndEpisodeListBySeriesID() { 
+            //http://services.tvrage.com/feeds/full_show_info.php?sid=2930
+            throw new NotImplementedException();
+        }
+        
        
     }
 }
