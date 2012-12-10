@@ -33,7 +33,7 @@ namespace nRage
                                                   Results = new List<SearchResult>()
                                               };
 
-            var rawResults = XDocument.Load(GetSearchByTitleURL(title));
+            var rawResults = XDocument.Load(Retriever.Get(GetSearchByTitleURL(title)));
             if (rawResults.Root == null || rawResults.Root.Value == "0") return result;
 
             var x = new DynamicXmlReader(rawResults.Root);
