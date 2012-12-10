@@ -40,8 +40,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contract\SearchResult.cs" />
+    <Compile Include="Contract\TVRage\AKA.cs" />
+    <Compile Include="Contract\TVRage\ShowInfoResponse.cs" />
+    <Compile Include="Contract\TVRage\ShowFullSearchResult.cs" />
     <Compile Include="Contract\TVRage\ShowSearchResponse.cs" />
-    <Compile Include="Contract\TVRage\ShowSearchResult.cs" />
+    <Compile Include="Contract\TVRage\SearchResult.cs" />
     <Compile Include="TVRageClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

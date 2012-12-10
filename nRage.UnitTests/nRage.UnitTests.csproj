@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -52,6 +53,10 @@
     <ProjectReference Include="..\nRage.Example\nRage.Example.csproj">
       <Project>{92fd3d7f-f3d6-41bf-b5ca-8bd85e5a76c8}</Project>
       <Name>nRage.Example</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nRage\nRage.csproj">
+      <Project>{1E9D1BBC-9CE5-418C-BE52-C7DC9A7BB5DC}</Project>
+      <Name>nRage</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
