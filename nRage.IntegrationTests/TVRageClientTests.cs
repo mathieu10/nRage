@@ -1,19 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
-namespace nRage.UnitTests
-{
-
+namespace nRage.IntegrationTests
+{   
     public class TVRageClientTests
-    {        
-        public TVRageClientTests() { 
-            // TODO: IOC: register mock retriever
-        }
-
+    {
         /// <summary>
         /// DISCLAIMER:
         /// There are not really "unit" tests in the pure sense.
@@ -25,7 +16,7 @@ namespace nRage.UnitTests
 
         [Fact]
         public void CanSearchShowByTitle() { 
-            var client = new TVRageClient(new MockRetriever());
+            var client = new TVRageClient();
             var title = "wilfred";
 
             var result = client.SearchByTitle(title);

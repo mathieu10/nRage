@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1E9D1BBC-9CE5-418C-BE52-C7DC9A7BB5DC}</ProjectGuid>
+    <ProjectGuid>{282F984C-24C1-4D53-A7BB-A980A2F6EA73}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>nRage</RootNamespace>
-    <AssemblyName>nRage</AssemblyName>
+    <RootNamespace>nRage.IntegrationTests</RootNamespace>
+    <AssemblyName>nRage.IntegrationTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -37,18 +37,22 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="xunit">
+      <HintPath>..\Lib\xunit.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.extensions">
+      <HintPath>..\Lib\xunit.extensions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contract\SearchResult.cs" />
-    <Compile Include="Contract\TVRage\AKA.cs" />
-    <Compile Include="Contract\TVRage\ShowInfoResponse.cs" />
-    <Compile Include="Contract\TVRage\ShowFullSearchResult.cs" />
-    <Compile Include="Contract\TVRage\SearchResponse.cs" />
-    <Compile Include="Contract\TVRage\SearchResult.cs" />
-    <Compile Include="DynamicXmlReader.cs" />
-    <Compile Include="IRetriever.cs" />
-    <Compile Include="TVRageClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TVRageClientTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\nRage\nRage.csproj">
+      <Project>{1E9D1BBC-9CE5-418C-BE52-C7DC9A7BB5DC}</Project>
+      <Name>nRage</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
