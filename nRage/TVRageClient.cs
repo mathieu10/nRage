@@ -27,18 +27,20 @@ namespace nRage
             return new string(param.Where(c=>char.IsLetterOrDigit(c)).ToArray());
         }
 
-        protected string GetSearchByTitleURL(string title) { 
+        protected string GetURLForSearch(string title) { 
             return String.Format(@"http://services.tvrage.com/feeds/search.php?show={0}", FormatURLParam(title)); }        
-        protected string GetFullSearchByTitleURL(string title) { 
+        protected string GetURLForFullSearch(string title) { 
             return String.Format(@"http://services.tvrage.com/feeds/full_search.php?show={0}", FormatURLParam(title)); }
-        protected string GetShowInfoURL(int showID) { 
+        protected string GetURLForShowInfo(int showID) { 
             return String.Format(@"http://services.tvrage.com/feeds/showinfo.php?sid={0}", showID); }
-        protected string GetEpisodeListURL(int showID) { 
+        protected string GetURLForEpisodeList(int showID) { 
             return String.Format(@"http://services.tvrage.com/feeds/episode_list.php?sid={0}", showID); }
-        protected string GetEpisoddeInfoURL(int showID, string episodeID){
+        protected string GetURLForEpisoddeInfo(int showID, string episodeID){
             return String.Format(@"http://services.tvrage.com/feeds/episodeinfo.php?sid={0}&ep={1}",showID,FormatURLParam(episodeID));}
-        protected string GetFullShowInfoURL(int showID) { 
+        protected string GetURLForFullShowInfo(int showID) { 
             return String.Format(@"http://services.tvrage.com/feeds/full_show_info.php?sid={0}", showID); }
+        protected string GetURLForFullShowList() { 
+            return @"http://services.tvrage.com/feeds/show_list.php"; }
         #endregion
 
         #region Public methods
@@ -46,7 +48,7 @@ namespace nRage
         {
             var result = new SearchResponse() { Results = new List<SearchResult>() };
 
-            var response = XDocument.Load(Retriever.Get(GetSearchByTitleURL(title)));
+            var response = XDocument.Load(Retriever.Get(GetURLForSearch(title)));
             if (response.Root == null || response.Root.Value == "0") return result;
 
             result.Results = MapXMLToSearchResponse(response);
@@ -57,7 +59,7 @@ namespace nRage
         {
             var result = new FullSearchResponse() { Results = new List<FullSearchResult>() };
 
-            var response = XDocument.Load(Retriever.Get(GetFullSearchByTitleURL(title)));
+            var response = XDocument.Load(Retriever.Get(GetURLForFullSearch(title)));
             if (response.Root == null || response.Root.Value == "0") return result;
 
             result.Results = MapXMLToFullSearchResults(response);
@@ -66,7 +68,7 @@ namespace nRage
 
         public ShowInfoResponse GetShowInfo(int showId)
         { 
-            var response = XDocument.Load(Retriever.Get(GetShowInfoURL(showId)));
+            var response = XDocument.Load(Retriever.Get(GetURLForShowInfo(showId)));
             if (response.Root == null || response.Root.Value == "0") throw new Exception("TODO: more info here");
 
             return MapXMLToShowInfoResult(response);
