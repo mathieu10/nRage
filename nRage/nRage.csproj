@@ -45,7 +45,6 @@
     <Compile Include="Contract\TVRage\ShowFullSearchResult.cs" />
     <Compile Include="Contract\TVRage\SearchResponse.cs" />
     <Compile Include="Contract\TVRage\SearchResult.cs" />
-    <Compile Include="DynamicXmlReader.cs" />
     <Compile Include="IRetriever.cs" />
     <Compile Include="TVRageClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

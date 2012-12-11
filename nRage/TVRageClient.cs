@@ -36,8 +36,6 @@ namespace nRage
             var rawResults = XDocument.Load(Retriever.Get(GetSearchByTitleURL(title)));
             if (rawResults.Root == null || rawResults.Root.Value == "0") return result;
 
-            var x = new DynamicXmlReader(rawResults.Root);
-
             //foreach (var rawResult in x.Results)
             //{
             //    var show = new SearchResult();
