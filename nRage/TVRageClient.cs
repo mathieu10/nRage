@@ -23,8 +23,18 @@ namespace nRage
             return new string(param.Where(c=>char.IsLetterOrDigit(c)).ToArray());
         }
 
-        protected string GetSearchByTitleURL(string title) { return "http://services.tvrage.com/feeds/search.php?show=" + FormatURLParam(title); }
-        protected string GetFullSearchByTitleURL(string title) { return "http://services.tvrage.com/feeds/full_search.php?show=" + FormatURLParam(title); }
+        protected string GetSearchByTitleURL(string title) { 
+            return String.Format(@"http://services.tvrage.com/feeds/search.php?show={0}", FormatURLParam(title)); }        
+        protected string GetFullSearchByTitleURL(string title) { 
+            return String.Format(@"http://services.tvrage.com/feeds/full_search.php?show={0}", FormatURLParam(title)); }
+        protected string GetShowInfoURL(int showID) { 
+            return String.Format(@"http://services.tvrage.com/feeds/showinfo.php?sid={0}", showID); }
+        protected string GetEpisodeListURL(int showID) { 
+            return String.Format(@"http://services.tvrage.com/feeds/episode_list.php?sid={0}", showID); }
+        protected string GetEpisoddeInfoURL(int showID, string episodeID){
+            return String.Format(@"http://services.tvrage.com/feeds/episodeinfo.php?sid={0}&ep={1}",showID,FormatURLParam(episodeID));}
+        protected string GetFullShowInfoURL(int showID) { 
+            return String.Format(@"http://services.tvrage.com/feeds/full_show_info.php?sid={0}", showID); }
 
         public SearchResponse SearchByTitle(string title)
         {
@@ -78,6 +88,13 @@ namespace nRage
             }).ToList();
 
             return result;
+        }
+
+        public ShowInfoResponse GetShowInfo(string showId)
+        { 
+            var response = XDocument.Load(Retriever.Get(GetFullSearchByTitleURL(title)));
+            if (response.Root == null || response.Root.Value == "0") return result;
+            
         }
     }
 }
