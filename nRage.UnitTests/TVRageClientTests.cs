@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 using Ninject;
 using Xunit;
 
-namespace nRage.UnitTests
+namespace nRage.Tests.Unit
 {
 
     public class TVRageClientTests
-    {       
- 
-        private IKernel _ioc;
+    {        
+        protected IKernel _ioc;
 
-        public TVRageClientTests() { 
+        public virtual void InitialiseIOC(){
             _ioc = new StandardKernel();
             _ioc.Bind<IRetriever>().To<MockRetriever>();
+        }
+
+        public TVRageClientTests() { 
+            InitialiseIOC();
         }
 
         [Fact]
@@ -57,7 +60,7 @@ namespace nRage.UnitTests
         public void SearchShowByTitleReturnsEmptyResultsWhenNoMatches()
         {
             var client = _ioc.Get<TVRageClient>();
-            var title = "wilfferd";
+            var title = "wilfferxjd";
 
             var response = client.SearchByTitle(title);
             Assert.True(response.Results.Count == 0);

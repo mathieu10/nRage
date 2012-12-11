@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace nRage.UnitTests.Properties {
+namespace nRage.Tests.Unit.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace nRage.UnitTests.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("nRage.UnitTests.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("nRage.Tests.Unit.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -118,9 +118,9 @@ namespace nRage.UnitTests.Properties {
         ///
         ///&lt;Results&gt;0&lt;/Results&gt;.
         /// </summary>
-        internal static string RESPONSE_SEARCH_WILFFERD {
+        internal static string RESPONSE_SEARCH_WILFFERXJD {
             get {
-                return ResourceManager.GetString("RESPONSE_SEARCH_WILFFERD", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_SEARCH_WILFFERXJD", resourceCulture);
             }
         }
         

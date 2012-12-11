@@ -7,7 +7,7 @@ using System.Resources;
 using System.Text;
 using System.Xml.Linq;
 
-namespace nRage.UnitTests
+namespace nRage.Tests.Unit
 {
     public class MockRetriever : IRetriever
     {
@@ -16,13 +16,13 @@ namespace nRage.UnitTests
         public MockRetriever()
         {            
             _mockResults = new Dictionary<string, string>();
-            _mockResults["search.php?show=wilfred"] = nRage.UnitTests.Properties.Resources.RESPONSE_SEARCH_WILFRED;
-            _mockResults["search.php?show=wilfferd"] = nRage.UnitTests.Properties.Resources.RESPONSE_SEARCH_WILFFERD;
-            _mockResults[""] = nRage.UnitTests.Properties.Resources.RESPONSE_SEARCHFULL_WILFRED;
-            _mockResults[""] = nRage.UnitTests.Properties.Resources.RESPONSE_SHOWINFO_15352;
-            _mockResults[""] = nRage.UnitTests.Properties.Resources.RESPONSE_EPISODELIST_15352;
-            _mockResults[""] = nRage.UnitTests.Properties.Resources.RESPONSE_FULLSHOWINFO_15352;            
-            _mockResults[""] = nRage.UnitTests.Properties.Resources.RESPONSE_EPISODEINFO_15352_2x05;            
+            _mockResults["search.php?show=wilfred"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCH_WILFRED;
+            _mockResults["search.php?show=wilfferxjd"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCH_WILFFERXJD;
+            _mockResults[""] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCHFULL_WILFRED;
+            _mockResults[""] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SHOWINFO_15352;
+            _mockResults[""] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODELIST_15352;
+            _mockResults[""] = nRage.Tests.Unit.Properties.Resources.RESPONSE_FULLSHOWINFO_15352;            
+            _mockResults[""] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODEINFO_15352_2x05;            
         }
 
         public Stream Get(string url)

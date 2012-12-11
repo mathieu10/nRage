@@ -1,4 +1,6 @@
 ﻿using System.IO;
+using System.Net;
+using System.Xml.Linq;
 
 namespace nRage
 {
@@ -11,6 +13,9 @@ namespace nRage
 
     public class WebRetriever : IRetriever
     {
-        public Stream Get(string url) { throw new System.NotImplementedException(); }
+        public Stream Get(string url) {  
+            var web = new WebClient();
+            return web.OpenRead(url);
+        }
     }    
 }
