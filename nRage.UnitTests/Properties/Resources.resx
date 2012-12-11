@@ -204,41 +204,31 @@
 
 &lt;/Show&gt;</value>
   </data>
-  <data name="RESPONSE_SEARCHFULL_WILFRED" xml:space="preserve">
+  <data name="RESPONSE_SEARCHFULL_BRACVNKINGBADGA" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+
+&lt;Results&gt;0&lt;/Results&gt;</value>
+  </data>
+  <data name="RESPONSE_SEARCHFULL_BREAKINGBAD" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
 &lt;Results&gt;
 &lt;show&gt;
-&lt;showid&gt;15352&lt;/showid&gt;
-&lt;name&gt;Wilfred&lt;/name&gt;
-&lt;link&gt;http://www.tvrage.com/shows/id-15352&lt;/link&gt;
-&lt;country&gt;AU&lt;/country&gt;
-&lt;started&gt;Mar/19/2007&lt;/started&gt;
-&lt;ended&gt;&lt;/ended&gt;
-&lt;seasons&gt;2&lt;/seasons&gt;
-&lt;status&gt;Canceled/Ended&lt;/status&gt;
-&lt;runtime&gt;25&lt;/runtime&gt;
-&lt;classification&gt;Scripted&lt;/classification&gt;
-&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;
-&lt;network country="AU"&gt;SBS&lt;/network&gt;
-&lt;airtime&gt;12:00&lt;/airtime&gt;
-&lt;airday&gt;Monday&lt;/airday&gt;
-&lt;/show&gt;
-&lt;show&gt;
-&lt;showid&gt;25709&lt;/showid&gt;
-&lt;name&gt;Wilfred (US)&lt;/name&gt;
-&lt;link&gt;http://www.tvrage.com/Wilfred_US&lt;/link&gt;
+&lt;showid&gt;18164&lt;/showid&gt;
+&lt;name&gt;Breaking Bad&lt;/name&gt;
+&lt;link&gt;http://www.tvrage.com/Breaking_Bad&lt;/link&gt;
 &lt;country&gt;US&lt;/country&gt;
-&lt;started&gt;Jun/23/2011&lt;/started&gt;
+&lt;started&gt;Jan/20/2008&lt;/started&gt;
 &lt;ended&gt;&lt;/ended&gt;
-&lt;seasons&gt;3&lt;/seasons&gt;
-&lt;status&gt;Returning Series&lt;/status&gt;
-&lt;runtime&gt;30&lt;/runtime&gt;
+&lt;seasons&gt;5&lt;/seasons&gt;
+&lt;status&gt;Final Season&lt;/status&gt;
+&lt;runtime&gt;60&lt;/runtime&gt;
 &lt;classification&gt;Scripted&lt;/classification&gt;
-&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;/genres&gt;
-&lt;network country="US"&gt;FX&lt;/network&gt;
+&lt;genres&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;
+&lt;network country="US"&gt;AMC&lt;/network&gt;
 &lt;airtime&gt;22:00&lt;/airtime&gt;
-&lt;airday&gt;Thursday&lt;/airday&gt;
+&lt;airday&gt;Sunday&lt;/airday&gt;
+&lt;akas&gt;&lt;aka country="SI"&gt;Kriva pota&lt;/aka&gt;&lt;aka country="HU"&gt;Totál szívás&lt;/aka&gt;&lt;aka country="BG"&gt;В обувките на сатаната&lt;/aka&gt;&lt;/akas&gt;
 &lt;/show&gt;
 &lt;/Results&gt;</value>
   </data>

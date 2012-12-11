@@ -155,28 +155,38 @@ namespace nRage.Tests.Unit.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
         ///
+        ///&lt;Results&gt;0&lt;/Results&gt;.
+        /// </summary>
+        internal static string RESPONSE_SEARCHFULL_BRACVNKINGBADGA {
+            get {
+                return ResourceManager.GetString("RESPONSE_SEARCHFULL_BRACVNKINGBADGA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///
         ///&lt;Results&gt;
         ///&lt;show&gt;
-        ///&lt;showid&gt;15352&lt;/showid&gt;
-        ///&lt;name&gt;Wilfred&lt;/name&gt;
-        ///&lt;link&gt;http://www.tvrage.com/shows/id-15352&lt;/link&gt;
-        ///&lt;country&gt;AU&lt;/country&gt;
-        ///&lt;started&gt;Mar/19/2007&lt;/started&gt;
+        ///&lt;showid&gt;18164&lt;/showid&gt;
+        ///&lt;name&gt;Breaking Bad&lt;/name&gt;
+        ///&lt;link&gt;http://www.tvrage.com/Breaking_Bad&lt;/link&gt;
+        ///&lt;country&gt;US&lt;/country&gt;
+        ///&lt;started&gt;Jan/20/2008&lt;/started&gt;
         ///&lt;ended&gt;&lt;/ended&gt;
-        ///&lt;seasons&gt;2&lt;/seasons&gt;
-        ///&lt;status&gt;Canceled/Ended&lt;/status&gt;
-        ///&lt;runtime&gt;25&lt;/runtime&gt;
+        ///&lt;seasons&gt;5&lt;/seasons&gt;
+        ///&lt;status&gt;Final Season&lt;/status&gt;
+        ///&lt;runtime&gt;60&lt;/runtime&gt;
         ///&lt;classification&gt;Scripted&lt;/classification&gt;
-        ///&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;
-        ///&lt;network country=&quot;AU&quot;&gt;SBS&lt;/network&gt;
-        ///&lt;airtime&gt;12:00&lt;/airtime&gt;
-        ///&lt;airday&gt;Monday&lt;/airday&gt;
-        ///&lt;/show&gt;
-        ///&lt;sh [rest of string was truncated]&quot;;.
+        ///&lt;genres&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;
+        ///&lt;network country=&quot;US&quot;&gt;AMC&lt;/network&gt;
+        ///&lt;airtime&gt;22:00&lt;/airtime&gt;
+        ///&lt;airday&gt;Sunday&lt;/airday&gt;
+        ///&lt;akas&gt;&lt;aka country=&quot;SI&quot;&gt;Kriva po [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string RESPONSE_SEARCHFULL_WILFRED {
+        internal static string RESPONSE_SEARCHFULL_BREAKINGBAD {
             get {
-                return ResourceManager.GetString("RESPONSE_SEARCHFULL_WILFRED", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_SEARCHFULL_BREAKINGBAD", resourceCulture);
             }
         }
         

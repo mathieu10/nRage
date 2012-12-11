@@ -3,10 +3,9 @@ using System.Collections.Generic;
 
 namespace nRage.Contract.TVRage
 {
-
     [Serializable]
-    public class SearchResponse
+    public class FullSearchResponse
     {        
-        public ICollection<SearchResult> Results { get; set; }
+        public ICollection<FullSearchResult> Results { get; set; }
     }
 }

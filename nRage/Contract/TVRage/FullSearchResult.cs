@@ -4,8 +4,9 @@ using System.Collections.Generic;
 namespace nRage.Contract.TVRage
 {
     [Serializable]
-    public class ShowFullSearchResult : SearchResult
+    public class FullSearchResult : SearchResult
     {
+        public string RunTime {get;set;}
         public string Network { get; set; }
         public string AirTime { get; set; }
         public string AirDay { get; set; }
