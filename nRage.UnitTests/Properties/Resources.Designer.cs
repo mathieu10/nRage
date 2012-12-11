@@ -93,23 +93,46 @@ namespace nRage.Tests.Unit.Properties {
         ///
         ///
         ///&lt;Show&gt;
-        ///&lt;name&gt;Wilfred&lt;/name&gt;
-        ///&lt;totalseasons&gt;2&lt;/totalseasons&gt;
-        ///&lt;showid&gt;15352&lt;/showid&gt;
-        ///&lt;showlink&gt;http://tvrage.com/shows/id-15352&lt;/showlink&gt;
-        ///&lt;started&gt;Mar/19/2007&lt;/started&gt;
+        ///&lt;name&gt;Kenny&apos;s World&lt;/name&gt;
+        ///&lt;totalseasons&gt;1&lt;/totalseasons&gt;
+        ///&lt;showid&gt;20260&lt;/showid&gt;
+        ///&lt;showlink&gt;http://tvrage.com/shows/id-20260&lt;/showlink&gt;
+        ///&lt;started&gt;Sep/10/2008&lt;/started&gt;
         ///&lt;ended&gt;&lt;/ended&gt;
-        ///&lt;image&gt;http://images.tvrage.com/shows/16/15352.jpg&lt;/image&gt;
+        ///&lt;image&gt;http://images.tvrage.com/shows/21/20260.jpg&lt;/image&gt;
         ///&lt;origin_country&gt;AU&lt;/origin_country&gt;
-        ///&lt;status&gt;Canceled/Ended&lt;/status&gt;
-        ///&lt;classification&gt;Scripted&lt;/classification&gt;
-        ///&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;
-        ///&lt;runtime&gt;25&lt;/runtime&gt;
-        ///&lt;network country=&quot;AU&quot; [rest of string was truncated]&quot;;.
+        ///&lt;status&gt;New Series&lt;/status&gt;
+        ///&lt;classification&gt;Reality&lt;/classification&gt;
+        ///&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Educational&lt;/genre&gt;&lt;genre&gt;Housing/Building&lt;/genre&gt;&lt;genre&gt;Travel&lt;/ge [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string RESPONSE_FULLSHOWINFO_15352 {
+        internal static string RESPONSE_FULLSHOWINFO_20260 {
             get {
-                return ResourceManager.GetString("RESPONSE_FULLSHOWINFO_15352", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_FULLSHOWINFO_20260", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///
+        ///
+        ///&lt;Show&gt;
+        ///&lt;name&gt;Howzat! Kerry Packer&apos;s War&lt;/name&gt;
+        ///&lt;totalseasons&gt;1&lt;/totalseasons&gt;
+        ///&lt;showid&gt;32517&lt;/showid&gt;
+        ///&lt;showlink&gt;http://tvrage.com/shows/id-32517&lt;/showlink&gt;
+        ///&lt;started&gt;Aug/19/2012&lt;/started&gt;
+        ///&lt;ended&gt;&lt;/ended&gt;
+        ///&lt;image&gt;http://images.tvrage.com/shows/33/32517.jpg&lt;/image&gt;
+        ///&lt;origin_country&gt;AU&lt;/origin_country&gt;
+        ///&lt;status&gt;New Series&lt;/status&gt;
+        ///&lt;classification&gt;Mini-Series&lt;/classification&gt;
+        ///&lt;genres&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;genre&gt;Sports&lt;/genre&gt;&lt;/genres&gt;
+        ///&lt;runtime&gt;120&lt;/runtime&gt;
+        ///&lt;n [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RESPONSE_FULLSHOWINFO_32517 {
+            get {
+                return ResourceManager.GetString("RESPONSE_FULLSHOWINFO_32517", resourceCulture);
             }
         }
         
@@ -194,24 +217,24 @@ namespace nRage.Tests.Unit.Properties {
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
         ///
         ///&lt;Showinfo&gt;
-        ///&lt;showid&gt;15352&lt;/showid&gt;
-        ///&lt;showname&gt;Wilfred&lt;/showname&gt;
-        ///&lt;showlink&gt;http://tvrage.com/shows/id-15352&lt;/showlink&gt;
-        ///&lt;seasons&gt;2&lt;/seasons&gt;
-        ///&lt;started&gt;2007&lt;/started&gt;
-        ///&lt;startdate&gt;Mar/19/2007&lt;/startdate&gt;
+        ///&lt;showid&gt;18753&lt;/showid&gt;
+        ///&lt;showname&gt;The Inbetweeners&lt;/showname&gt;
+        ///&lt;showlink&gt;http://tvrage.com/The_Inbetweeners&lt;/showlink&gt;
+        ///&lt;seasons&gt;3&lt;/seasons&gt;
+        ///&lt;started&gt;2008&lt;/started&gt;
+        ///&lt;startdate&gt;May/01/2008&lt;/startdate&gt;
         ///&lt;ended&gt;&lt;/ended&gt;
-        ///&lt;origin_country&gt;AU&lt;/origin_country&gt;
+        ///&lt;origin_country&gt;UK&lt;/origin_country&gt;
         ///&lt;status&gt;Canceled/Ended&lt;/status&gt;
         ///&lt;classification&gt;Scripted&lt;/classification&gt;
-        ///&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;
-        ///&lt;runtime&gt;25&lt;/runtime&gt;
-        ///&lt;network  country=&quot;AU&quot;&gt;SBS&lt;/network&gt;
-        ///&lt;airtime&gt;12:00 [rest of string was truncated]&quot;;.
+        ///&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;/genres&gt;
+        ///&lt;runtime&gt;30&lt;/runtime&gt;
+        ///&lt;network  country=&quot;UK&quot;&gt;E4&lt;/network&gt;
+        ///&lt;airtime&gt;22:00&lt;/airtime&gt; [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string RESPONSE_SHOWINFO_15352 {
+        internal static string RESPONSE_SHOWINFO_18753 {
             get {
-                return ResourceManager.GetString("RESPONSE_SHOWINFO_15352", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_SHOWINFO_18753", resourceCulture);
             }
         }
     }

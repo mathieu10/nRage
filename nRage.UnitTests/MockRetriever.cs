@@ -14,7 +14,11 @@ namespace nRage.Tests.Unit
         private Dictionary<string, string> _mockResults;
 
         public MockRetriever()
-        {            
+        {   
+            //RESPONSE_FULLSHOWINFO_32517 - episodes (Kerry Packer)
+
+            //TODO: replace this with Moq/RhinoMocks/etc 
+
             _mockResults = new Dictionary<string, string>();
             _mockResults["search.php?show=wilfred"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCH_WILFRED;
             _mockResults["search.php?show=wilfferxjd"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCH_WILFFERXJD;
@@ -22,9 +26,9 @@ namespace nRage.Tests.Unit
             _mockResults["full_search.php?show=breakingbad"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCHFULL_BREAKINGBAD;
             _mockResults["full_search.php?show=bracvnkingbadga"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCHFULL_BRACVNKINGBADGA;
 
-            _mockResults["showinfo.php?sid=15352"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SHOWINFO_15352;
+            _mockResults["showinfo.php?sid=15352"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SHOWINFO_18753;
             _mockResults["episode_list.php?sid=15352"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODELIST_15352;
-            _mockResults["full_show_info.php?sid=15352"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_FULLSHOWINFO_15352;            
+            _mockResults["full_show_info.php?sid=15352"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_FULLSHOWINFO_20260;            
             _mockResults["episodeinfo.php?sid=15352&ep=2x05"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODEINFO_15352_2x05;            
         }
 

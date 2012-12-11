@@ -155,59 +155,71 @@
 
 &lt;/Show&gt;</value>
   </data>
-  <data name="RESPONSE_FULLSHOWINFO_15352" xml:space="preserve">
+  <data name="RESPONSE_FULLSHOWINFO_20260" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
 
 &lt;Show&gt;
-&lt;name&gt;Wilfred&lt;/name&gt;
-&lt;totalseasons&gt;2&lt;/totalseasons&gt;
-&lt;showid&gt;15352&lt;/showid&gt;
-&lt;showlink&gt;http://tvrage.com/shows/id-15352&lt;/showlink&gt;
-&lt;started&gt;Mar/19/2007&lt;/started&gt;
+&lt;name&gt;Kenny's World&lt;/name&gt;
+&lt;totalseasons&gt;1&lt;/totalseasons&gt;
+&lt;showid&gt;20260&lt;/showid&gt;
+&lt;showlink&gt;http://tvrage.com/shows/id-20260&lt;/showlink&gt;
+&lt;started&gt;Sep/10/2008&lt;/started&gt;
 &lt;ended&gt;&lt;/ended&gt;
-&lt;image&gt;http://images.tvrage.com/shows/16/15352.jpg&lt;/image&gt;
+&lt;image&gt;http://images.tvrage.com/shows/21/20260.jpg&lt;/image&gt;
 &lt;origin_country&gt;AU&lt;/origin_country&gt;
-&lt;status&gt;Canceled/Ended&lt;/status&gt;
-&lt;classification&gt;Scripted&lt;/classification&gt;
-&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;
-&lt;runtime&gt;25&lt;/runtime&gt;
-&lt;network country="AU"&gt;SBS&lt;/network&gt;
-&lt;airtime&gt;12:00&lt;/airtime&gt;
-&lt;airday&gt;Monday&lt;/airday&gt;
+&lt;status&gt;New Series&lt;/status&gt;
+&lt;classification&gt;Reality&lt;/classification&gt;
+&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Educational&lt;/genre&gt;&lt;genre&gt;Housing/Building&lt;/genre&gt;&lt;genre&gt;Travel&lt;/genre&gt;&lt;/genres&gt;
+&lt;runtime&gt;30&lt;/runtime&gt;
+&lt;network country="AU"&gt;Ten&lt;/network&gt;
+&lt;airtime&gt;20:00&lt;/airtime&gt;
+&lt;airday&gt;Wednesday&lt;/airday&gt;
+&lt;timezone&gt;GMT+10 -DST&lt;/timezone&gt;
+
+&lt;/Show&gt;</value>
+    <comment>Kenny's World
+No episodes</comment>
+  </data>
+  <data name="RESPONSE_FULLSHOWINFO_32517" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+
+
+&lt;Show&gt;
+&lt;name&gt;Howzat! Kerry Packer's War&lt;/name&gt;
+&lt;totalseasons&gt;1&lt;/totalseasons&gt;
+&lt;showid&gt;32517&lt;/showid&gt;
+&lt;showlink&gt;http://tvrage.com/shows/id-32517&lt;/showlink&gt;
+&lt;started&gt;Aug/19/2012&lt;/started&gt;
+&lt;ended&gt;&lt;/ended&gt;
+&lt;image&gt;http://images.tvrage.com/shows/33/32517.jpg&lt;/image&gt;
+&lt;origin_country&gt;AU&lt;/origin_country&gt;
+&lt;status&gt;New Series&lt;/status&gt;
+&lt;classification&gt;Mini-Series&lt;/classification&gt;
+&lt;genres&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;genre&gt;Sports&lt;/genre&gt;&lt;/genres&gt;
+&lt;runtime&gt;120&lt;/runtime&gt;
+&lt;network country="AU"&gt;Nine&lt;/network&gt;
+&lt;airtime&gt;20:30&lt;/airtime&gt;
+&lt;airday&gt;Sunday&lt;/airday&gt;
 &lt;timezone&gt;GMT+10 -DST&lt;/timezone&gt;
 &lt;Episodelist&gt;
 
 &lt;Season no="1"&gt;
-&lt;episode&gt;&lt;epnum&gt;1&lt;/epnum&gt;&lt;seasonnum&gt;01&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-19&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578793&lt;/link&gt;&lt;title&gt;There is a Dog&lt;/title&gt;&lt;screencap&gt;http://images.tvrage.com/screencaps/77/15352/578793.jpg&lt;/screencap&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;2&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578794&lt;/link&gt;&lt;title&gt;Dog Day Afterglow&lt;/title&gt;&lt;screencap&gt;http://images.tvrage.com/screencaps/77/15352/578794.jpg&lt;/screencap&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;3&lt;/epnum&gt;&lt;seasonnum&gt;03&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-04-02&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578795&lt;/link&gt;&lt;title&gt;Dogs of War&lt;/title&gt;&lt;screencap&gt;http://images.tvrage.com/screencaps/77/15352/578795.jpg&lt;/screencap&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;4&lt;/epnum&gt;&lt;seasonnum&gt;04&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-04-09&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578796&lt;/link&gt;&lt;title&gt;Walking the Dog&lt;/title&gt;&lt;screencap&gt;http://images.tvrage.com/screencaps/77/15352/578796.jpg&lt;/screencap&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;5&lt;/epnum&gt;&lt;seasonnum&gt;05&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-04-16&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578797&lt;/link&gt;&lt;title&gt;The Dog Whisperer&lt;/title&gt;&lt;screencap&gt;http://images.tvrage.com/screencaps/77/15352/578797.jpg&lt;/screencap&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;6&lt;/epnum&gt;&lt;seasonnum&gt;06&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-04-23&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578798&lt;/link&gt;&lt;title&gt;Dog Eat Dog&lt;/title&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;7&lt;/epnum&gt;&lt;seasonnum&gt;07&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-04-30&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578799&lt;/link&gt;&lt;title&gt;Barking Behind Bars&lt;/title&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;8&lt;/epnum&gt;&lt;seasonnum&gt;08&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-05-07&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578800&lt;/link&gt;&lt;title&gt;This Dog's Life&lt;/title&gt;&lt;/episode&gt;
-&lt;/Season&gt;
-
-&lt;Season no="2"&gt;
-&lt;episode&gt;&lt;epnum&gt;9&lt;/epnum&gt;&lt;seasonnum&gt;01&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-03-08&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916910&lt;/link&gt;&lt;title&gt;Kiss Me Kat&lt;/title&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;10&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-03-15&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916911&lt;/link&gt;&lt;title&gt;Dog of a Town (Part 1)&lt;/title&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;11&lt;/epnum&gt;&lt;seasonnum&gt;03&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-03-22&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916912&lt;/link&gt;&lt;title&gt;Dog of a Town (Part 2)&lt;/title&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;12&lt;/epnum&gt;&lt;seasonnum&gt;04&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-03-29&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916913&lt;/link&gt;&lt;title&gt;Honey You're Killing the Dog&lt;/title&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;13&lt;/epnum&gt;&lt;seasonnum&gt;05&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-04-05&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916984&lt;/link&gt;&lt;title&gt;The Ice Dog Cometh&lt;/title&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;14&lt;/epnum&gt;&lt;seasonnum&gt;06&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-04-12&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916985&lt;/link&gt;&lt;title&gt;The Dog Father&lt;/title&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;15&lt;/epnum&gt;&lt;seasonnum&gt;07&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-04-19&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916986&lt;/link&gt;&lt;title&gt;Dog Star&lt;/title&gt;&lt;/episode&gt;
-&lt;episode&gt;&lt;epnum&gt;16&lt;/epnum&gt;&lt;seasonnum&gt;08&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-04-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916987&lt;/link&gt;&lt;title&gt;Bite Club&lt;/title&gt;&lt;/episode&gt;
+&lt;episode&gt;&lt;epnum&gt;1&lt;/epnum&gt;&lt;seasonnum&gt;01&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2012-08-19&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-32517/episodes/1065211194&lt;/link&gt;&lt;title&gt;Part 1&lt;/title&gt;&lt;/episode&gt;
+&lt;episode&gt;&lt;epnum&gt;2&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2012-08-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-32517/episodes/1065211195&lt;/link&gt;&lt;title&gt;Part 2&lt;/title&gt;&lt;/episode&gt;
 &lt;/Season&gt;
 
 &lt;/Episodelist&gt;
 
 &lt;/Show&gt;</value>
+    <comment>Howzat!Kerry Packer's War
+Lists specific episodes</comment>
   </data>
   <data name="RESPONSE_SEARCHFULL_BRACVNKINGBADGA" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
 &lt;Results&gt;0&lt;/Results&gt;</value>
+    <comment>No result</comment>
   </data>
   <data name="RESPONSE_SEARCHFULL_BREAKINGBAD" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
@@ -231,11 +243,13 @@
 &lt;akas&gt;&lt;aka country="SI"&gt;Kriva pota&lt;/aka&gt;&lt;aka country="HU"&gt;Totál szívás&lt;/aka&gt;&lt;aka country="BG"&gt;В обувките на сатаната&lt;/aka&gt;&lt;/akas&gt;
 &lt;/show&gt;
 &lt;/Results&gt;</value>
+    <comment>Breaking Bad</comment>
   </data>
   <data name="RESPONSE_SEARCH_WILFFERXJD" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
 &lt;Results&gt;0&lt;/Results&gt;</value>
+    <comment>No result</comment>
   </data>
   <data name="RESPONSE_SEARCH_WILFRED" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
@@ -266,27 +280,29 @@
 &lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;/genres&gt;
 &lt;/show&gt;
 &lt;/Results&gt;</value>
+    <comment>Wilfred</comment>
   </data>
-  <data name="RESPONSE_SHOWINFO_15352" xml:space="preserve">
+  <data name="RESPONSE_SHOWINFO_18753" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
 &lt;Showinfo&gt;
-&lt;showid&gt;15352&lt;/showid&gt;
-&lt;showname&gt;Wilfred&lt;/showname&gt;
-&lt;showlink&gt;http://tvrage.com/shows/id-15352&lt;/showlink&gt;
-&lt;seasons&gt;2&lt;/seasons&gt;
-&lt;started&gt;2007&lt;/started&gt;
-&lt;startdate&gt;Mar/19/2007&lt;/startdate&gt;
+&lt;showid&gt;18753&lt;/showid&gt;
+&lt;showname&gt;The Inbetweeners&lt;/showname&gt;
+&lt;showlink&gt;http://tvrage.com/The_Inbetweeners&lt;/showlink&gt;
+&lt;seasons&gt;3&lt;/seasons&gt;
+&lt;started&gt;2008&lt;/started&gt;
+&lt;startdate&gt;May/01/2008&lt;/startdate&gt;
 &lt;ended&gt;&lt;/ended&gt;
-&lt;origin_country&gt;AU&lt;/origin_country&gt;
+&lt;origin_country&gt;UK&lt;/origin_country&gt;
 &lt;status&gt;Canceled/Ended&lt;/status&gt;
 &lt;classification&gt;Scripted&lt;/classification&gt;
-&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;
-&lt;runtime&gt;25&lt;/runtime&gt;
-&lt;network  country="AU"&gt;SBS&lt;/network&gt;
-&lt;airtime&gt;12:00&lt;/airtime&gt;
-&lt;airday&gt;Monday&lt;/airday&gt;
-&lt;timezone&gt;GMT+10 -DST&lt;/timezone&gt;
+&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;/genres&gt;
+&lt;runtime&gt;30&lt;/runtime&gt;
+&lt;network  country="UK"&gt;E4&lt;/network&gt;
+&lt;airtime&gt;22:00&lt;/airtime&gt;
+&lt;airday&gt;Thursday&lt;/airday&gt;
+&lt;timezone&gt;GMT+0 -DST&lt;/timezone&gt;
 &lt;/Showinfo&gt;</value>
+    <comment>The Inbetweeners</comment>
   </data>
 </root>

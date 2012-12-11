@@ -96,7 +96,7 @@ namespace nRage.Tests.Unit
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
-            Assert.True(result.Ended=="0");
+            Assert.True(result.Ended=="");
         }
 
         [Fact]
