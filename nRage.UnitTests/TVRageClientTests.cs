@@ -9,7 +9,7 @@ using Xunit;
 namespace nRage.Tests.Unit
 {
 
-    public class TVRageClientTests
+    public class SearchTests
     {        
         protected IKernel _ioc;
 
@@ -18,7 +18,7 @@ namespace nRage.Tests.Unit
             _ioc.Bind<IRetriever>().To<MockRetriever>();
         }
 
-        public TVRageClientTests() { 
+        public SearchTests() { 
             InitialiseIOC();
         }
 

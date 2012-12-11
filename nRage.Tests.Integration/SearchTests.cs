@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using Ninject;
 
 namespace nRage.Tests.Integration {
-    public class TVRageClientTests : nRage.Tests.Unit.TVRageClientTests {
+    public class SearchTests : nRage.Tests.Unit.SearchTests
+    {
         public override void InitialiseIOC() {
             _ioc = new StandardKernel();
             _ioc.Bind<IRetriever>().To<WebRetriever>();
