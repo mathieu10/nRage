@@ -11,9 +11,8 @@ namespace nRage.Tests.Unit
 
     public class ShowInfoTests : TestBase
     {            
-        private const string show_id = "18753";
-        private const string nonexistent_show_id = "842999999";
-        private const string invalid_show_id = "842999999";
+        private const int show_id = 18753;
+        private const int nonexistent_show_id = 842999999;
 
         private TVRageClient client;
 
@@ -30,17 +29,8 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
-        public void GetShowInfoThrowsWhenNoMatchFound()
+        public void GetShowInfoThrowsWhenInvalidShowID()
         { 
-            var response = client.GetShowInfo(show_id);
-            Assert.True(response != null);
-        }
-
-        [Fact]
-        public void GetShowInfoThrowsWhenInvalidShowIDFormat()
-        { 
-            var client = _ioc.Get<TVRageClient>();            
-
             var response = client.GetShowInfo(show_id);
             Assert.True(response != null);
         }
