@@ -38,9 +38,10 @@ namespace nRage.UnitTests
             Assert.True(result.Name=="Wilfred");
             Assert.True(result.Link==@"http://www.tvrage.com/shows/id-15352");
             Assert.True(result.Country=="AU");
-            Assert.True(result.Started=="Mar/19/2007");
+            Assert.True(result.Started=="2007");
             Assert.True(result.Ended=="0");
             Assert.True(result.Seasons=="2");
+            Assert.True(result.Status == "Canceled/Ended");
             Assert.True(result.Classification=="Scripted");
             Assert.True(result.Genres.Count==2);
             Assert.True(result.Genres.ElementAt(0) == "Comedy");

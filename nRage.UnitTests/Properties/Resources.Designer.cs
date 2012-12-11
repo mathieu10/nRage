@@ -116,6 +116,17 @@ namespace nRage.UnitTests.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
         ///
+        ///&lt;Results&gt;0&lt;/Results&gt;.
+        /// </summary>
+        internal static string RESPONSE_SEARCH_WILFFERD {
+            get {
+                return ResourceManager.GetString("RESPONSE_SEARCH_WILFFERD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///
         ///&lt;Results&gt;
         ///&lt;show&gt;
         ///&lt;showid&gt;15352&lt;/showid&gt;

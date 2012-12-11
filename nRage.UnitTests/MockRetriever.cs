@@ -17,6 +17,7 @@ namespace nRage.UnitTests
         {            
             _mockResults = new Dictionary<string, string>();
             _mockResults["search.php?show=wilfred"] = nRage.UnitTests.Properties.Resources.RESPONSE_SEARCH_WILFRED;
+            _mockResults["search.php?show=wilfferd"] = nRage.UnitTests.Properties.Resources.RESPONSE_SEARCH_WILFFERD;
             _mockResults[""] = nRage.UnitTests.Properties.Resources.RESPONSE_SEARCHFULL_WILFRED;
             _mockResults[""] = nRage.UnitTests.Properties.Resources.RESPONSE_SHOWINFO_15352;
             _mockResults[""] = nRage.UnitTests.Properties.Resources.RESPONSE_EPISODELIST_15352;

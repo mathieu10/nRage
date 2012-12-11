@@ -242,6 +242,11 @@
 &lt;/show&gt;
 &lt;/Results&gt;</value>
   </data>
+  <data name="RESPONSE_SEARCH_WILFFERD" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+
+&lt;Results&gt;0&lt;/Results&gt;</value>
+  </data>
   <data name="RESPONSE_SEARCH_WILFRED" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
