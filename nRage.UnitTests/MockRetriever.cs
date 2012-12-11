@@ -18,11 +18,11 @@ namespace nRage.Tests.Unit
             _mockResults = new Dictionary<string, string>();
             _mockResults["search.php?show=wilfred"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCH_WILFRED;
             _mockResults["search.php?show=wilfferxjd"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCH_WILFFERXJD;
-            _mockResults[""] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCHFULL_WILFRED;
-            _mockResults[""] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SHOWINFO_15352;
-            _mockResults[""] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODELIST_15352;
-            _mockResults[""] = nRage.Tests.Unit.Properties.Resources.RESPONSE_FULLSHOWINFO_15352;            
-            _mockResults[""] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODEINFO_15352_2x05;            
+            _mockResults["full_search.php?show=wilfred"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCHFULL_WILFRED;
+            _mockResults["showinfo.php?sid=15352"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SHOWINFO_15352;
+            _mockResults["episode_list.php?sid=15352"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODELIST_15352;
+            _mockResults["full_show_info.php?sid=15352"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_FULLSHOWINFO_15352;            
+            _mockResults["episodeinfo.php?sid=15352&ep=2x05"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODEINFO_15352_2x05;            
         }
 
         public Stream Get(string url)
