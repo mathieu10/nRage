@@ -16,13 +16,11 @@ namespace nRage
     {
         private IRetriever Retriever { get; set; }
 
-
         public TVRageClient(IRetriever retriever) { this.Retriever = retriever; }
 
         protected string FormatURLParam(string param)
-        {
-            // TODO: any fancy formatting here (eg replace space with +, remove certain chars
-            return param;
+        {            
+            return new string(param.Where(c=>char.IsLetterOrDigit(c)).ToArray());
         }
 
         protected string GetSearchByTitleURL(string title) { return "http://services.tvrage.com/feeds/search.php?show=" + FormatURLParam(title); }

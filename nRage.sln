@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nRage", "nRage\nRage.csproj", "{1E9D1BBC-9CE5-418C-BE52-C7DC9A7BB5DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nRage.UnitTests", "nRage.UnitTests\nRage.UnitTests.csproj", "{A613821F-1AB8-4713-B2C9-1179D5C22F03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nRage.Tests", "nRage.UnitTests\nRage.Tests.csproj", "{A613821F-1AB8-4713-B2C9-1179D5C22F03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nRage.Example", "nRage.Example\nRage.Example.csproj", "{92FD3D7F-F3D6-41BF-B5CA-8BD85E5A76C8}"
 EndProject

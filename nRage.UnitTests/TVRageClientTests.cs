@@ -3,20 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ninject;
 using Xunit;
 
 namespace nRage.UnitTests
 {
 
     public class TVRageClientTests
-    {        
+    {       
+ 
+        private IKernel _ioc;
+
         public TVRageClientTests() { 
-            // TODO: IOC: register mock retriever
+            _ioc = new StandardKernel();
+            _ioc.Bind<IRetriever>().To<MockRetriever>();
         }
 
         [Fact]
         public void CanSearchShowByTitle() { 
-            var client = new TVRageClient(new MockRetriever());
+            var client = _ioc.Get<TVRageClient>();
             var title = "wilfred";
 
             var response = client.SearchByTitle(title);
@@ -27,7 +32,7 @@ namespace nRage.UnitTests
         [Fact]
         public void SearchShowByTitleReturnsCorrectInformation()
         {
-            var client = new TVRageClient(new MockRetriever());
+            var client = _ioc.Get<TVRageClient>();
             var title = "wilfred";
 
             var response = client.SearchByTitle(title);
@@ -51,7 +56,7 @@ namespace nRage.UnitTests
         [Fact]
         public void SearchShowByTitleReturnsEmptyResultsWhenNoMatches()
         {
-            var client = new TVRageClient(new MockRetriever());
+            var client = _ioc.Get<TVRageClient>();
             var title = "wilfferd";
 
             var response = client.SearchByTitle(title);
