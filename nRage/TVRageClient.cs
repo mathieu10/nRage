@@ -84,12 +84,13 @@ namespace nRage {
             if (response.Root == null || response.Root.Value == "0")
                 throw new Exception("TODO: more info here");
 
-            return MapXMLToShowInfoResult(response);
-        }        
+            return MapXMLToShowInfoResponse(response);
+        }
 
         public EpisodeListResponse GetEpisodeList(int showId) {
             var response = XDocument.Load(Retriever.Get(GetURLForEpisodeList(showId)));
-            return response;
+
+            return MapXMLToEpisodeListResponse(response);
         }
 
         public EpisodeInfoResponse GetEpisodeInfo(int showID, int season, int episode) {
@@ -98,27 +99,43 @@ namespace nRage {
         }
 
         public EpisodeInfoResponse GetEpisodeInfo(int showID, string episodeLabel) {
-            var response = XDocument.Load(Retriever.Get(GetURLForEpisoddeInfo(showID,episodeLabel)));
+            var response = XDocument.Load(Retriever.Get(GetURLForEpisoddeInfo(showID, episodeLabel)));
 
-            return response;
+            return MapXMLToEpisodeInfoResponse(response);
         }
 
-        public FullShowInfoResponse GetFullShowInfo() {
+        public FullShowInfoResponse GetFullShowInfo(int showId) {
             var response = XDocument.Load(Retriever.Get(GetURLForFullShowInfo(showId)));
 
-            return response;
+            return MapXMLToFullShowInfoResponse(response);
         }
 
         public ShowListResponse GetShowList() {
             var response = XDocument.Load(Retriever.Get(GetURLForShowList()));
 
-            return response;
+            return MapXMLToShowListResponse(response);
         }
         #endregion
 
         #region OXM (Object-XML Mapper) - because the software world needs more acronyms
-        private static List<FullSearchResult> MapXMLToFullSearchResults(XDocument response) {
-            return response.Descendants("show").Select(x => new FullSearchResult {
+        private ShowInfoResponse MapXMLToShowInfoResponse(XDocument xml) {
+            throw new NotImplementedException();
+        }
+        private EpisodeListResponse MapXMLToEpisodeListResponse(XDocument xml) {
+            throw new NotImplementedException();
+        }
+        private EpisodeInfoResponse MapXMLToEpisodeInfoResponse(XDocument xml) {
+            throw new NotImplementedException();
+        }
+        private FullShowInfoResponse MapXMLToFullShowInfoResponse(XDocument xml) {
+            throw new NotImplementedException();
+        }
+        private ShowListResponse MapXMLToShowListResponse(XDocument xml) {
+            throw new NotImplementedException();
+        }
+
+        private List<FullSearchResult> MapXMLToFullSearchResults(XDocument xml) {
+            return xml.Descendants("show").Select(x => new FullSearchResult {
                 ShowID = (int)x.Element("showid"),
                 Name = (string)x.Element("name"),
                 Link = (string)x.Element("link"),
@@ -153,10 +170,6 @@ namespace nRage {
                 Classification = (string)x.Element("classification"),
                 Genres = x.Descendants("genre").Select(y => y.Value).ToList(),
             }).ToList();
-        }
-
-        private ShowInfoResponse MapXMLToShowInfoResult(XDocument xml) {
-            throw new NotImplementedException();
         }
         #endregion
 
