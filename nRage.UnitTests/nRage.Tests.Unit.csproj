@@ -49,6 +49,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ShowListTests.cs" />
+    <Compile Include="EpisodeInfoTests.cs" />
+    <Compile Include="FullShowInfoTests.cs" />
+    <Compile Include="EpisodeListTests.cs" />
     <Compile Include="ShowInfoTests.cs" />
     <Compile Include="TestBase.cs" />
     <Compile Include="FullSearchTests.cs" />
