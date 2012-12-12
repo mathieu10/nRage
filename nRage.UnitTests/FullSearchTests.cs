@@ -14,11 +14,16 @@ namespace nRage.Tests.Unit
         private const string title = "breakingbad";
         private const string incorrect_title = "bracvnkingbadga";
 
+        private TVRageClient client;
+
+        public FullSearchTests()
+        {
+            client = _ioc.Get<TVRageClient>();
+        }
+
         [Fact]
         public void CanFullSearchByTitle()
         { 
-            var client = _ioc.Get<TVRageClient>();            
-
             var response = client.FullSearchByTitle(title);
             Assert.True(response != null);
             Assert.True(response.Results.Count == 1);
@@ -27,8 +32,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsEmptyResultsWhenNoMatches()
         {
-            var client = _ioc.Get<TVRageClient>();            
-
             var response = client.FullSearchByTitle(incorrect_title);
             Assert.True(response.Results.Count == 0);
         }           
@@ -36,8 +39,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectShowID()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -47,8 +48,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectName()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -58,8 +57,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectLink()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -69,8 +66,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectCountry()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -80,8 +75,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectYearStarted()
         {
-            var client = _ioc.Get<TVRageClient>();         
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -91,8 +84,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectYearEnded()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -102,8 +93,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectStatus()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -113,8 +102,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectSeasonsCount()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -124,8 +111,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectClassification()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -135,8 +120,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectGenres()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -147,8 +130,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectAirTime()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -158,8 +139,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectAirDay()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -169,8 +148,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectNetwork()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -180,8 +157,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectRunTime()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -191,8 +166,6 @@ namespace nRage.Tests.Unit
         [Fact]
         public void FullSearchByTitleReturnsCorrectAKAs()
         {
-            var client = _ioc.Get<TVRageClient>();
-
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
@@ -202,8 +175,7 @@ namespace nRage.Tests.Unit
             Assert.True(result.AKAs.ElementAt(1).Country=="HU");
             Assert.True(result.AKAs.ElementAt(1).Name=="Totál szívás");
             Assert.True(result.AKAs.ElementAt(2).Country=="BG");
-            Assert.True(result.AKAs.ElementAt(2).Name=="В обувките на сатаната");
-            
+            Assert.True(result.AKAs.ElementAt(2).Name=="В обувките на сатаната");            
         }
 
     }
