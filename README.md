@@ -9,6 +9,7 @@ TODO / Notes to self
 --------------------
 * Support country attribute for <network> nodes
 * Finish in-line XML documentation for contracts
+* Proper API documentation (eg: status codes for show list)
 
 Observed inconsistencies
 ------------------------
