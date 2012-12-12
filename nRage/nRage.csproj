@@ -46,7 +46,11 @@
     <Compile Include="Contract\TVRage\FullSearchResult.cs" />
     <Compile Include="Contract\TVRage\SearchResponse.cs" />
     <Compile Include="Contract\TVRage\SearchResult.cs" />
+    <Compile Include="Contract\TVRage\EpisodeInfoResponse.cs" />
+    <Compile Include="Contract\TVRage\EpisodeListResponse.cs" />
+    <Compile Include="Contract\TVRage\FullShowInfoResponse.cs" />
     <Compile Include="IRetriever.cs" />
+    <Compile Include="Contract\TVRage\ShowListResponse.cs" />
     <Compile Include="TVRageClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
