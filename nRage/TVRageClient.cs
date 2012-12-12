@@ -82,7 +82,7 @@ namespace nRage {
         public ShowInfoResponse GetShowInfo(int showId) {
             var response = XDocument.Load(Retriever.Get(GetURLForShowInfo(showId)));
             
-            if (response.Root == null || response.Root.Value == "0")
+            if (response.Root == null || response.Root.Value == "")
                 throw new ShowNotFoundException();
 
             return MapXMLToShowInfoResponse(response);
@@ -120,7 +120,7 @@ namespace nRage {
 
         #region OXM (Object-XML Mapper) - because the software world needs more acronyms
         private ShowInfoResponse MapXMLToShowInfoResponse(XDocument xml) {
-            return xml.Descendants("showinfo").Select(x => new ShowInfoResponse {
+            return xml.Descendants("Showinfo").Select(x => new ShowInfoResponse {
                 ShowID = (int)x.Element("showid"),
                 ShowName = (string)x.Element("showname"),
                 ShowLink = (string)x.Element("showlink"),
