@@ -31,7 +31,7 @@ namespace nRage.Tests.Unit
         [Fact]
         public void GetShowInfoThrowsWhenInvalidShowID()
         { 
-            var response = client.GetShowInfo(show_id);
+            var response = client.GetShowInfo(nonexistent_show_id);
             Assert.True(response != null);
         }
 

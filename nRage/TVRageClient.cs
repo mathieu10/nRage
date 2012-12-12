@@ -81,8 +81,9 @@ namespace nRage {
 
         public ShowInfoResponse GetShowInfo(int showId) {
             var response = XDocument.Load(Retriever.Get(GetURLForShowInfo(showId)));
+            
             if (response.Root == null || response.Root.Value == "0")
-                throw new Exception("TODO: more info here");
+                throw new ShowNotFoundException();
 
             return MapXMLToShowInfoResponse(response);
         }
@@ -119,19 +120,33 @@ namespace nRage {
 
         #region OXM (Object-XML Mapper) - because the software world needs more acronyms
         private ShowInfoResponse MapXMLToShowInfoResponse(XDocument xml) {
-            throw new NotImplementedException();
+            return xml.Descendants("showinfo").Select(x => new ShowInfoResponse {
+            
+            }).Single();
         }
+
         private EpisodeListResponse MapXMLToEpisodeListResponse(XDocument xml) {
-            throw new NotImplementedException();
+            return xml.Descendants("show").Select(x => new EpisodeListResponse {
+            
+            }).Single();
         }
+
         private EpisodeInfoResponse MapXMLToEpisodeInfoResponse(XDocument xml) {
-            throw new NotImplementedException();
+            return xml.Descendants("show").Select(x => new EpisodeInfoResponse {
+            
+            }).Single();
         }
+
         private FullShowInfoResponse MapXMLToFullShowInfoResponse(XDocument xml) {
-            throw new NotImplementedException();
+            return xml.Descendants("?").Select(x => new FullShowInfoResponse {
+            
+            }).Single();
         }
+
         private ShowListResponse MapXMLToShowListResponse(XDocument xml) {
-            throw new NotImplementedException();
+            return xml.Descendants("?").Select(x => new ShowListResponse {
+            
+            }).Single();
         }
 
         private List<FullSearchResult> MapXMLToFullSearchResults(XDocument xml) {
@@ -174,4 +189,5 @@ namespace nRage {
         #endregion
 
     }
+
 }

@@ -51,6 +51,7 @@
     <Compile Include="Contract\TVRage\FullShowInfoResponse.cs" />
     <Compile Include="IRetriever.cs" />
     <Compile Include="Contract\TVRage\ShowListResponse.cs" />
+    <Compile Include="Exceptions.cs" />
     <Compile Include="TVRageClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -237,5 +237,17 @@ namespace nRage.Tests.Unit.Properties {
                 return ResourceManager.GetString("RESPONSE_SHOWINFO_18753", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///
+        ///&lt;Showinfo&gt;
+        ///&lt;/Showinfo&gt;.
+        /// </summary>
+        internal static string RESPONSE_SHOWINFO_842999999 {
+            get {
+                return ResourceManager.GetString("RESPONSE_SHOWINFO_842999999", resourceCulture);
+            }
+        }
     }
 }
