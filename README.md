@@ -14,3 +14,4 @@ Observed inconsistencies
 ------------------------
 * <ended> sometimes returns either empty/self-terminating or "0"s
 * <AKAs> not returned at all if empty; other tags are returned as self-terminating nodes
+* Inconsistent naming (eg sometimes "id" or "name" othertimes "showid" or "showname")
