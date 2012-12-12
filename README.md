@@ -10,6 +10,7 @@ TODO / Notes to self
 * Support country attribute for <network> nodes
 * Finish in-line XML documentation for contracts
 * Proper API documentation (eg: status codes for show list)
+* Re-think Stream usage for IRetriever (poor memory management)
 
 Observed inconsistencies
 ------------------------
