@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 namespace nRage.Contract.TVRage
 {
     [Serializable]

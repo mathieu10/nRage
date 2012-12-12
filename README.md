@@ -17,4 +17,5 @@ Observed inconsistencies
 * API guide indicates EpisodeInfo is retrieved by:
 	> http://services.tvrage.com/feeds/episodeinfo.php?show={SHOWNAME}&exact=1&ep={SEASON}x{EPISODE}
   Actual usage is:
-    > > http://services.tvrage.com/feeds/episodeinfo.php?sid={SHOWID}&ep={SEASON}x{EPISODE}
+    > http://services.tvrage.com/feeds/episodeinfo.php?sid={SHOWID}&ep={SEASON}x{EPISODE}
+* Inconsistent naming (eg sometimes "id" or "name" othertimes "showid" or "showname")
