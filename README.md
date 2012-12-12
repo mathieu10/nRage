@@ -20,3 +20,4 @@ Observed inconsistencies
   Actual usage is:
     > http://services.tvrage.com/feeds/episodeinfo.php?sid={SHOWID}&ep={SEASON}x{EPISODE}
 * Inconsistent naming (eg sometimes "id" or "name" othertimes "showid" or "showname")
+* Inconsistent casing (eg XML for show info opens with "Showinfo" - all other nodes in show info are strict lower case)
