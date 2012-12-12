@@ -121,7 +121,22 @@ namespace nRage {
         #region OXM (Object-XML Mapper) - because the software world needs more acronyms
         private ShowInfoResponse MapXMLToShowInfoResponse(XDocument xml) {
             return xml.Descendants("showinfo").Select(x => new ShowInfoResponse {
-            
+                ShowID = (int)x.Element("showid"),
+                ShowName = (string)x.Element("showname"),
+                ShowLink = (string)x.Element("showlink"),
+                Seasons = (string)x.Element("seasons"),
+                Started = (string)x.Element("started"),
+                StartDate = (string)x.Element("startdate"),
+                Ended = (string)x.Element("ended"),
+                OriginCountry = (string)x.Element("origin_country"),
+                Status = (string)x.Element("status"),
+                Genres = x.Descendants("genre").Select(y => y.Value).ToList(),
+                RunTime = (string)x.Element("runtime"),
+                Network = (string)x.Element("network"),
+                AirDay = (string)x.Element("airday"),
+                AirTime = (string)x.Element("airtime"),
+                TimeZone = (string)x.Element("timezone"),
+                Classification = (string)x.Element("classification"),
             }).Single();
         }
 
