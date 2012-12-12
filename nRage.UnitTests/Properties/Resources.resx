@@ -312,4 +312,40 @@ Lists specific episodes</comment>
 &lt;/Showinfo&gt;</value>
     <comment>No result</comment>
   </data>
+  <data name="RESPONSE_SHOWLIST" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;shows&gt;
+&lt;show&gt;&lt;id&gt;1&lt;/id&gt;&lt;name&gt;Fernwood 2Night&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;2&lt;/id&gt;&lt;name&gt;America 2Night&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;3&lt;/id&gt;&lt;name&gt;Mary Hartman, Mary Hartman&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;4&lt;/id&gt;&lt;name&gt;Sara (1985)&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;5&lt;/id&gt;&lt;name&gt;Buffalo Bill&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;6&lt;/id&gt;&lt;name&gt;The Rousters&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;7&lt;/id&gt;&lt;name&gt;Paper Dolls&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;8&lt;/id&gt;&lt;name&gt;Marcus Welby, M.D.&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;9&lt;/id&gt;&lt;name&gt;Too Close for Comfort&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;10&lt;/id&gt;&lt;name&gt;Bob &amp;amp; Carol &amp;amp; Ted &amp;amp; Alice&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;11&lt;/id&gt;&lt;name&gt;USA High&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;12&lt;/id&gt;&lt;name&gt;The Colbys&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;13&lt;/id&gt;&lt;name&gt;The Betty White Show&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;14&lt;/id&gt;&lt;name&gt;The Andy Williams Show (1958)&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;15&lt;/id&gt;&lt;name&gt;The Courtship of Eddie's Father&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;16&lt;/id&gt;&lt;name&gt;Forever Fernwood&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;17&lt;/id&gt;&lt;name&gt;Seven Brides for Seven Brothers&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;18&lt;/id&gt;&lt;name&gt;Fallen Angels&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;19&lt;/id&gt;&lt;name&gt;Another Day&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;20&lt;/id&gt;&lt;name&gt;The Defenders (1961)&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;21&lt;/id&gt;&lt;name&gt;Trapper John, M.D.&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;22&lt;/id&gt;&lt;name&gt;Dr. Kildare&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;23&lt;/id&gt;&lt;name&gt;Empire (1962)&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;24&lt;/id&gt;&lt;name&gt;Fifteen&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;25&lt;/id&gt;&lt;name&gt;Swans Crossing&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;26&lt;/id&gt;&lt;name&gt;Santa Barbara&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;27&lt;/id&gt;&lt;name&gt;NYPD&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;28&lt;/id&gt;&lt;name&gt;Social Studies&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;29&lt;/id&gt;&lt;name&gt;Winnetka Road&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;30&lt;/id&gt;&lt;name&gt;Cupid (1998)&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+&lt;show&gt;&lt;id&gt;31&lt;/id&gt;&lt;name&gt;Pokémon&lt;/name&gt;&lt;country&gt;AJ&lt;/country&gt;&lt;status&gt;1&lt;/status&gt;&lt;/show&gt; 
+&lt;/shows&gt;</value>
+  </data>
 </root>

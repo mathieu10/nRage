@@ -9,7 +9,7 @@ using Xunit;
 namespace nRage.Tests.Unit
 {
 
-    public class SearchTests : TestBase
+    public class SearchTests : TVRageClientTestBase
     {                
         private const string title = "wilfred";
         private const string incorrect_title = "wilfferxjd";

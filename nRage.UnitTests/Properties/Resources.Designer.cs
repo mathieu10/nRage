@@ -249,5 +249,20 @@ namespace nRage.Tests.Unit.Properties {
                 return ResourceManager.GetString("RESPONSE_SHOWINFO_842999999", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///&lt;shows&gt;
+        ///&lt;show&gt;&lt;id&gt;1&lt;/id&gt;&lt;name&gt;Fernwood 2Night&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+        ///&lt;show&gt;&lt;id&gt;2&lt;/id&gt;&lt;name&gt;America 2Night&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+        ///&lt;show&gt;&lt;id&gt;3&lt;/id&gt;&lt;name&gt;Mary Hartman, Mary Hartman&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+        ///&lt;show&gt;&lt;id&gt;4&lt;/id&gt;&lt;name&gt;Sara (1985)&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/show&gt; 
+        ///&lt;show&gt;&lt;id&gt;5&lt;/id&gt;&lt;name&gt;Buffalo Bill&lt;/name&gt;&lt;country&gt;US&lt;/country&gt;&lt;status&gt;2&lt;/status&gt;&lt;/sh [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RESPONSE_SHOWLIST {
+            get {
+                return ResourceManager.GetString("RESPONSE_SHOWLIST", resourceCulture);
+            }
+        }
     }
 }

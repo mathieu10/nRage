@@ -54,7 +54,7 @@
     <Compile Include="FullShowInfoTests.cs" />
     <Compile Include="EpisodeListTests.cs" />
     <Compile Include="ShowInfoTests.cs" />
-    <Compile Include="TestBase.cs" />
+    <Compile Include="TVRageClientTestBase.cs" />
     <Compile Include="FullSearchTests.cs" />
     <Compile Include="MockRetriever.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

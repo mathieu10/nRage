@@ -113,8 +113,9 @@ namespace nRage {
 
         public ShowListResponse GetShowList() {
             var response = XDocument.Load(Retriever.Get(GetURLForShowList()));
-
-            return MapXMLToShowListResponse(response);
+            var result = new ShowListResponse();
+            result.Results = MapXMLToShowListResponse(response);
+            return result;
         }
         #endregion
 
@@ -158,10 +159,13 @@ namespace nRage {
             }).Single();
         }
 
-        private ShowListResponse MapXMLToShowListResponse(XDocument xml) {
-            return xml.Descendants("?").Select(x => new ShowListResponse {
-            
-            }).Single();
+        private List<ShowListResult> MapXMLToShowListResponse(XDocument xml) {
+            return xml.Descendants("show").Select(x => new ShowListResult {
+                ID = (int)x.Element("id"),
+                Name = (string)x.Element("name"),
+                Country = (string)x.Element("country"),
+                Status = (string)x.Element("status"),
+            }).ToList();
         }
 
         private List<FullSearchResult> MapXMLToFullSearchResults(XDocument xml) {

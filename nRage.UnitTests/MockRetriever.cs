@@ -32,6 +32,8 @@ namespace nRage.Tests.Unit
             _mockResults["episode_list.php?sid=15352"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODELIST_15352;
             _mockResults["full_show_info.php?sid=15352"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_FULLSHOWINFO_20260;            
             _mockResults["episodeinfo.php?sid=15352&ep=2x05"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODEINFO_15352_2x05;            
+
+            _mockResults["show_list.php"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SHOWLIST;
         }
 
         public Stream Get(string url)

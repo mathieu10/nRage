@@ -49,6 +49,7 @@
     <Compile Include="Contract\TVRage\EpisodeInfoResponse.cs" />
     <Compile Include="Contract\TVRage\EpisodeListResponse.cs" />
     <Compile Include="Contract\TVRage\FullShowInfoResponse.cs" />
+    <Compile Include="Contract\TVRage\ShowListResult.cs" />
     <Compile Include="IRetriever.cs" />
     <Compile Include="Contract\TVRage\ShowListResponse.cs" />
     <Compile Include="Exceptions.cs" />

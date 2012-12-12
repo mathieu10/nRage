@@ -9,7 +9,7 @@ using Xunit;
 namespace nRage.Tests.Unit
 {
 
-    public class ShowInfoTests : TestBase
+    public class ShowInfoTests : TVRageClientTestBase
     {            
         private const int show_id = 18753;
         private const int nonexistent_show_id = 842999999;

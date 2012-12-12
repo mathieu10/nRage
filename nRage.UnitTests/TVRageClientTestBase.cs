@@ -12,17 +12,20 @@ namespace nRage.Tests.Unit
     //http://services.tvrage.com/feeds/full_show_info.php?sid=32517 - HOWZAT
 
 
-    public class TestBase
+    public class TVRageClientTestBase
     {        
         protected IKernel _ioc;
+
+        protected TVRageClient client;        
 
         public virtual void InitialiseIOC(){
             _ioc = new StandardKernel();
             _ioc.Bind<IRetriever>().To<MockRetriever>();
         }
 
-        public TestBase() { 
+        public TVRageClientTestBase() { 
             InitialiseIOC();
+            client = _ioc.Get<TVRageClient>();
         }       
     }
 }
