@@ -14,13 +14,6 @@ namespace nRage.Tests.Unit
         private const string title = "breakingbad";
         private const string incorrect_title = "bracvnkingbadga";
 
-        private TVRageClient client;
-
-        public FullSearchTests()
-        {
-            client = _ioc.Get<TVRageClient>();
-        }
-
         [Fact]
         public void CanFullSearchByTitle()
         { 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -100,7 +101,13 @@ namespace nRage {
         }
 
         public EpisodeInfoResponse GetEpisodeInfo(int showID, string episodeLabel) {
-            var response = XDocument.Load(Retriever.Get(GetURLForEpisoddeInfo(showID, episodeLabel)));
+            var rawResponse = Retriever.Get(GetURLForEpisoddeInfo(showID, episodeLabel));            
+            if(rawResponse.Length < 40){                                    
+                    var sr = new StreamReader(rawResponse);
+                    if(sr.ReadLine().Substring(0,15)=="No Show Results") throw new ShowNotFoundException();   
+                    rawResponse.Position = 0;
+            }            
+            var response = XDocument.Load(rawResponse);
 
             return MapXMLToEpisodeInfoResponse(response);
         }

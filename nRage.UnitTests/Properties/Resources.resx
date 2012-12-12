@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RESPONSE_EPISODEINFO_15352_2x05" xml:space="preserve">
-    <value>&lt;show id='15352'&gt;&lt;name&gt;Wilfred&lt;/name&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352&lt;/link&gt;&lt;started&gt;2007-03-19&lt;/started&gt;&lt;ended&gt;&lt;/ended&gt;&lt;country&gt;Australia&lt;/country&gt;&lt;status&gt;Canceled/Ended&lt;/status&gt;&lt;classification&gt;Scripted&lt;/classification&gt;&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;&lt;airtime&gt;Monday&lt;/airtime&gt;&lt;runtime&gt;25&lt;/runtime&gt;&lt;episode&gt;&lt;number&gt;02x05&lt;/number&gt;&lt;title&gt;The Ice Dog Cometh&lt;/title&gt;&lt;airdate&gt;2010-04-05&lt;/airdate&gt;&lt;url&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916984&lt;/url&gt;&lt;/episode&gt;&lt;latestepisode&gt;&lt;number&gt;02x08&lt;/number&gt;&lt;title&gt;Bite Club&lt;/title&gt;&lt;airdate&gt;2010-04-26&lt;/airdate&gt;&lt;/latestepisode&gt;&lt;/show&gt;</value>
+  <data name="RESPONSE_EPISODEINFO_5481_2x13" xml:space="preserve">
+    <value>&lt;show id='5481'&gt;&lt;name&gt;Teenage Mutant Ninja Turtles (1987)&lt;/name&gt;&lt;link&gt;http://www.tvrage.com/Teenage_Mutant_Ninja_Turtles_1987&lt;/link&gt;&lt;started&gt;1988-10-01&lt;/started&gt;&lt;ended&gt;1996-11-00&lt;/ended&gt;&lt;country&gt;USA&lt;/country&gt;&lt;status&gt;Canceled/Ended&lt;/status&gt;&lt;classification&gt;Animation&lt;/classification&gt;&lt;genres&gt;&lt;genre&gt;Animation General&lt;/genre&gt;&lt;genre&gt;Action&lt;/genre&gt;&lt;genre&gt;Adventure&lt;/genre&gt;&lt;/genres&gt;&lt;airtime&gt;Saturday&lt;/airtime&gt;&lt;runtime&gt;30&lt;/runtime&gt;&lt;episode&gt;&lt;number&gt;02x13&lt;/number&gt;&lt;title&gt;Return of the Technodrome&lt;/title&gt;&lt;airdate&gt;1988-12-03&lt;/airdate&gt;&lt;url&gt;http://www.tvrage.com/Teenage_Mutant_Ninja_Turtles_1987/episodes/169211&lt;/url&gt;&lt;/episode&gt;&lt;latestepisode&gt;&lt;number&gt;10x08&lt;/number&gt;&lt;title&gt;Divide and Conquer&lt;/title&gt;&lt;airdate&gt;1996-11-02&lt;/airdate&gt;&lt;/latestepisode&gt;&lt;/show&gt;</value>
+    <comment>Ninja Turtles (1987)</comment>
+  </data>
+  <data name="RESPONSE_EPISODEINFO_5481_99x99" xml:space="preserve">
+    <value>&lt;show id='5481'&gt;&lt;name&gt;Teenage Mutant Ninja Turtles (1987)&lt;/name&gt;&lt;link&gt;http://www.tvrage.com/Teenage_Mutant_Ninja_Turtles_1987&lt;/link&gt;&lt;started&gt;1988-10-01&lt;/started&gt;&lt;ended&gt;1996-11-00&lt;/ended&gt;&lt;country&gt;USA&lt;/country&gt;&lt;status&gt;Canceled/Ended&lt;/status&gt;&lt;classification&gt;Animation&lt;/classification&gt;&lt;genres&gt;&lt;genre&gt;Animation General&lt;/genre&gt;&lt;genre&gt;Action&lt;/genre&gt;&lt;genre&gt;Adventure&lt;/genre&gt;&lt;/genres&gt;&lt;airtime&gt;Saturday&lt;/airtime&gt;&lt;runtime&gt;30&lt;/runtime&gt;&lt;latestepisode&gt;&lt;number&gt;10x08&lt;/number&gt;&lt;title&gt;Divide and Conquer&lt;/title&gt;&lt;airdate&gt;1996-11-02&lt;/airdate&gt;&lt;/latestepisode&gt;&lt;/show&gt;</value>
+    <comment>Ninja Turtles (1987)
+Invalid episode</comment>
+  </data>
+  <data name="RESPONSE_EPISODEINFO_999999999" xml:space="preserve">
+    <value>No Show Results Were Found For ""</value>
   </data>
   <data name="RESPONSE_EPISODELIST_15352" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
@@ -155,7 +164,7 @@
 
 &lt;/Show&gt;</value>
   </data>
-  <data name="RESPONSE_FULLSHOWINFO_20260" xml:space="preserve">
+  <data name="RESPONSE_EPISODELIST_20260" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
 

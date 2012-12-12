@@ -11,13 +11,7 @@ namespace nRage.Tests.Unit
 
     public class EpisodeListTests : TVRageClientTestBase
     {                
-        private const int showId = 0;
-        private TVRageClient client;
-
-        public EpisodeListTests()
-        {
-            client = _ioc.Get<TVRageClient>();
-        }
+        private const int showId = 0;        
 
         [Fact]
         public void CanGetEpisodeList()

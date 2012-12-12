@@ -12,17 +12,11 @@ namespace nRage.Tests.Unit
     public class FullShowInfoTests : TVRageClientTestBase
     {                
         private const int showId = 0;
-        private TVRageClient client;
-
-        public FullShowInfoTests()
-        {
-            client = _ioc.Get<TVRageClient>();
-        }
 
         [Fact]
-        public void CanGetEpisodeList()
+        public void CanGetFullShowInfo()
         { 
-            var response = client.GetEpisodeList(showId);
+            var response = client.GetFullShowInfo(showId);
             Assert.True(response != null);
         }
 

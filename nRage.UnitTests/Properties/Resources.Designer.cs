@@ -61,11 +61,29 @@ namespace nRage.Tests.Unit.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;show id=&apos;15352&apos;&gt;&lt;name&gt;Wilfred&lt;/name&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352&lt;/link&gt;&lt;started&gt;2007-03-19&lt;/started&gt;&lt;ended&gt;&lt;/ended&gt;&lt;country&gt;Australia&lt;/country&gt;&lt;status&gt;Canceled/Ended&lt;/status&gt;&lt;classification&gt;Scripted&lt;/classification&gt;&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;&lt;airtime&gt;Monday&lt;/airtime&gt;&lt;runtime&gt;25&lt;/runtime&gt;&lt;episode&gt;&lt;number&gt;02x05&lt;/number&gt;&lt;title&gt;The Ice Dog Cometh&lt;/title&gt;&lt;airdate&gt;2010-04-05&lt;/airdate&gt;&lt;url&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916984&lt;/url&gt;&lt;/episode&gt;&lt;lateste [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;show id=&apos;5481&apos;&gt;&lt;name&gt;Teenage Mutant Ninja Turtles (1987)&lt;/name&gt;&lt;link&gt;http://www.tvrage.com/Teenage_Mutant_Ninja_Turtles_1987&lt;/link&gt;&lt;started&gt;1988-10-01&lt;/started&gt;&lt;ended&gt;1996-11-00&lt;/ended&gt;&lt;country&gt;USA&lt;/country&gt;&lt;status&gt;Canceled/Ended&lt;/status&gt;&lt;classification&gt;Animation&lt;/classification&gt;&lt;genres&gt;&lt;genre&gt;Animation General&lt;/genre&gt;&lt;genre&gt;Action&lt;/genre&gt;&lt;genre&gt;Adventure&lt;/genre&gt;&lt;/genres&gt;&lt;airtime&gt;Saturday&lt;/airtime&gt;&lt;runtime&gt;30&lt;/runtime&gt;&lt;episode&gt;&lt;number&gt;02x13&lt;/number&gt;&lt;title&gt;Return of the Technodrome&lt;/title&gt;&lt;airdate&gt;1988-12-0 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string RESPONSE_EPISODEINFO_15352_2x05 {
+        internal static string RESPONSE_EPISODEINFO_5481_2x13 {
             get {
-                return ResourceManager.GetString("RESPONSE_EPISODEINFO_15352_2x05", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_EPISODEINFO_5481_2x13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;show id=&apos;5481&apos;&gt;&lt;name&gt;Teenage Mutant Ninja Turtles (1987)&lt;/name&gt;&lt;link&gt;http://www.tvrage.com/Teenage_Mutant_Ninja_Turtles_1987&lt;/link&gt;&lt;started&gt;1988-10-01&lt;/started&gt;&lt;ended&gt;1996-11-00&lt;/ended&gt;&lt;country&gt;USA&lt;/country&gt;&lt;status&gt;Canceled/Ended&lt;/status&gt;&lt;classification&gt;Animation&lt;/classification&gt;&lt;genres&gt;&lt;genre&gt;Animation General&lt;/genre&gt;&lt;genre&gt;Action&lt;/genre&gt;&lt;genre&gt;Adventure&lt;/genre&gt;&lt;/genres&gt;&lt;airtime&gt;Saturday&lt;/airtime&gt;&lt;runtime&gt;30&lt;/runtime&gt;&lt;latestepisode&gt;&lt;number&gt;10x08&lt;/number&gt;&lt;title&gt;Divide and Conquer&lt;/title&gt;&lt;airdate&gt;1996-11-02 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RESPONSE_EPISODEINFO_5481_99x99 {
+            get {
+                return ResourceManager.GetString("RESPONSE_EPISODEINFO_5481_99x99", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Show Results Were Found For &quot;&quot;.
+        /// </summary>
+        internal static string RESPONSE_EPISODEINFO_999999999 {
+            get {
+                return ResourceManager.GetString("RESPONSE_EPISODEINFO_999999999", resourceCulture);
             }
         }
         
@@ -105,9 +123,9 @@ namespace nRage.Tests.Unit.Properties {
         ///&lt;classification&gt;Reality&lt;/classification&gt;
         ///&lt;genres&gt;&lt;genre&gt;Comedy&lt;/genre&gt;&lt;genre&gt;Educational&lt;/genre&gt;&lt;genre&gt;Housing/Building&lt;/genre&gt;&lt;genre&gt;Travel&lt;/ge [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string RESPONSE_FULLSHOWINFO_20260 {
+        internal static string RESPONSE_EPISODELIST_20260 {
             get {
-                return ResourceManager.GetString("RESPONSE_FULLSHOWINFO_20260", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_EPISODELIST_20260", resourceCulture);
             }
         }
         

@@ -14,13 +14,6 @@ namespace nRage.Tests.Unit
         private const int show_id = 18753;
         private const int nonexistent_show_id = 842999999;
 
-        private TVRageClient client;
-
-        public ShowInfoTests()
-        {
-            client = _ioc.Get<TVRageClient>();
-        }
-
         [Fact]
         public void CanGetShowInfoByShowID()
         { 
