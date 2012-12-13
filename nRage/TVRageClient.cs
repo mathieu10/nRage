@@ -91,7 +91,7 @@ namespace nRage {
 
         public EpisodeListResponse GetEpisodeList(int showId) {
             var response = XDocument.Load(Retriever.Get(GetURLForEpisodeList(showId)));
-
+            
             return MapXMLToEpisodeListResponse(response);
         }
 
@@ -150,13 +150,36 @@ namespace nRage {
 
         private EpisodeListResponse MapXMLToEpisodeListResponse(XDocument xml) {
             return xml.Descendants("show").Select(x => new EpisodeListResponse {
-            
+                Name = (string)x.Element("name"),
+                TotalSeasons = (string)x.Element("totalseasons"),
+                Seasons = x.Descendants("season").Select(y=>new EpisodeListResultSeason{
+                    Number = x.Attribute("no").Value.ToString(),
+                    Episodes = new List<EpisodeListResultEpisode>{
+
+                    },
+                }).ToList(),
+                                 
             }).Single();
         }
 
         private EpisodeInfoResponse MapXMLToEpisodeInfoResponse(XDocument xml) {
             return xml.Descendants("show").Select(x => new EpisodeInfoResponse {
-            
+                Name = (string)x.Element("name"),
+                Link = (string)x.Element("link"),
+                Started = (string)x.Element("started"),
+                Ended = (string)x.Element("ended"),
+                Country = (string)x.Element("country"),
+                Status = (string)x.Element("status"),
+                Classification = (string)x.Element("classification"),
+                Genres = x.Descendants("genre").Select(y=>y.Value).ToList(),
+                AirTime = (string)x.Element("airtime"),
+                RunTime = (string)x.Element("runtime"),
+                Episode = x.Descendants("episode").Select(y=>new EpisodeResult{
+                    AirDate = (string)y.Element("airdate"),
+                    Title = (string)y.Element("title"),
+                    Number = (string)y.Element("number"),
+                    URL = (string)y.Element("url"),
+                }).SingleOrDefault(),
             }).Single();
         }
 

@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,6 +42,9 @@
   <ItemGroup>
     <Compile Include="Contract\SearchResult.cs" />
     <Compile Include="Contract\TVRage\AKA.cs" />
+    <Compile Include="Contract\TVRage\EpisodeListResultEpisode.cs" />
+    <Compile Include="Contract\TVRage\EpisodeListResultSeason.cs" />
+    <Compile Include="Contract\TVRage\EpisodeResult.cs" />
     <Compile Include="Contract\TVRage\FullSearchResponse.cs" />
     <Compile Include="Contract\TVRage\ShowInfoResponse.cs" />
     <Compile Include="Contract\TVRage\FullSearchResult.cs" />

@@ -89,7 +89,7 @@ namespace nRage.Tests.Unit
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
-            Assert.True(result.Status == "Final Season");
+            Assert.True(result.Status == "Final EpisodeListResultSeason");
         }
 
         [Fact]
