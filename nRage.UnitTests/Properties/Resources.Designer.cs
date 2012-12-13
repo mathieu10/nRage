@@ -96,7 +96,7 @@ namespace nRage.Tests.Unit.Properties {
         ///&lt;totalseasons&gt;2&lt;/totalseasons&gt;
         ///&lt;Episodelist&gt;
         ///
-        ///&lt;Season no=&quot;1&quot;&gt;
+        ///&lt;EpisodeListResultSeason no=&quot;1&quot;&gt;
         ///&lt;episode&gt;&lt;epnum&gt;1&lt;/epnum&gt;&lt;seasonnum&gt;01&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-19&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578793&lt;/link&gt;&lt;title&gt;There is a Dog&lt;/title&gt;&lt;/episode&gt;
         ///&lt;episode&gt;&lt;epnum&gt;2&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578794&lt;/link&gt;&lt;tit [rest of string was truncated]&quot;;.
         /// </summary>
@@ -216,7 +216,7 @@ namespace nRage.Tests.Unit.Properties {
         ///&lt;started&gt;Jan/20/2008&lt;/started&gt;
         ///&lt;ended&gt;&lt;/ended&gt;
         ///&lt;seasons&gt;5&lt;/seasons&gt;
-        ///&lt;status&gt;Final Season&lt;/status&gt;
+        ///&lt;status&gt;Final EpisodeListResultSeason&lt;/status&gt;
         ///&lt;runtime&gt;60&lt;/runtime&gt;
         ///&lt;classification&gt;Scripted&lt;/classification&gt;
         ///&lt;genres&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;

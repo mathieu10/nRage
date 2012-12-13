@@ -138,7 +138,7 @@ Invalid episode</comment>
 &lt;totalseasons&gt;2&lt;/totalseasons&gt;
 &lt;Episodelist&gt;
 
-&lt;Season no="1"&gt;
+&lt;EpisodeListResultSeason no="1"&gt;
 &lt;episode&gt;&lt;epnum&gt;1&lt;/epnum&gt;&lt;seasonnum&gt;01&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-19&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578793&lt;/link&gt;&lt;title&gt;There is a Dog&lt;/title&gt;&lt;/episode&gt;
 &lt;episode&gt;&lt;epnum&gt;2&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578794&lt;/link&gt;&lt;title&gt;Dog Day Afterglow&lt;/title&gt;&lt;/episode&gt;
 &lt;episode&gt;&lt;epnum&gt;3&lt;/epnum&gt;&lt;seasonnum&gt;03&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-04-02&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578795&lt;/link&gt;&lt;title&gt;Dogs of War&lt;/title&gt;&lt;/episode&gt;
@@ -147,9 +147,9 @@ Invalid episode</comment>
 &lt;episode&gt;&lt;epnum&gt;6&lt;/epnum&gt;&lt;seasonnum&gt;06&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-04-23&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578798&lt;/link&gt;&lt;title&gt;Dog Eat Dog&lt;/title&gt;&lt;/episode&gt;
 &lt;episode&gt;&lt;epnum&gt;7&lt;/epnum&gt;&lt;seasonnum&gt;07&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-04-30&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578799&lt;/link&gt;&lt;title&gt;Barking Behind Bars&lt;/title&gt;&lt;/episode&gt;
 &lt;episode&gt;&lt;epnum&gt;8&lt;/epnum&gt;&lt;seasonnum&gt;08&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-05-07&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578800&lt;/link&gt;&lt;title&gt;This Dog's Life&lt;/title&gt;&lt;/episode&gt;
-&lt;/Season&gt;
+&lt;/EpisodeListResultSeason&gt;
 
-&lt;Season no="2"&gt;
+&lt;EpisodeListResultSeason no="2"&gt;
 &lt;episode&gt;&lt;epnum&gt;9&lt;/epnum&gt;&lt;seasonnum&gt;01&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-03-08&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916910&lt;/link&gt;&lt;title&gt;Kiss Me Kat&lt;/title&gt;&lt;/episode&gt;
 &lt;episode&gt;&lt;epnum&gt;10&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-03-15&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916911&lt;/link&gt;&lt;title&gt;Dog of a Town (Part 1)&lt;/title&gt;&lt;/episode&gt;
 &lt;episode&gt;&lt;epnum&gt;11&lt;/epnum&gt;&lt;seasonnum&gt;03&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-03-22&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916912&lt;/link&gt;&lt;title&gt;Dog of a Town (Part 2)&lt;/title&gt;&lt;/episode&gt;
@@ -158,7 +158,7 @@ Invalid episode</comment>
 &lt;episode&gt;&lt;epnum&gt;14&lt;/epnum&gt;&lt;seasonnum&gt;06&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-04-12&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916985&lt;/link&gt;&lt;title&gt;The Dog Father&lt;/title&gt;&lt;/episode&gt;
 &lt;episode&gt;&lt;epnum&gt;15&lt;/epnum&gt;&lt;seasonnum&gt;07&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-04-19&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916986&lt;/link&gt;&lt;title&gt;Dog Star&lt;/title&gt;&lt;/episode&gt;
 &lt;episode&gt;&lt;epnum&gt;16&lt;/epnum&gt;&lt;seasonnum&gt;08&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2010-04-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/1064916987&lt;/link&gt;&lt;title&gt;Bite Club&lt;/title&gt;&lt;/episode&gt;
-&lt;/Season&gt;
+&lt;/EpisodeListResultSeason&gt;
 
 &lt;/Episodelist&gt;
 
@@ -213,10 +213,10 @@ No episodes</comment>
 &lt;timezone&gt;GMT+10 -DST&lt;/timezone&gt;
 &lt;Episodelist&gt;
 
-&lt;Season no="1"&gt;
+&lt;EpisodeListResultSeason no="1"&gt;
 &lt;episode&gt;&lt;epnum&gt;1&lt;/epnum&gt;&lt;seasonnum&gt;01&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2012-08-19&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-32517/episodes/1065211194&lt;/link&gt;&lt;title&gt;Part 1&lt;/title&gt;&lt;/episode&gt;
 &lt;episode&gt;&lt;epnum&gt;2&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2012-08-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-32517/episodes/1065211195&lt;/link&gt;&lt;title&gt;Part 2&lt;/title&gt;&lt;/episode&gt;
-&lt;/Season&gt;
+&lt;/EpisodeListResultSeason&gt;
 
 &lt;/Episodelist&gt;
 
@@ -242,7 +242,7 @@ Lists specific episodes</comment>
 &lt;started&gt;Jan/20/2008&lt;/started&gt;
 &lt;ended&gt;&lt;/ended&gt;
 &lt;seasons&gt;5&lt;/seasons&gt;
-&lt;status&gt;Final Season&lt;/status&gt;
+&lt;status&gt;Final EpisodeListResultSeason&lt;/status&gt;
 &lt;runtime&gt;60&lt;/runtime&gt;
 &lt;classification&gt;Scripted&lt;/classification&gt;
 &lt;genres&gt;&lt;genre&gt;Drama&lt;/genre&gt;&lt;/genres&gt;
