@@ -37,78 +37,101 @@ namespace nRage.Tests.Unit
         public void GetEpisodeInfoReturnsCorrectName()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(response.Name == "");
+            Assert.True(response.Name == "Teenage Mutant Ninja Turtles (1987)");
         }
 
         [Fact]
         public void GetEpisodeInfoReturnsCorrectLink()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(response.LatestEpisodeAirDate == "");
+            Assert.True(response.Link == "http://www.tvrage.com/Teenage_Mutant_Ninja_Turtles_1987");
         }
 
         [Fact]
         public void GetEpisodeInfoReturnsCorrectStarted()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(response.Started == "");
+            Assert.True(response.Started == "1988-10-01");
         }
 
         [Fact]
         public void GetEpisodeInfoReturnsCorrectEnded()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(response.Ended == "");
+            Assert.True(response.Ended == "1996-11-00");
         }
 
         [Fact]
         public void GetEpisodeInfoReturnsCorrectCountry()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(response.Country == "");
+            Assert.True(response.Country == "USA");
         }
 
         [Fact]
         public void GetEpisodeInfoReturnsCorrectStatus()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(response.Status == "");
+            Assert.True(response.Status == "Canceled/Ended");
         }
 
         [Fact]
         public void GetEpisodeInfoReturnsCorrectClassification()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(response.Classification == "");
+            Assert.True(response.Classification == "Animation");
         }
 
         [Fact]
         public void GetEpisodeInfoReturnsCorrectGenres()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(response.Genres.Count == 0);
-            Assert.True(response.Genres.Single() == "");
+            Assert.True(response.Genres.Count == 3);
+            Assert.True(response.Genres.ElementAt(0) == "Animation General");
+            Assert.True(response.Genres.ElementAt(1) == "Action");
+            Assert.True(response.Genres.ElementAt(2) == "Adventure");
         }
 
         [Fact]
         public void GetEpisodeInfoReturnsCorrectAirTime()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(response.AirTime == "");
+            Assert.True(response.AirTime == "Saturday");
         }
 
         [Fact]
         public void GetEpisodeInfoReturnsCorrectRunTime()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(response.RunTime == "");
+            Assert.True(response.RunTime == "30");
         }
 
         [Fact]
-        public void GetEpisodeInfoReturnsCorrectEpisode()
+        public void GetEpisodeInfoReturnsCorrectEpisodeNumber()
         { 
             var response = client.GetEpisodeInfo(showId,episodeLabel);
-            // Assert.True(response.Episode == ""); // TODO
+            Assert.True(response.Episode.Number == "02x13");
+        }
+
+        [Fact]
+        public void GetEpisodeInfoReturnsCorrectEpisodeTitle()
+        { 
+            var response = client.GetEpisodeInfo(showId,episodeLabel);
+            Assert.True(response.Episode.Title == "Return of the Technodrome");
+        }
+
+        [Fact]
+        public void GetEpisodeInfoReturnsCorrectEpisodeAirDate()
+        { 
+            var response = client.GetEpisodeInfo(showId,episodeLabel);
+            Assert.True(response.Episode.AirDate == "1988-12-03");
+        }
+
+        [Fact]
+        public void GetEpisodeInfoReturnsCorrectEpisodeURL()
+        { 
+            var response = client.GetEpisodeInfo(showId,episodeLabel);
+            Assert.True(response.Episode.URL == "http://www.tvrage.com/Teenage_Mutant_Ninja_Turtles_1987/episodes/169211");
         }
 
         #pragma warning disable 612,618 // Ignore warning about obsolete params
