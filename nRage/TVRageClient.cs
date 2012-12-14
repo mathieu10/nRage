@@ -149,14 +149,18 @@ namespace nRage {
         }
 
         private EpisodeListResponse MapXMLToEpisodeListResponse(XDocument xml) {
-            return xml.Descendants("show").Select(x => new EpisodeListResponse {
+            return xml.Descendants("Show").Select(x => new EpisodeListResponse {
                 Name = (string)x.Element("name"),
                 TotalSeasons = (string)x.Element("totalseasons"),
-                Seasons = x.Descendants("season").Select(y=>new EpisodeListResultSeason{
-                    Number = x.Attribute("no").Value.ToString(),
-                    Episodes = new List<EpisodeListResultEpisode>{
-
-                    },
+                Seasons = x.Descendants("EpisodeListResultSeason").Select(y=>new EpisodeListResultSeason{
+                    Number = y.Attribute("no").Value.ToString(),
+                    Episodes = y.Descendants("episode").Select(z=>new EpisodeListResultEpisode{
+                        EpNum = (string)z.Element("epnum"),
+                        Link = (string)z.Element("link"),
+                        AirDate = (string)z.Element("airdate"),
+                        Title = (string)z.Element("title"),
+                        ProdNum = (string)z.Element("prodnum"), 
+                    }).ToList(),
                 }).ToList(),
                                  
             }).Single();
