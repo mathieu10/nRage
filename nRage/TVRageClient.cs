@@ -156,6 +156,7 @@ namespace nRage {
                     Number = y.Attribute("no").Value.ToString(),
                     Episodes = y.Descendants("episode").Select(z=>new EpisodeListResultEpisode{
                         EpNum = (string)z.Element("epnum"),
+                        SeasonNum = (string)z.Element("seasonnum"),
                         Link = (string)z.Element("link"),
                         AirDate = (string)z.Element("airdate"),
                         Title = (string)z.Element("title"),
