@@ -102,19 +102,18 @@ namespace nRage {
 
         public EpisodeInfoResponse GetEpisodeInfo(int showID, string episodeLabel) {
             var rawResponse = Retriever.Get(GetURLForEpisoddeInfo(showID, episodeLabel));            
-            if(rawResponse.Length < 40){                                    
-                    var sr = new StreamReader(rawResponse);
-                    if(sr.ReadLine().Substring(0,15)=="No Show Results") throw new ShowNotFoundException();   
-                    rawResponse.Position = 0;
-            }            
+            ValidateResponse(rawResponse);    
+        
             var response = XDocument.Load(rawResponse);
-
             return MapXMLToEpisodeInfoResponse(response);
         }
 
-        public FullShowInfoResponse GetFullShowInfo(int showId) {
-            var response = XDocument.Load(Retriever.Get(GetURLForFullShowInfo(showId)));
 
+        public FullShowInfoResponse GetFullShowInfo(int showId) {            
+            var rawResponse = Retriever.Get(GetURLForFullShowInfo(showId));
+            ValidateResponse(rawResponse);            
+
+            var response = XDocument.Load(rawResponse);
             return MapXMLToFullShowInfoResponse(response);
         }
 
@@ -189,8 +188,34 @@ namespace nRage {
         }
 
         private FullShowInfoResponse MapXMLToFullShowInfoResponse(XDocument xml) {
-            return xml.Descendants("?").Select(x => new FullShowInfoResponse {
-            
+            return xml.Descendants("Show").Select(x => new FullShowInfoResponse {
+                ShowID = (int)x.Element("showid"),
+                Name = (string)x.Element("name"),
+                ShowLink = (string)x.Element("showlink"),
+                TotalSeasons = (string)x.Element("totalseasons"),
+                Started = (string)x.Element("started"),
+                Ended = (string)x.Element("ended"),
+                Image = (string)x.Element("image"),
+                OriginCountry = (string)x.Element("origin_country"),
+                Status = (string)x.Element("status"),
+                Genres = x.Descendants("genre").Select(y => y.Value).ToList(),
+                RunTime = (string)x.Element("runtime"),
+                Network = (string)x.Element("network"),
+                AirDay = (string)x.Element("airday"),
+                AirTime = (string)x.Element("airtime"),
+                TimeZone = (string)x.Element("timezone"),
+                Classification = (string)x.Element("classification"),
+                Seasons = x.Descendants("EpisodeListResultSeason").Select(y=>new EpisodeListResultSeason{
+                    Number = y.Attribute("no").Value.ToString(),
+                    Episodes = y.Descendants("episode").Select(z=>new EpisodeListResultEpisode{
+                        EpNum = (string)z.Element("epnum"),
+                        SeasonNum = (string)z.Element("seasonnum"),
+                        Link = (string)z.Element("link"),
+                        AirDate = (string)z.Element("airdate"),
+                        Title = (string)z.Element("title"),
+                        ProdNum = (string)z.Element("prodnum"), 
+                    }).ToList(),
+                }).ToList(),
             }).Single();
         }
 
@@ -241,7 +266,16 @@ namespace nRage {
             }).ToList();
         }
         #endregion
-
+        
+        private void ValidateResponse(Stream rawResponse)
+        {
+            if (rawResponse.Length < 40)
+            {
+                var sr = new StreamReader(rawResponse);
+                if (sr.ReadLine().Substring(0, 15) == "No Show Results") throw new ShowNotFoundException();
+                rawResponse.Position = 0;
+            }
+        }
     }
 
 }
