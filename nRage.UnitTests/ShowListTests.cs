@@ -12,7 +12,7 @@ namespace nRage.Tests.Unit
     public class ShowListTests : TVRageClientTestBase
     {                
         [Fact]
-        public void CanGetEpisodeList()
+        public void CanGetShowList()
         { 
             var response = client.GetShowList();
             Assert.True(response != null);
@@ -20,14 +20,14 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
-        public void EpisodeListReturnsCorrectID()
+        public void ShowListReturnsCorrectID()
         { 
             var response = client.GetShowList();
             Assert.True(response.Results.First().ID==1);
         }
 
         [Fact]
-        public void EpisodeListReturnsCorrectName()
+        public void ShowListReturnsCorrectName()
         { 
             var response = client.GetShowList();
             var result = response.Results.Where(x=>x.ID==2).Single();
@@ -35,7 +35,7 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
-        public void EpisodeListReturnsCorrectCountry()
+        public void ShowListReturnsCorrectCountry()
         { 
             var response = client.GetShowList();
             var result = response.Results.Where(x=>x.ID==31).Single();
@@ -43,7 +43,7 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
-        public void EpisodeListReturnsCorrectShowName()
+        public void ShowListReturnsCorrectShowName()
         { 
             var response = client.GetShowList();
             var result = response.Results.Where(x=>x.ID==23).Single();
