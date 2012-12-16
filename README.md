@@ -34,6 +34,7 @@ Observed inconsistencies
 * <ended> sometimes returns either empty/self-terminating or "0"s
 * <AKAs> not returned at all if empty; other tags are returned as self-terminating nodes
 * API guide indicates EpisodeInfo is retrieved by:
+* LastUpdates does not appear to support the advertised ability to get updates from a specific point in time
 
 TODO / Notes to self
 --------------------
