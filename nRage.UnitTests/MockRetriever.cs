@@ -53,10 +53,9 @@ namespace nRage.Tests.Unit
         public Stream Get(string url)
         {
             string key = url.Split('/').Last();
-            string value = _mockResults[key];
-            
-            _urlHistory.Push(value);
+            _urlHistory.Push(key);
 
+            string value = _mockResults[key];                       
             byte[] byteArray = Encoding.UTF8.GetBytes(value);
             return new MemoryStream(byteArray);
         }        
