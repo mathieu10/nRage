@@ -26,6 +26,13 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
+        public void GetEpisodeInfoCallsCorrectURL()
+        { 
+            client.GetEpisodeInfo(showId,episodeLabel);
+            Assert.True(MockRetriever.GetLastURLCalled()=="episodeinfo.php?sid=5481&ep=02x13");
+        }
+
+        [Fact]
         public void GetEpisodeInfoThrowsWhenInvalidShowID()
         {
             Assert.Throws<ShowNotFoundException>(()=>{
