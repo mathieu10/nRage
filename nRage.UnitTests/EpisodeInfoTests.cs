@@ -33,6 +33,13 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
+        public void GetEpisodeInfoBySeasonAndNumberCallsCorrectURL()
+        { 
+            client.GetEpisodeInfo(showId,seasonNumber,episodeNumber);
+            Assert.True(MockRetriever.GetLastURLCalled()=="episodeinfo.php?sid=5481&ep=02x13");
+        }
+
+        [Fact]
         public void GetEpisodeInfoThrowsWhenInvalidShowID()
         {
             Assert.Throws<ShowNotFoundException>(()=>{
