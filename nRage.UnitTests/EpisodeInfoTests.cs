@@ -24,6 +24,20 @@ namespace nRage.Tests.Unit
             var response = client.GetEpisodeInfo(showId,episodeLabel);
             Assert.True(response != null);
         }
+        
+        [Fact]
+        public void GetCallsEpisodeInfoCorrectURL()
+        { 
+            client.GetEpisodeInfo(showId,episodeLabel);
+            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.EPISODEINFO_5481_2x13);
+        }
+        
+        [Fact]
+        public void GetEpisodeInfoBySeasonAndNumberCallsCorrectURL()
+        { 
+            client.GetEpisodeInfo(showId,seasonNumber,episodeNumber);
+            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.EPISODEINFO_5481_2x13);
+        }
 
         [Fact]
         public void GetEpisodeInfoThrowsWhenInvalidShowID()

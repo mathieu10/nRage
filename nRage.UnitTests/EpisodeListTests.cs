@@ -22,6 +22,13 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
+        public void GetEpisodeListCallsCorrectURL()
+        { 
+            client.GetEpisodeList(showId);
+            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.EPISODELIST_15352);
+        }
+
+        [Fact]
         public void CanGetEpisodeListWhereNoEpisodeResults()
         { 
             var response = client.GetEpisodeList(noEpisodeResults_showId);

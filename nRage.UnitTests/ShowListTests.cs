@@ -20,6 +20,13 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
+        public void GetShowListCallsCorrectURL()
+        { 
+            client.GetShowList();
+            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.SHOWLIST);
+        }
+
+        [Fact]
         public void ShowListReturnsCorrectID()
         { 
             var response = client.GetShowList();
