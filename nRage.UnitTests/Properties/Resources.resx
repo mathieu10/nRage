@@ -224,6 +224,46 @@ No episodes</comment>
     <comment>Howzat!Kerry Packer's War
 Lists specific episodes</comment>
   </data>
+  <data name="RESPONSE_LASTUPDATES_4" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+
+&lt;updates at='1355720878' found='26' sorting='latest_updates' showing='Last 4H'&gt;
+&lt;show&gt;&lt;id&gt;31&lt;/id&gt;&lt;last&gt;-622&lt;/last&gt;&lt;lastepisode&gt;950340&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;33901&lt;/id&gt;&lt;last&gt;131&lt;/last&gt;&lt;lastepisode&gt;131&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;3256&lt;/id&gt;&lt;last&gt;1015&lt;/last&gt;&lt;lastepisode&gt;2580&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;33900&lt;/id&gt;&lt;last&gt;1267&lt;/last&gt;&lt;lastepisode&gt;1281&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;6531&lt;/id&gt;&lt;last&gt;1869&lt;/last&gt;&lt;lastepisode&gt;0&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;6715&lt;/id&gt;&lt;last&gt;1975&lt;/last&gt;&lt;lastepisode&gt;1975&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;5914&lt;/id&gt;&lt;last&gt;1975&lt;/last&gt;&lt;lastepisode&gt;1975&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;30214&lt;/id&gt;&lt;last&gt;2844&lt;/last&gt;&lt;lastepisode&gt;2844&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;1563&lt;/id&gt;&lt;last&gt;4003&lt;/last&gt;&lt;lastepisode&gt;4003&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;30397&lt;/id&gt;&lt;last&gt;7442&lt;/last&gt;&lt;lastepisode&gt;7442&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;21704&lt;/id&gt;&lt;last&gt;8100&lt;/last&gt;&lt;lastepisode&gt;110673&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;30750&lt;/id&gt;&lt;last&gt;9533&lt;/last&gt;&lt;lastepisode&gt;201970&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;20089&lt;/id&gt;&lt;last&gt;10278&lt;/last&gt;&lt;lastepisode&gt;10278&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;29757&lt;/id&gt;&lt;last&gt;10558&lt;/last&gt;&lt;lastepisode&gt;10558&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;29414&lt;/id&gt;&lt;last&gt;10579&lt;/last&gt;&lt;lastepisode&gt;10579&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;20602&lt;/id&gt;&lt;last&gt;10591&lt;/last&gt;&lt;lastepisode&gt;10591&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;30974&lt;/id&gt;&lt;last&gt;10621&lt;/last&gt;&lt;lastepisode&gt;10621&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;27747&lt;/id&gt;&lt;last&gt;10637&lt;/last&gt;&lt;lastepisode&gt;10637&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;8044&lt;/id&gt;&lt;last&gt;11609&lt;/last&gt;&lt;lastepisode&gt;107285&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;27447&lt;/id&gt;&lt;last&gt;11713&lt;/last&gt;&lt;lastepisode&gt;11713&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;31559&lt;/id&gt;&lt;last&gt;12299&lt;/last&gt;&lt;lastepisode&gt;12299&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;4458&lt;/id&gt;&lt;last&gt;12417&lt;/last&gt;&lt;lastepisode&gt;47523&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;10408&lt;/id&gt;&lt;last&gt;12516&lt;/last&gt;&lt;lastepisode&gt;19574&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;31546&lt;/id&gt;&lt;last&gt;12525&lt;/last&gt;&lt;lastepisode&gt;12525&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;16886&lt;/id&gt;&lt;last&gt;12566&lt;/last&gt;&lt;lastepisode&gt;12566&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;show&gt;&lt;id&gt;23727&lt;/id&gt;&lt;last&gt;13033&lt;/last&gt;&lt;lastepisode&gt;338013&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;/updates&gt;</value>
+    <comment>4 hours</comment>
+  </data>
+  <data name="RESPONSE_LASTUPDATES_999" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+
+&lt;updates at="1355649960" found="2575" sorting="latest_updates" showing="Last 41D, 15H"&gt;
+&lt;show&gt;&lt;id&gt;31&lt;/id&gt;&lt;last&gt;-622&lt;/last&gt;&lt;lastepisode&gt;950340&lt;/lastepisode&gt;&lt;/show&gt;
+&lt;/updates&gt;</value>
+  </data>
   <data name="RESPONSE_SEARCHFULL_BRACVNKINGBADGA" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 

@@ -98,7 +98,7 @@ namespace nRage.Tests.Unit.Properties {
         ///
         ///&lt;EpisodeListResultSeason no=&quot;1&quot;&gt;
         ///&lt;episode&gt;&lt;epnum&gt;1&lt;/epnum&gt;&lt;seasonnum&gt;01&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-19&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578793&lt;/link&gt;&lt;title&gt;There is a Dog&lt;/title&gt;&lt;/episode&gt;
-        ///&lt;episode&gt;&lt;epnum&gt;2&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578794&lt;/link&gt;&lt;tit [rest of string was truncated]&quot;;.
+        ///&lt;episode&gt;&lt;epnum&gt;2&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string RESPONSE_EPISODELIST_15352 {
             get {
@@ -151,6 +151,36 @@ namespace nRage.Tests.Unit.Properties {
         internal static string RESPONSE_FULLSHOWINFO_32517 {
             get {
                 return ResourceManager.GetString("RESPONSE_FULLSHOWINFO_32517", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///
+        ///&lt;updates at=&apos;1355720878&apos; found=&apos;26&apos; sorting=&apos;latest_updates&apos; showing=&apos;Last 4H&apos;&gt;
+        ///&lt;show&gt;&lt;id&gt;31&lt;/id&gt;&lt;last&gt;-622&lt;/last&gt;&lt;lastepisode&gt;950340&lt;/lastepisode&gt;&lt;/show&gt;
+        ///&lt;show&gt;&lt;id&gt;33901&lt;/id&gt;&lt;last&gt;131&lt;/last&gt;&lt;lastepisode&gt;131&lt;/lastepisode&gt;&lt;/show&gt;
+        ///&lt;show&gt;&lt;id&gt;3256&lt;/id&gt;&lt;last&gt;1015&lt;/last&gt;&lt;lastepisode&gt;2580&lt;/lastepisode&gt;&lt;/show&gt;
+        ///&lt;show&gt;&lt;id&gt;33900&lt;/id&gt;&lt;last&gt;1267&lt;/last&gt;&lt;lastepisode&gt;1281&lt;/lastepisode&gt;&lt;/show&gt;
+        ///&lt;show&gt;&lt;id&gt;6531&lt;/id&gt;&lt;last&gt;1869&lt;/last&gt;&lt;lastepisode&gt;0&lt;/lastepisode&gt;&lt;/show&gt;
+        ///&lt;show&gt;&lt;id&gt;6 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RESPONSE_LASTUPDATES_4 {
+            get {
+                return ResourceManager.GetString("RESPONSE_LASTUPDATES_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///
+        ///&lt;updates at=&quot;1355649960&quot; found=&quot;2575&quot; sorting=&quot;latest_updates&quot; showing=&quot;Last 41D, 15H&quot;&gt;
+        ///&lt;show&gt;&lt;id&gt;31&lt;/id&gt;&lt;last&gt;-622&lt;/last&gt;&lt;lastepisode&gt;950340&lt;/lastepisode&gt;&lt;/show&gt;
+        ///&lt;/updates&gt;.
+        /// </summary>
+        internal static string RESPONSE_LASTUPDATES_999 {
+            get {
+                return ResourceManager.GetString("RESPONSE_LASTUPDATES_999", resourceCulture);
             }
         }
         
@@ -223,7 +253,7 @@ namespace nRage.Tests.Unit.Properties {
         ///&lt;network country=&quot;US&quot;&gt;AMC&lt;/network&gt;
         ///&lt;airtime&gt;22:00&lt;/airtime&gt;
         ///&lt;airday&gt;Sunday&lt;/airday&gt;
-        ///&lt;akas&gt;&lt;aka country=&quot;SI&quot;&gt;Kriva po [rest of string was truncated]&quot;;.
+        ///&lt;akas&gt;&lt;aka coun [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string RESPONSE_SEARCHFULL_BREAKINGBAD {
             get {
