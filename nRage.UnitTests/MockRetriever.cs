@@ -11,13 +11,16 @@ namespace nRage.Tests.Unit
 {
     public class MockRetriever : IRetriever
     {
-        private Dictionary<string, string> _mockResults;
+        private Dictionary<string, string> _mockResults;               
+        private static Stack<string> _urlHistory{get; set;}
 
         public MockRetriever()
         {   
             //RESPONSE_FULLSHOWINFO_32517 - episodes (Kerry Packer)
 
             //TODO: replace this with Moq/RhinoMocks/etc 
+
+            _urlHistory = new Stack<string>();
 
             _mockResults = new Dictionary<string, string>();
 
@@ -43,10 +46,16 @@ namespace nRage.Tests.Unit
             _mockResults["full_show_info.php?sid=999999999"] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODEINFO_999999999;
         }
 
+        public static string GetLastURLCalled(){
+            return _urlHistory.Pop();
+        }
+
         public Stream Get(string url)
         {
             string key = url.Split('/').Last();
             string value = _mockResults[key];
+            
+            _urlHistory.Push(value);
 
             byte[] byteArray = Encoding.UTF8.GetBytes(value);
             return new MemoryStream(byteArray);
