@@ -17,6 +17,30 @@ namespace nRage.Tests.Unit
             var timeSpan = new TimeSpan(0,12,0,0);
             var response = client.LastUpdates(timeSpan);
             Assert.True(response != null);
+        }        
+
+        [Fact]
+        public void CanGetLastUpdatesByTimeSpanInDays()
+        { 
+            var timeSpan = new TimeSpan(0,12,0,0);
+            var response = client.LastUpdates(timeSpan);
+            Assert.True(response != null);
+        }
+
+        [Fact]
+        public void CanGetLastUpdatesByTimeSpanInDaysAndHours()
+        { 
+            var timeSpan = new TimeSpan(0,12,0,0);
+            var response = client.LastUpdates(timeSpan);
+            Assert.True(response != null);
+        }
+
+        [Fact]
+        public void CanGetLastUpdatesByStartTime()
+        { 
+            var timeSpan = new TimeSpan(0,12,0,0);
+            var response = client.LastUpdates(timeSpan);
+            Assert.True(response != null);
         }
     }
 }
