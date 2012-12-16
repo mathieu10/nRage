@@ -81,9 +81,9 @@ namespace nRage.Tests.Unit.Properties {
         /// <summary>
         ///   Looks up a localized string similar to No Show Results Were Found For &quot;&quot;.
         /// </summary>
-        internal static string RESPONSE_EPISODEINFO_999999999_99x99 {
+        internal static string RESPONSE_EPISODEINFO_999999999 {
             get {
-                return ResourceManager.GetString("RESPONSE_EPISODEINFO_999999999_99x99", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_EPISODEINFO_999999999", resourceCulture);
             }
         }
         

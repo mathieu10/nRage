@@ -224,6 +224,9 @@ No episodes</comment>
     <comment>Howzat!Kerry Packer's War
 Lists specific episodes</comment>
   </data>
+  <data name="RESPONSE_FULLSHOWINFO_999999999" xml:space="preserve">
+    <value>No Show Results Were Found For ""</value>
+  </data>
   <data name="RESPONSE_LASTUPDATES_4" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 
