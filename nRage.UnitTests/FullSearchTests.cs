@@ -23,6 +23,13 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
+        public void GetFullSearchCallsCorrectURL()
+        { 
+            client.FullSearchByTitle(title);
+            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.SEARCHFULL_BREAKINGBAD);
+        }
+
+        [Fact]
         public void FullSearchByTitleReturnsEmptyResultsWhenNoMatches()
         {
             var response = client.FullSearchByTitle(incorrect_title);
