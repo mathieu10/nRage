@@ -81,9 +81,9 @@ namespace nRage.Tests.Unit.Properties {
         /// <summary>
         ///   Looks up a localized string similar to No Show Results Were Found For &quot;&quot;.
         /// </summary>
-        internal static string RESPONSE_EPISODEINFO_999999999 {
+        internal static string RESPONSE_EPISODEINFO_999999999_99x99 {
             get {
-                return ResourceManager.GetString("RESPONSE_EPISODEINFO_999999999", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_EPISODEINFO_999999999_99x99", resourceCulture);
             }
         }
         
@@ -98,7 +98,7 @@ namespace nRage.Tests.Unit.Properties {
         ///
         ///&lt;EpisodeListResultSeason no=&quot;1&quot;&gt;
         ///&lt;episode&gt;&lt;epnum&gt;1&lt;/epnum&gt;&lt;seasonnum&gt;01&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-19&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578793&lt;/link&gt;&lt;title&gt;There is a Dog&lt;/title&gt;&lt;/episode&gt;
-        ///&lt;episode&gt;&lt;epnum&gt;2&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/578794&lt;/link&gt;&lt;tit [rest of string was truncated]&quot;;.
+        ///&lt;episode&gt;&lt;epnum&gt;2&lt;/epnum&gt;&lt;seasonnum&gt;02&lt;/seasonnum&gt;&lt;prodnum&gt;&lt;/prodnum&gt;&lt;airdate&gt;2007-03-26&lt;/airdate&gt;&lt;link&gt;http://www.tvrage.com/shows/id-15352/episodes/ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string RESPONSE_EPISODELIST_15352 {
             get {
@@ -151,6 +151,15 @@ namespace nRage.Tests.Unit.Properties {
         internal static string RESPONSE_FULLSHOWINFO_32517 {
             get {
                 return ResourceManager.GetString("RESPONSE_FULLSHOWINFO_32517", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Show Results Were Found For &quot;&quot;.
+        /// </summary>
+        internal static string RESPONSE_FULLSHOWINFO_999999999 {
+            get {
+                return ResourceManager.GetString("RESPONSE_FULLSHOWINFO_999999999", resourceCulture);
             }
         }
         
@@ -223,7 +232,7 @@ namespace nRage.Tests.Unit.Properties {
         ///&lt;network country=&quot;US&quot;&gt;AMC&lt;/network&gt;
         ///&lt;airtime&gt;22:00&lt;/airtime&gt;
         ///&lt;airday&gt;Sunday&lt;/airday&gt;
-        ///&lt;akas&gt;&lt;aka country=&quot;SI&quot;&gt;Kriva po [rest of string was truncated]&quot;;.
+        ///&lt;akas&gt;&lt;aka coun [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string RESPONSE_SEARCHFULL_BREAKINGBAD {
             get {

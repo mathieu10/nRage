@@ -126,7 +126,7 @@
     <comment>Ninja Turtles (1987)
 Invalid episode</comment>
   </data>
-  <data name="RESPONSE_EPISODEINFO_999999999" xml:space="preserve">
+  <data name="RESPONSE_EPISODEINFO_999999999_99x99" xml:space="preserve">
     <value>No Show Results Were Found For ""</value>
   </data>
   <data name="RESPONSE_EPISODELIST_15352" xml:space="preserve">
@@ -223,6 +223,9 @@ No episodes</comment>
 &lt;/Show&gt;</value>
     <comment>Howzat!Kerry Packer's War
 Lists specific episodes</comment>
+  </data>
+  <data name="RESPONSE_FULLSHOWINFO_999999999" xml:space="preserve">
+    <value>No Show Results Were Found For ""</value>
   </data>
   <data name="RESPONSE_SEARCHFULL_BRACVNKINGBADGA" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
