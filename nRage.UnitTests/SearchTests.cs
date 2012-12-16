@@ -23,6 +23,13 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
+        public void GetSearchCallsCorrectURL()
+        { 
+            client.SearchByTitle(title);
+            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.SEARCH_WILFRED);
+        }
+
+        [Fact]
         public void SearchByTitleReturnsEmptyResultsWhenNoMatches()
         {
             var response = client.SearchByTitle(incorrect_title);

@@ -96,7 +96,7 @@ namespace nRage {
         }
 
         public EpisodeInfoResponse GetEpisodeInfo(int showID, int season, int episode) {
-            var episodeLabel = string.Format("{0}x{1:D2}", season, episode);
+            var episodeLabel = string.Format("{0:D2}x{1:D2}", season, episode);
             return GetEpisodeInfo(showID, episodeLabel);
         }
 

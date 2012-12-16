@@ -155,6 +155,15 @@ namespace nRage.Tests.Unit.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No Show Results Were Found For &quot;&quot;.
+        /// </summary>
+        internal static string RESPONSE_FULLSHOWINFO_999999999 {
+            get {
+                return ResourceManager.GetString("RESPONSE_FULLSHOWINFO_999999999", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
         ///
         ///&lt;updates at=&apos;1355720878&apos; found=&apos;26&apos; sorting=&apos;latest_updates&apos; showing=&apos;Last 4H&apos;&gt;

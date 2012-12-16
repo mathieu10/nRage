@@ -22,6 +22,13 @@ namespace nRage.Tests.Unit
         }
 
         [Fact]
+        public void GetShowInfoCallsCorrectURL()
+        { 
+            client.GetShowInfo(show_id);
+            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.SHOWINFO_18753);
+        }
+
+        [Fact]
         public void GetShowInfoThrowsWhenInvalidShowID()
         { 
             Assert.Throws<ShowNotFoundException>(()=>{
