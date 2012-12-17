@@ -8,7 +8,7 @@ using System.Resources;
 using System.Text;
 using System.Xml.Linq;
 
-namespace nRage.Tests.Unit
+namespace nRage.Tests.Unit.TVRageClient
 {    
     public class MockRetriever : IRetriever
     {

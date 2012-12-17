@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
-using nRage.Contract.TVRage;
+using nRage.Contract.TheTVDB;
 
-namespace nRage {
+namespace nRage.Clients {
 
-    public class TheTVDBClient {
+    public class TheTVDBClient
+    {
+        private const string API_KEY = "2A7162D6C1E477B0";
+
         private IRetriever Retriever {get;set;}
 
         public TheTVDBClient() {
@@ -27,13 +30,19 @@ namespace nRage {
         // Mirror
 
         #region URL generation                
+        //http://www.thetvdb.com/api/<apikey>/mirrors.xml. 
         #endregion
 
         #region Public methods        
+        public List<Mirror> GetMirrors()
+        {
+            throw new NotImplementedException();
+        }
         #endregion
 
         #region OXM (Object-XML Mapper) - because the software world needs more acronyms       
         #endregion
                  
-    }    
+    }
+
 }

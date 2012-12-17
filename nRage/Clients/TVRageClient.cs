@@ -10,7 +10,7 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using nRage.Contract.TVRage;
 
-namespace nRage {
+namespace nRage.Clients {
 
     public class TVRageClient {
         private IRetriever Retriever {get;set;}

@@ -50,23 +50,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LastUpdatesTests.cs">
+    <Compile Include="TVRageClient\LastUpdatesTests.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ShowListTests.cs" />
-    <Compile Include="EpisodeInfoTests.cs" />
-    <Compile Include="FullShowInfoTests.cs" />
-    <Compile Include="EpisodeListTests.cs" />
-    <Compile Include="ShowInfoTests.cs" />
-    <Compile Include="TVRageClientTestBase.cs" />
-    <Compile Include="FullSearchTests.cs" />
-    <Compile Include="MockRetriever.cs" />
+    <Compile Include="TVRageClient\ShowListTests.cs" />
+    <Compile Include="TVRageClient\EpisodeInfoTests.cs" />
+    <Compile Include="TVRageClient\FullShowInfoTests.cs" />
+    <Compile Include="TVRageClient\EpisodeListTests.cs" />
+    <Compile Include="TVRageClient\ShowInfoTests.cs" />
+    <Compile Include="TVRageClient\TVRageClientTestBase.cs" />
+    <Compile Include="TVRageClient\FullSearchTests.cs" />
+    <Compile Include="TVRageClient\MockRetriever.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SearchTests.cs" />
+    <Compile Include="TVRageClient\SearchTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

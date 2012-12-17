@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Ninject;
 using Xunit;
+using nRage.Clients;
 
-namespace nRage.Tests.Unit
+namespace nRage.Tests.Unit.TVRageClient
 {
     public class TVRageClientTestBase
     {        
         protected IKernel _ioc;
 
-        protected TVRageClient client;        
+        protected nRage.Clients.TVRageClient client;        
 
         public virtual void InitialiseIOC(){
             _ioc = new StandardKernel();
@@ -21,7 +22,7 @@ namespace nRage.Tests.Unit
 
         public TVRageClientTestBase() { 
             InitialiseIOC();
-            client = _ioc.Get<TVRageClient>();
+            client = _ioc.Get<nRage.Clients.TVRageClient>();
         }       
     }
 }
