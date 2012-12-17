@@ -81,9 +81,9 @@ namespace nRage.Tests.Unit.Properties {
         /// <summary>
         ///   Looks up a localized string similar to No Show Results Were Found For &quot;&quot;.
         /// </summary>
-        internal static string RESPONSE_EPISODEINFO_999999999 {
+        internal static string RESPONSE_EPISODEINFO_999999999_99x99 {
             get {
-                return ResourceManager.GetString("RESPONSE_EPISODEINFO_999999999", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_EPISODEINFO_999999999_99x99", resourceCulture);
             }
         }
         
@@ -166,13 +166,28 @@ namespace nRage.Tests.Unit.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
         ///
+        ///&lt;updates at=&quot;1355598487&quot; found=&quot;214&quot; sorting=&quot;latest_updates&quot; showing=&quot;Last 24H&quot;&gt;
+        ///&lt;show&gt;&lt;id&gt;31&lt;/id&gt;&lt;last&gt;-622&lt;/last&gt;&lt;lastepisode&gt;950340&lt;/lastepisode&gt;&lt;/show&gt;
+        ///&lt;show&gt;&lt;id&gt;33901&lt;/id&gt;&lt;last&gt;131&lt;/last&gt;&lt;lastepisode&gt;131&lt;/lastepisode&gt;&lt;/show&gt;
+        ///&lt;show&gt;&lt;id&gt;3256&lt;/id&gt;&lt;last&gt;1015&lt;/last&gt;&lt;lastepisode&gt;2580&lt;/lastepisode&gt;&lt;/show&gt;
+        ///&lt;show&gt;&lt;id&gt;33900&lt;/id&gt;&lt;last&gt;1267&lt;/last&gt;&lt;lastepisode&gt;1281&lt;/lastepisode&gt;&lt;/show&gt;
+        ///&lt;/updates&gt;.
+        /// </summary>
+        internal static string RESPONSE_LASTUPDATES {
+            get {
+                return ResourceManager.GetString("RESPONSE_LASTUPDATES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///
         ///&lt;updates at=&apos;1355720878&apos; found=&apos;26&apos; sorting=&apos;latest_updates&apos; showing=&apos;Last 4H&apos;&gt;
         ///&lt;show&gt;&lt;id&gt;31&lt;/id&gt;&lt;last&gt;-622&lt;/last&gt;&lt;lastepisode&gt;950340&lt;/lastepisode&gt;&lt;/show&gt;
         ///&lt;show&gt;&lt;id&gt;33901&lt;/id&gt;&lt;last&gt;131&lt;/last&gt;&lt;lastepisode&gt;131&lt;/lastepisode&gt;&lt;/show&gt;
         ///&lt;show&gt;&lt;id&gt;3256&lt;/id&gt;&lt;last&gt;1015&lt;/last&gt;&lt;lastepisode&gt;2580&lt;/lastepisode&gt;&lt;/show&gt;
         ///&lt;show&gt;&lt;id&gt;33900&lt;/id&gt;&lt;last&gt;1267&lt;/last&gt;&lt;lastepisode&gt;1281&lt;/lastepisode&gt;&lt;/show&gt;
-        ///&lt;show&gt;&lt;id&gt;6531&lt;/id&gt;&lt;last&gt;1869&lt;/last&gt;&lt;lastepisode&gt;0&lt;/lastepisode&gt;&lt;/show&gt;
-        ///&lt;show&gt;&lt;id&gt;6 [rest of string was truncated]&quot;;.
+        ///&lt;/updates&gt;.
         /// </summary>
         internal static string RESPONSE_LASTUPDATES_4 {
             get {
