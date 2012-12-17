@@ -13,10 +13,7 @@ using nRage.Contract.TVRage;
 namespace nRage {
 
     public class TVRageClient {
-        private IRetriever Retriever {
-            get;
-            set;
-        }
+        private IRetriever Retriever {get;set;}
 
         /// <summary>
         /// .ctor
@@ -26,34 +23,56 @@ namespace nRage {
         }
 
         #region URL generation
+        private const string API_ROOT = @"http://services.tvrage.com/feeds/";
         protected string FormatURLParam(string param) {
             return new string(param.Where(c => char.IsLetterOrDigit(c)).ToArray());
         }
 
         protected string GetURLForSearch(string title) {
-            return String.Format(@"http://services.tvrage.com/feeds/search.php?show={0}", FormatURLParam(title));
+            return String.Format(@"{0}search.php?show={1}", API_ROOT, FormatURLParam(title));
         }
         protected string GetURLForFullSearch(string title) {
-            return String.Format(@"http://services.tvrage.com/feeds/full_search.php?show={0}", FormatURLParam(title));
+            return String.Format(@"{0}full_search.php?show={1}", API_ROOT, FormatURLParam(title));
         }
         protected string GetURLForShowInfo(int showID) {
-            return String.Format(@"http://services.tvrage.com/feeds/showinfo.php?sid={0}", showID);
+            return String.Format(@"{0}showinfo.php?sid={1}", API_ROOT, showID);
         }
         protected string GetURLForEpisodeList(int showID) {
-            return String.Format(@"http://services.tvrage.com/feeds/episode_list.php?sid={0}", showID);
+            return String.Format(@"{0}episode_list.php?sid={1}", API_ROOT, showID);
         }
         protected string GetURLForEpisoddeInfo(int showID, string episodeLabel) {
-            return String.Format(@"http://services.tvrage.com/feeds/episodeinfo.php?sid={0}&ep={1}", showID, FormatURLParam(episodeLabel));
+            return String.Format(@"{0}episodeinfo.php?sid={1}&ep={2}", API_ROOT, showID, FormatURLParam(episodeLabel));
         }
         protected string GetURLForFullShowInfo(int showID) {
-            return String.Format(@"http://services.tvrage.com/feeds/full_show_info.php?sid={0}", showID);
+            return String.Format(@"{0}full_show_info.php?sid={1}", API_ROOT, showID);
         }
         protected string GetURLForShowList() {
-            return @"http://services.tvrage.com/feeds/show_list.php";
+            return String.Format(@"{0}show_list.php",API_ROOT);
+        }
+        protected string GetURLForLastUpdates(int hours) {
+            return String.Format(@"{0}last_updates.php?hours={1}", API_ROOT, hours);
         }
         #endregion
 
         #region Public methods
+        public LastUpdatesResponse LastUpdates()
+        { 
+            return LastUpdates(0);
+        }
+        
+        public LastUpdatesResponse LastUpdates(TimeSpan timeSpan)
+        { 
+            var hours = (int)timeSpan.TotalHours;
+            return LastUpdates(hours);
+        }
+
+        public LastUpdatesResponse LastUpdates(int hours)
+        { 
+            var response = XDocument.Load(Retriever.Get(GetURLForLastUpdates(hours)));
+            
+            return MapXMLToEpisodeLastUpdates(response);
+        }        
+
         public SearchResponse SearchByTitle(string title) {
             var result = new SearchResponse() {
                 Results = new List<SearchResult>()
@@ -265,6 +284,22 @@ namespace nRage {
                 Genres = x.Descendants("genre").Select(y => y.Value).ToList(),
             }).ToList();
         }
+
+        private LastUpdatesResponse MapXMLToEpisodeLastUpdates(XDocument xml) { 
+            return new LastUpdatesResponse{
+                Timestamp = (string)xml.Element("updates").Attribute("at"),
+                UpdatesCount = (string)xml.Element("updates").Attribute("found"),
+                Sorting = (string)xml.Element("updates").Attribute("sorting"),
+                ShowingPeriod = (string)xml.Element("updates").Attribute("showing"),
+
+                Shows = xml.Descendants("show").Select(x=>new LastUpdatesShowResult{
+                    ShowID = (int)x.Element("id"),
+                    Last = (string)x.Element("last"),
+                    LatestEpisode = (string)x.Element("lastepisode"),
+                }).ToList(),
+            };
+
+        }
         #endregion
         
         private void ValidateResponse(Stream rawResponse)
@@ -275,7 +310,6 @@ namespace nRage {
                 if (sr.ReadLine().Substring(0, 15) == "No Show Results") throw new ShowNotFoundException();
                 rawResponse.Position = 0;
             }
-        }
-    }
-
+        }        
+    }    
 }

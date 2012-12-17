@@ -49,6 +49,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LastUpdatesTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ShowListTests.cs" />
     <Compile Include="EpisodeInfoTests.cs" />
     <Compile Include="FullShowInfoTests.cs" />
