@@ -30,7 +30,7 @@ namespace nRage.Clients {
         // Mirror
 
         #region URL generation                
-        //http://www.thetvdb.com/api/<apikey>/mirrors.xml. 
+        //http://www.thetvdb.com/api/2A7162D6C1E477B0/mirrors.xml
         #endregion
 
         #region Public methods        

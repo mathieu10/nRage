@@ -48,31 +48,31 @@ namespace nRage.Tests.Unit.TVRageClient
             _urlHistory = new Stack<string>();
             _mockResults = new Dictionary<string, string>();
 
-            _mockResults[SHOWLIST] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SHOWLIST;
+            _mockResults[SHOWLIST] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_SHOWLIST;
 
-            _mockResults[LASTUPDATES] = nRage.Tests.Unit.Properties.Resources.RESPONSE_LASTUPDATES;
-            _mockResults[LASTUPDATES_4] = nRage.Tests.Unit.Properties.Resources.RESPONSE_LASTUPDATES_4;
-            _mockResults[LASTUPDATES_24] = nRage.Tests.Unit.Properties.Resources.RESPONSE_LASTUPDATES; // Defaults to 24 hours when none specified
-            _mockResults[LASTUPDATES_999] = nRage.Tests.Unit.Properties.Resources.RESPONSE_LASTUPDATES_999;
+            _mockResults[LASTUPDATES] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_LASTUPDATES;
+            _mockResults[LASTUPDATES_4] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_LASTUPDATES_4;
+            _mockResults[LASTUPDATES_24] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_LASTUPDATES; // Defaults to 24 hours when none specified
+            _mockResults[LASTUPDATES_999] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_LASTUPDATES_999;
 
-            _mockResults[SEARCH_WILFRED] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCH_WILFRED;
-            _mockResults[SEARCH_WILFFERXJD] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCH_WILFFERXJD;
+            _mockResults[SEARCH_WILFRED] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_SEARCH_WILFRED;
+            _mockResults[SEARCH_WILFFERXJD] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_SEARCH_WILFFERXJD;
 
-            _mockResults[SEARCHFULL_BREAKINGBAD] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCHFULL_BREAKINGBAD;
-            _mockResults[SEARCHFULL_BRACVNKINGBADGA] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCHFULL_BRACVNKINGBADGA;
+            _mockResults[SEARCHFULL_BREAKINGBAD] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_SEARCHFULL_BREAKINGBAD;
+            _mockResults[SEARCHFULL_BRACVNKINGBADGA] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_SEARCHFULL_BRACVNKINGBADGA;
 
-            _mockResults[SHOWINFO_18753] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SHOWINFO_18753;
-            _mockResults[SHOWINFO_842999999] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SHOWINFO_842999999;
+            _mockResults[SHOWINFO_18753] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_SHOWINFO_18753;
+            _mockResults[SHOWINFO_842999999] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_SHOWINFO_842999999;
 
-            _mockResults[EPISODEINFO_5481_2x13] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODEINFO_5481_2x13;
-            _mockResults[EPISODEINFO_5481_99x99] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODEINFO_5481_99x99;
-            _mockResults[EPISODEINFO_999999999_99x99] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODEINFO_999999999_99x99;
+            _mockResults[EPISODEINFO_5481_2x13] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_EPISODEINFO_5481_2x13;
+            _mockResults[EPISODEINFO_5481_99x99] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_EPISODEINFO_5481_99x99;
+            _mockResults[EPISODEINFO_999999999_99x99] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_EPISODEINFO_999999999_99x99;
 
-            _mockResults[EPISODELIST_15352] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODELIST_15352;
-            _mockResults[EPISODELIST_20260] = nRage.Tests.Unit.Properties.Resources.RESPONSE_EPISODELIST_20260;
+            _mockResults[EPISODELIST_15352] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_EPISODELIST_15352;
+            _mockResults[EPISODELIST_20260] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_EPISODELIST_20260;
 
-            _mockResults[FULLSHOWINFO_32517] = nRage.Tests.Unit.Properties.Resources.RESPONSE_FULLSHOWINFO_32517;                        
-            _mockResults[FULLSHOWINFO_999999999] = nRage.Tests.Unit.Properties.Resources.RESPONSE_FULLSHOWINFO_999999999;
+            _mockResults[FULLSHOWINFO_32517] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_FULLSHOWINFO_32517;                        
+            _mockResults[FULLSHOWINFO_999999999] = nRage.Tests.Unit.Properties.TVRage.RESPONSE_FULLSHOWINFO_999999999;
         }
 
         public static string GetLastURLCalled(){

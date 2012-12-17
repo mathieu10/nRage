@@ -31,6 +31,14 @@ Roadmap
 + TV schedule API
 + TVRage API documentation 
 
+TODO / Notes to self
+====================
+
+* Support country attribute for <network> nodes
+* Finish in-line XML documentation for contracts
+* Proper API documentation (eg: status codes for show list)
+* Re-think Stream usage for IRetriever (poor memory management)
+
 TVRage API notes
 ================
 
@@ -52,10 +60,9 @@ Observed inconsistencies
 * Inconsistent casing (eg XML for show info opens with "Showinfo" - all other nodes in show info are strict lower case)
 * Inconsistent number format (eg: episode number example is 2x05 - leading zero for episode number, no leading zero for season - but both work interchangeably)
 
-TODO / Notes to self
---------------------
+TheTVDB API notes
+================
 
-* Support country attribute for <network> nodes
-* Finish in-line XML documentation for contracts
-* Proper API documentation (eg: status codes for show list)
-* Re-think Stream usage for IRetriever (poor memory management)
+Mirror flags:
+* None 0
+* 

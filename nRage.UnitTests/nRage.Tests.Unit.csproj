@@ -61,10 +61,10 @@
     <Compile Include="TVRageClient\TVRageClientTestBase.cs" />
     <Compile Include="TVRageClient\FullSearchTests.cs" />
     <Compile Include="TVRageClient\MockRetriever.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Include="Properties\TVRage1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
+      <DependentUpon>TVRage.resx</DependentUpon>
     </Compile>
     <Compile Include="TVRageClient\SearchTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,9 +76,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <EmbeddedResource Include="Properties\TVRage.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>TVRage1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
