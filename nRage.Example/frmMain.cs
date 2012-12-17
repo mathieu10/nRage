@@ -15,10 +15,33 @@ namespace nRage.Example {
             InitializeComponent();
         }
 
+        internal class LoadingBar : IDisposable
+        {
+            private frmMain _form;
+
+            public LoadingBar(frmMain form)
+            {
+                _form = form;
+                _form.groupBox1.Enabled = false;
+                _form.groupBox2.Enabled = false;
+                _form.groupBox3.Enabled = false;
+                _form.groupBox4.Enabled = false;
+            }
+            public void Dispose() { 
+                _form.groupBox1.Enabled = true;
+                _form.groupBox2.Enabled = true;
+                _form.groupBox3.Enabled = true;
+                _form.groupBox4.Enabled = true;
+            }
+        }
+
         private void btnSearch_Click(object sender, EventArgs e) {
-            var db = new TVRageClient();
-            var result = db.SearchByTitle(txtShowName.Text);
-            DisplayResults(result);
+            using(new LoadingBar(this))
+            {
+                var db = new TVRageClient();
+                var result = db.SearchByTitle(txtShowName.Text);
+                DisplayResults(result);
+            }
         }
 
         #region Display Results
@@ -94,5 +117,5 @@ namespace nRage.Example {
             txtResult.Clear();
         }
         #endregion
-    }
+    }    
 }
