@@ -8,10 +8,6 @@ using Xunit;
 
 namespace nRage.Tests.Unit
 {
-    // http://services.tvrage.com/feeds/full_show_info.php?sid=20260 - show without specific episodes (Kenny's World)
-    //http://services.tvrage.com/feeds/full_show_info.php?sid=32517 - HOWZAT
-
-
     public class TVRageClientTestBase
     {        
         protected IKernel _ioc;
