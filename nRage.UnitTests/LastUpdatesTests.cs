@@ -41,7 +41,7 @@ namespace nRage.Tests.Unit
         public void GetLastUpdatesByTimespanInDaysCallsCorrectURL()
         { 
             client.LastUpdates(span_1day);
-            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.LASTUPDATES);
+            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.LASTUPDATES_24);
         }
 
         [Fact]
@@ -104,7 +104,7 @@ namespace nRage.Tests.Unit
         public void GetLastUpdatesReturnsCorrectShowLastEpisode()
         { 
             var response = client.LastUpdates(span_4hours);
-            Assert.True(response.Shows.ElementAt(0).LatestEpisode == "131");
+            Assert.True(response.Shows.ElementAt(0).LatestEpisode == "950340");
         }
 
 

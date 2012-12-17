@@ -289,10 +289,14 @@ namespace nRage {
             return new LastUpdatesResponse{
                 Timestamp = (string)xml.Element("updates").Attribute("at"),
                 UpdatesCount = (string)xml.Element("updates").Attribute("found"),
-                Sorting = (string)xml.Element("updates").Attribute("latest_updates"),
+                Sorting = (string)xml.Element("updates").Attribute("sorting"),
                 ShowingPeriod = (string)xml.Element("updates").Attribute("showing"),
 
-                Shows = new List<LastUpdatesShowResult>(),
+                Shows = xml.Descendants("show").Select(x=>new LastUpdatesShowResult{
+                    ShowID = (int)x.Element("id"),
+                    Last = (string)x.Element("last"),
+                    LatestEpisode = (string)x.Element("lastepisode"),
+                }).ToList(),
             };
 
         }
