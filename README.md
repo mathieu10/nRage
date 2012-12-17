@@ -1,22 +1,24 @@
 nRage
 ===========
 
-A simple .NET wrapper for the TVRage.com API.
+A .NET library for searching and retreiving metadata for TV shows. The name comes from TVRage which was the first external API supported by nRage.
 
 History
 -------
 
 ###v0.2 (2012-Dec-17)
-+ Support update/scheduling API
++ Support TVRage update/scheduling API
 
 ###v0.1 (2012-Dec-15)
 + Initial official release
+* TVRage API support
 
 Roadmap
 -------
 
 ###v0.3
 + Common data model abstraction
++ TheTVDB basic support
 
 ###v0.4
 + Basic local cache 
@@ -24,10 +26,10 @@ Roadmap
 ###v1.0
 + Intelligent configurable local cache
 + nRage documenation
-+ TVRage API documentation 
 
 ###Very low priority
 + TV schedule API
++ TVRage API documentation 
 
 TVRage API notes
 ================
