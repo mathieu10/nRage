@@ -10,7 +10,6 @@ using System.Xml.Linq;
 
 namespace nRage.Tests.Unit
 {    
-    /// <todo>replace this with Moq/RhinoMocks/etc </todo>  
     public class MockRetriever : IRetriever
     {
         private Dictionary<string, string> _mockResults;               
