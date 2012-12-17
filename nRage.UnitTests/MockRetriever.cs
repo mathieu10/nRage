@@ -19,7 +19,7 @@ namespace nRage.Tests.Unit
         #region URL constants
         public const string SHOWLIST = @"show_list.php";
 
-        public const string LASTUPDATES = @"last_updates.php";
+        public const string LASTUPDATES = @"last_updates.php?hours=0";
         public const string LASTUPDATES_4 = @"last_updates.php?hours=4";
         public const string LASTUPDATES_24 = @"last_updates.php?hours=24";
         public const string LASTUPDATES_999 = @"last_updates.php?hours=999";
