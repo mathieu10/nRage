@@ -54,6 +54,21 @@ namespace nRage {
         #endregion
 
         #region Public methods
+        public LastUpdatesResponse LastUpdates()
+        { 
+            throw new NotImplementedException();
+        }
+
+        public LastUpdatesResponse LastUpdates(int hours)
+        { 
+            throw new NotImplementedException();
+        }
+
+        public LastUpdatesResponse LastUpdates(TimeSpan timeSpan)
+        { 
+            throw new NotImplementedException();
+        }
+
         public SearchResponse SearchByTitle(string title) {
             var result = new SearchResponse() {
                 Results = new List<SearchResult>()
@@ -275,7 +290,7 @@ namespace nRage {
                 if (sr.ReadLine().Substring(0, 15) == "No Show Results") throw new ShowNotFoundException();
                 rawResponse.Position = 0;
             }
-        }
+        }        
     }
 
 }
