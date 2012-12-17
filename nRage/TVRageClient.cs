@@ -15,9 +15,10 @@ namespace nRage {
     public class TVRageClient {
         private IRetriever Retriever {get;set;}
 
-        /// <summary>
-        /// .ctor
-        /// </summary>
+        public TVRageClient() {
+            this.Retriever = new WebRetriever();
+        }
+
         public TVRageClient(IRetriever retriever) {
             this.Retriever = retriever;
         }

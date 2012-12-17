@@ -33,20 +33,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnShowInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnBoth = new System.Windows.Forms.Button();
+            this.btnFullShowInfo = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtShowList = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSeason = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEpisode = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDays = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtLastUpdates = new System.Windows.Forms.Button();
+            this.txtHours = new System.Windows.Forms.TextBox();
+            this.txtResult = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -61,6 +62,7 @@
             this.btnSearch.TabIndex = 0;
             this.btnSearch.Text = "Basic Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // groupBox1
             // 
@@ -105,7 +107,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnBoth);
+            this.groupBox2.Controls.Add(this.btnFullShowInfo);
             this.groupBox2.Controls.Add(this.btnEpisodeList);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnShowInfo);
@@ -154,22 +156,22 @@
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "15352";
             // 
-            // btnBoth
+            // btnFullShowInfo
             // 
-            this.btnBoth.Location = new System.Drawing.Point(157, 45);
-            this.btnBoth.Name = "btnBoth";
-            this.btnBoth.Size = new System.Drawing.Size(73, 27);
-            this.btnBoth.TabIndex = 5;
-            this.btnBoth.Text = "Both";
-            this.btnBoth.UseVisualStyleBackColor = true;
+            this.btnFullShowInfo.Location = new System.Drawing.Point(157, 45);
+            this.btnFullShowInfo.Name = "btnFullShowInfo";
+            this.btnFullShowInfo.Size = new System.Drawing.Size(73, 27);
+            this.btnFullShowInfo.TabIndex = 5;
+            this.btnFullShowInfo.Text = "Both";
+            this.btnFullShowInfo.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.txtEpisode);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.txtSeason);
             this.groupBox3.Location = new System.Drawing.Point(9, 179);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox3.Name = "groupBox3";
@@ -179,14 +181,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Get Episode Info";
             // 
-            // button1
+            // txtShowList
             // 
-            this.button1.Location = new System.Drawing.Point(9, 328);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 27);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Full Show List";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtShowList.Location = new System.Drawing.Point(9, 328);
+            this.txtShowList.Name = "txtShowList";
+            this.txtShowList.Size = new System.Drawing.Size(236, 27);
+            this.txtShowList.TabIndex = 5;
+            this.txtShowList.Text = "Full Show List";
+            this.txtShowList.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -206,13 +208,13 @@
             this.button3.Text = "Get Episode";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtSeason
             // 
-            this.textBox2.Location = new System.Drawing.Point(75, 19);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(54, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "15352";
+            this.txtSeason.Location = new System.Drawing.Point(75, 19);
+            this.txtSeason.Name = "txtSeason";
+            this.txtSeason.Size = new System.Drawing.Size(54, 20);
+            this.txtSeason.TabIndex = 2;
+            this.txtSeason.Text = "15352";
             // 
             // label4
             // 
@@ -223,21 +225,21 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Episode #";
             // 
-            // textBox3
+            // txtEpisode
             // 
-            this.textBox3.Location = new System.Drawing.Point(75, 42);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(54, 20);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.Text = "15352";
+            this.txtEpisode.Location = new System.Drawing.Point(75, 42);
+            this.txtEpisode.Name = "txtEpisode";
+            this.txtEpisode.Size = new System.Drawing.Size(54, 20);
+            this.txtEpisode.TabIndex = 4;
+            this.txtEpisode.Text = "15352";
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.textBox4);
+            this.groupBox4.Controls.Add(this.txtDays);
             this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.button2);
-            this.groupBox4.Controls.Add(this.textBox5);
+            this.groupBox4.Controls.Add(this.txtLastUpdates);
+            this.groupBox4.Controls.Add(this.txtHours);
             this.groupBox4.Location = new System.Drawing.Point(9, 251);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox4.Name = "groupBox4";
@@ -256,13 +258,13 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Days";
             // 
-            // textBox4
+            // txtDays
             // 
-            this.textBox4.Location = new System.Drawing.Point(75, 42);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(54, 20);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "0";
+            this.txtDays.Location = new System.Drawing.Point(75, 42);
+            this.txtDays.Name = "txtDays";
+            this.txtDays.Size = new System.Drawing.Size(54, 20);
+            this.txtDays.TabIndex = 4;
+            this.txtDays.Text = "0";
             // 
             // label6
             // 
@@ -273,30 +275,39 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Hours";
             // 
-            // button2
+            // txtLastUpdates
             // 
-            this.button2.Location = new System.Drawing.Point(135, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 43);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Get Updates";
-            this.button2.UseVisualStyleBackColor = true;
+            this.txtLastUpdates.Location = new System.Drawing.Point(135, 19);
+            this.txtLastUpdates.Name = "txtLastUpdates";
+            this.txtLastUpdates.Size = new System.Drawing.Size(95, 43);
+            this.txtLastUpdates.TabIndex = 0;
+            this.txtLastUpdates.Text = "Get Updates";
+            this.txtLastUpdates.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtHours
             // 
-            this.textBox5.Location = new System.Drawing.Point(75, 19);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(54, 20);
-            this.textBox5.TabIndex = 2;
-            this.textBox5.Text = "8";
+            this.txtHours.Location = new System.Drawing.Point(75, 19);
+            this.txtHours.Name = "txtHours";
+            this.txtHours.Size = new System.Drawing.Size(54, 20);
+            this.txtHours.TabIndex = 2;
+            this.txtHours.Text = "8";
+            // 
+            // txtResult
+            // 
+            this.txtResult.Location = new System.Drawing.Point(259, 15);
+            this.txtResult.Multiline = true;
+            this.txtResult.Name = "txtResult";
+            this.txtResult.Size = new System.Drawing.Size(410, 339);
+            this.txtResult.TabIndex = 8;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 367);
+            this.Controls.Add(this.txtResult);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtShowList);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -311,6 +322,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -322,24 +334,25 @@
         private System.Windows.Forms.Button btnFullSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnBoth;
+        private System.Windows.Forms.Button btnFullShowInfo;
         private System.Windows.Forms.Button btnEpisodeList;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnShowInfo;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEpisode;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtSeason;
+        private System.Windows.Forms.Button txtShowList;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDays;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button txtLastUpdates;
+        private System.Windows.Forms.TextBox txtHours;
+        private System.Windows.Forms.TextBox txtResult;
     }
 }
 
