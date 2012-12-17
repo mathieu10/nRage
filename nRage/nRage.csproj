@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contract\SearchResult.cs" />
+    <Compile Include="Contract\Common\TVShow.cs" />
+    <Compile Include="Contract\TheTVDB\Mirror.cs" />
+    <Compile Include="Clients\TheTVDBClient.cs" />
     <Compile Include="Contract\TVRage\AKA.cs" />
     <Compile Include="Contract\TVRage\EpisodeListResultEpisode.cs" />
     <Compile Include="Contract\TVRage\EpisodeListResultSeason.cs" />
@@ -59,9 +61,10 @@
     <Compile Include="IRetriever.cs" />
     <Compile Include="Contract\TVRage\ShowListResponse.cs" />
     <Compile Include="Exceptions.cs" />
-    <Compile Include="TVRageClient.cs" />
+    <Compile Include="Clients\TVRageClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

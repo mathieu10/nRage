@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Ninject;
 using Xunit;
 
-namespace nRage.Tests.Unit
+namespace nRage.Tests.Unit.TVRageClient
 {
 
     public class ShowInfoTests : TVRageClientTestBase
