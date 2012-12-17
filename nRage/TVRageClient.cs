@@ -291,6 +291,5 @@ namespace nRage {
                 rawResponse.Position = 0;
             }
         }        
-    }
-
+    }    
 }

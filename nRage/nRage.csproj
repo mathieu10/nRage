@@ -46,6 +46,8 @@
     <Compile Include="Contract\TVRage\EpisodeListResultSeason.cs" />
     <Compile Include="Contract\TVRage\EpisodeResult.cs" />
     <Compile Include="Contract\TVRage\FullSearchResponse.cs" />
+    <Compile Include="Contract\TVRage\LastUpdatesResponse.cs" />
+    <Compile Include="Contract\TVRage\LastUpdatesShowResult.cs" />
     <Compile Include="Contract\TVRage\ShowInfoResponse.cs" />
     <Compile Include="Contract\TVRage\FullSearchResult.cs" />
     <Compile Include="Contract\TVRage\SearchResponse.cs" />
