@@ -19,6 +19,11 @@ namespace nRage.Tests.Unit
         #region URL constants
         public const string SHOWLIST = @"show_list.php";
 
+        public const string LASTUPDATES = @"last_updates.php";
+        public const string LASTUPDATES_4 = @"last_updates.php?hours=4";
+        public const string LASTUPDATES_24 = @"last_updates.php?hours=24";
+        public const string LASTUPDATES_999 = @"last_updates.php?hours=999";
+
         public const string SEARCH_WILFRED = @"search.php?show=wilfred";
         public const string SEARCH_WILFFERXJD = @"search.php?show=wilfferxjd";
 
@@ -36,7 +41,7 @@ namespace nRage.Tests.Unit
         public const string EPISODELIST_20260 = @"episode_list.php?sid=20260";
 
         public const string FULLSHOWINFO_32517 = @"full_show_info.php?sid=32517";
-        public const string FULLSHOWINFO_999999999 = @"full_show_info.php?sid=999999999";        
+        public const string FULLSHOWINFO_999999999 = @"full_show_info.php?sid=999999999";
         #endregion
 
         public MockRetriever()
@@ -45,6 +50,11 @@ namespace nRage.Tests.Unit
             _mockResults = new Dictionary<string, string>();
 
             _mockResults[SHOWLIST] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SHOWLIST;
+
+            _mockResults[LASTUPDATES] = nRage.Tests.Unit.Properties.Resources.RESPONSE_LASTUPDATES;
+            _mockResults[LASTUPDATES_4] = nRage.Tests.Unit.Properties.Resources.RESPONSE_LASTUPDATES_4;
+            _mockResults[LASTUPDATES_24] = nRage.Tests.Unit.Properties.Resources.RESPONSE_LASTUPDATES; // Defaults to 24 hours when none specified
+            _mockResults[LASTUPDATES_999] = nRage.Tests.Unit.Properties.Resources.RESPONSE_LASTUPDATES_999;
 
             _mockResults[SEARCH_WILFRED] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCH_WILFRED;
             _mockResults[SEARCH_WILFFERXJD] = nRage.Tests.Unit.Properties.Resources.RESPONSE_SEARCH_WILFFERXJD;
