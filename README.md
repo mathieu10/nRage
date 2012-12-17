@@ -9,6 +9,7 @@ History
 * v0.2 (2012-Dec-17)
     + Support update/scheduling API
 
+
 * v0.1 (2012-Dec-15)
     + Initial official release
 
@@ -18,14 +19,17 @@ Roadmap
 * v0.3
     + Commom data model abstraction
 
+
 * v0.4
     + Basic local cache 
+
 
 * v1.0
     + Intelligent configurable local cache
     + nRage documenation
     + TVRage API documentation
  
+
 * Very low priority
     + Schedule API
 
