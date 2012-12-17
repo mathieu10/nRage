@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nRage.Tests.Unit", "nRage.U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nRage.Example", "nRage.Example\nRage.Example.csproj", "{92FD3D7F-F3D6-41BF-B5CA-8BD85E5A76C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nRage.Tests.Integration", "nRage.Tests.Integration\nRage.Tests.Integration.csproj", "{282F984C-24C1-4D53-A7BB-A980A2F6EA73}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ADCE50C0-283E-414E-BAEA-EFB80814ACC9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5215749F-124C-499E-A2D2-4CCF9855EE54}"
@@ -34,16 +32,11 @@ Global
 		{92FD3D7F-F3D6-41BF-B5CA-8BD85E5A76C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92FD3D7F-F3D6-41BF-B5CA-8BD85E5A76C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92FD3D7F-F3D6-41BF-B5CA-8BD85E5A76C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{282F984C-24C1-4D53-A7BB-A980A2F6EA73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{282F984C-24C1-4D53-A7BB-A980A2F6EA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{282F984C-24C1-4D53-A7BB-A980A2F6EA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{282F984C-24C1-4D53-A7BB-A980A2F6EA73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{282F984C-24C1-4D53-A7BB-A980A2F6EA73} = {ADCE50C0-283E-414E-BAEA-EFB80814ACC9}
 		{A613821F-1AB8-4713-B2C9-1179D5C22F03} = {ADCE50C0-283E-414E-BAEA-EFB80814ACC9}
 	EndGlobalSection
 EndGlobal
