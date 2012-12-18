@@ -24,6 +24,12 @@ namespace nRage.Clients {
             return GetURL(@"{0}/mirrors.xml", API_KEY); }
         private string GetURLForServerTime() {
             return GetURL(@"Updates.php?type=none"); }
+        private string GetURLForSearch(string query) {
+            return GetURL(@"GetSeries.php?seriesname={0}",query); }
+        private string GetURLForSeriesInfo(int seriesId) {
+            return GetURL(@"{0}/series/{1}/all/en.xml", API_KEY, seriesId); }
+        private string GetURLForUpdates(string query) {
+            return GetURL(@"Updates.php?type=all&time=<previoustime>. "); }
         #endregion
 
         #region Public methods        
@@ -37,6 +43,18 @@ namespace nRage.Clients {
             var response = GetXML(GetURLForServerTime());
             return MapXMLToServerTime(response);
         }        
+
+        public SearchResponse Search(string query){
+            //TODO: format/clean input (eg ' ' to '+')            
+            var response = GetXML(GetURLForSearch(query));
+            return MapXMLToSearch(response);
+        }
+
+        public object GetSeriesInfo(int seriesId){
+            // http://www.thetvdb.com/api/api/2A7162D6C1E477B0/series/81189/all/en.xml
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         #region OXM (Object-XML Mapper) - because the software world needs more acronyms
@@ -55,13 +73,8 @@ namespace nRage.Clients {
                 Time = xml.Descendants("Time").Single().Value,
             };
         }
-        #endregion
-                 
-    }
 
-    public class ServerTimeResponse
-    {
-        public string Time{get;set;}
-    }
-
+        private SearchResponse MapXMLToSearch(XDocument response) { throw new NotImplementedException(); }
+        #endregion                 
+    }    
 }

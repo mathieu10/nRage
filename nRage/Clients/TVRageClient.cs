@@ -14,6 +14,7 @@ namespace nRage.Clients {
 
     public class TVRageClient : ClientBase
     {
+        public TVRageClient():base(){}
         public TVRageClient(IRetriever retriever) : base(retriever) {}        
 
         #region URL generation

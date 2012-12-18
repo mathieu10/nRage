@@ -117,6 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RESPONSE_GETSERIES_BREAKINGBAD" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;Data&gt;
+&lt;Series&gt;
+&lt;seriesid&gt;81189&lt;/seriesid&gt;
+&lt;language&gt;en&lt;/language&gt;
+&lt;SeriesName&gt;Breaking Bad&lt;/SeriesName&gt;
+&lt;banner&gt;graphical/81189-g13.jpg&lt;/banner&gt;
+&lt;Overview&gt;Walter White, a struggling high school chemistry teacher is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman with the aim of securing his family's financial future before he dies.&lt;/Overview&gt;
+&lt;FirstAired&gt;2008-01-20&lt;/FirstAired&gt;
+&lt;IMDB_ID&gt;tt0903747&lt;/IMDB_ID&gt;
+&lt;zap2it_id&gt;SH01009396&lt;/zap2it_id&gt;
+&lt;id&gt;81189&lt;/id&gt;
+&lt;/Series&gt;
+&lt;/Data&gt;</value>
+  </data>
   <data name="RESPONSE_MIRRORS" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;Mirrors&gt;

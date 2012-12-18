@@ -62,6 +62,23 @@ namespace nRage.Tests.Unit.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///&lt;Data&gt;
+        ///&lt;Series&gt;
+        ///&lt;seriesid&gt;81189&lt;/seriesid&gt;
+        ///&lt;language&gt;en&lt;/language&gt;
+        ///&lt;SeriesName&gt;Breaking Bad&lt;/SeriesName&gt;
+        ///&lt;banner&gt;graphical/81189-g13.jpg&lt;/banner&gt;
+        ///&lt;Overview&gt;Walter White, a struggling high school chemistry teacher is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman with the aim of securing his family&apos;s financial future before he dies.&lt;/Overview&gt;
+        ///&lt;FirstAired&gt;200 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RESPONSE_GETSERIES_BREAKINGBAD {
+            get {
+                return ResourceManager.GetString("RESPONSE_GETSERIES_BREAKINGBAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
         ///&lt;Mirrors&gt;
         ///  &lt;Mirror&gt;
         ///    &lt;id&gt;1&lt;/id&gt;
