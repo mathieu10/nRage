@@ -13,16 +13,16 @@ namespace nRage.Tests.Unit.TVRage
     {        
         protected IKernel _ioc;
 
-        protected nRage.Clients.TVRageClient client;        
+        protected TVRageClient client;        
 
         public virtual void InitialiseIOC(){
             _ioc = new StandardKernel();
-            _ioc.Bind<IRetriever>().To<MockRetriever>();
+            _ioc.Bind<IRetriever>().To<TVRageMockRetriever>();
         }
 
         public TVRageClientTestBase() { 
             InitialiseIOC();
-            client = _ioc.Get<nRage.Clients.TVRageClient>();
+            client = _ioc.Get<TVRageClient>();
         }       
     }
 }
