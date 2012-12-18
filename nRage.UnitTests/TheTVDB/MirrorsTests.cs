@@ -10,7 +10,9 @@ namespace nRage.Tests.Unit.TheTVDB
 {
 
     public class MirrorsTests : TestBase
-    {                        
+    {      
+        public MirrorsTests() : base(){}
+          
         [Fact]
         public void CanGetMirrors()
         { 

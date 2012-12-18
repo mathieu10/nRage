@@ -8,6 +8,10 @@ namespace nRage.Tests.Unit.TheTVDB
         public static readonly string MIRRORS = @"mirrors.xml";
         #endregion
 
+        public TheTVDBMockRetriever() : base(){
+            
+        }
+
         protected override void FillCache()
         { 
             Cache(MIRRORS, Properties.TheTVDB.RESPONSE_MIRRORS);

@@ -4,6 +4,8 @@ namespace nRage.Tests.Unit.TVRage
 {
     public class TVRageMockRetriever : MockRetriever
     {
+        public TVRageMockRetriever() : base(){}
+
         #region URL constants
         public static readonly string SHOWLIST = @"show_list.php";
 

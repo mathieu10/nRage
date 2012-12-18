@@ -14,6 +14,8 @@ namespace nRage.Clients {
 
     public class TVRageClient : ClientBase
     {
+        public TVRageClient(IRetriever retriever) : base(retriever) {}
+
         public override string ApiRoot {
             get { return @"http://services.tvrage.com/feeds"; }
         }

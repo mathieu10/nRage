@@ -14,6 +14,8 @@ namespace nRage.Clients {
 
     public class TheTVDBClient : ClientBase
     {
+        public TheTVDBClient(IRetriever retriever) : base(retriever) { }
+
         /// <TODO>
         /// This should - in theory - be configurable to support mirrors. In practice... well... there's never any mirrors.
         /// </TODO>
@@ -25,7 +27,7 @@ namespace nRage.Clients {
         private const string API_KEY = @"2A7162D6C1E477B0";
 
         private string GetURLForMirrors() {
-            return GetURL(@"{1}/mirrors.xml", API_KEY);
+            return GetURL(@"{0}/mirrors.xml", API_KEY);
         }
         #endregion
 
@@ -33,7 +35,7 @@ namespace nRage.Clients {
         public MirrorsResponse GetMirrors()
         {
             var response = GetXML(GetURLForMirrors());
-            return MapXMLToMirrors(response);            
+            return MapXMLToMirrors(response);
         }
         #endregion
 
