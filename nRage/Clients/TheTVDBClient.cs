@@ -27,9 +27,11 @@ namespace nRage.Clients {
         private string GetURLForSearch(string query) {
             return GetURL(@"GetSeries.php?seriesname={0}",query); }
         private string GetURLForSeriesInfo(int seriesId) {
-            return GetURL(@"{0}/series/{1}/all/en.xml", API_KEY, seriesId); }
-        private string GetURLForUpdates(string query) {
-            return GetURL(@"Updates.php?type=all&time=<previoustime>. "); }
+            return GetURL(@"{0}/series/{1}", API_KEY, seriesId); }
+        private string GetURLForEpisodeList(int seriesId) {
+            return GetURL(@"{0}/series/{1}/all", API_KEY, seriesId); }
+        private string GetURLForUpdates(int updatedSince) {
+            return GetURL(@"Updates.php?type=all&time=",updatedSince); }
         #endregion
 
         #region Public methods        
@@ -50,11 +52,23 @@ namespace nRage.Clients {
             return MapXMLToSearch(response);
         }
 
-        public object GetSeriesInfo(int seriesId){
-            // http://www.thetvdb.com/api/api/2A7162D6C1E477B0/series/81189/all/en.xml
-            throw new NotImplementedException();
+        public SeriesInfoResponse GetSeriesInfo(int seriesId){   
+            // http://www.thetvdb.com/api/2A7162D6C1E477B0/series/81189/all/en.xml
+            var response = GetXML(GetURLForSeriesInfo(seriesId));
+            return MapXMLToSeriesInfo(response);
         }
 
+        public EpisodeListResponse GetEpisodeList(int seriesId){   
+            // http://www.thetvdb.com/api/2A7162D6C1E477B0/series/81189/all/en.xml
+            var response = GetXML(GetURLForEpisodeList(seriesId));
+            return MapXMLToEpisodeList(response);
+        }
+
+        public GetUpdatesResponse GetUpdates(int updatedSince)
+        {
+            var response = GetXML(GetURLForUpdates(updatedSince));
+            return MapXMLToUpdates(response);
+        }
         #endregion
 
         #region OXM (Object-XML Mapper) - because the software world needs more acronyms
@@ -74,7 +88,10 @@ namespace nRage.Clients {
             };
         }
 
-        private SearchResponse MapXMLToSearch(XDocument response) { throw new NotImplementedException(); }
+        private SearchResponse MapXMLToSearch(XDocument response) { throw new NotImplementedException(); }        
+        private SeriesInfoResponse MapXMLToSeriesInfo(XDocument response) { throw new NotImplementedException(); }
+        private EpisodeListResponse MapXMLToEpisodeList(XDocument response) { throw new NotImplementedException(); }
+        private GetUpdatesResponse MapXMLToUpdates(XDocument response) { throw new NotImplementedException(); }
         #endregion                 
     }    
 }

@@ -62,6 +62,26 @@ namespace nRage.Tests.Unit.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///&lt;Data&gt;&lt;Series&gt;
+        ///  &lt;id&gt;81189&lt;/id&gt;
+        ///  &lt;Actors&gt;|Bryan Cranston|Aaron Paul|Dean Norris|RJ Mitte|Betsy Brandt|Anna Gunn|Christopher Cousins|Steven Michael Quezada|Jonathan Banks|Giancarlo Esposito|Bob Odenkirk|&lt;/Actors&gt;
+        ///  &lt;Airs_DayOfWeek&gt;Sunday&lt;/Airs_DayOfWeek&gt;
+        ///  &lt;Airs_Time&gt;10:00 PM&lt;/Airs_Time&gt;
+        ///  &lt;ContentRating&gt;TV-MA&lt;/ContentRating&gt;
+        ///  &lt;FirstAired&gt;2008-01-20&lt;/FirstAired&gt;
+        ///  &lt;Genre&gt;|Drama|&lt;/Genre&gt;
+        ///  &lt;IMDB_ID&gt;tt0903747&lt;/IMDB_ID&gt;
+        ///  &lt;Language&gt;en&lt;/Language&gt;
+        ///  &lt;Network&gt;AM [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RESPONSE_EPISODELIST_81189 {
+            get {
+                return ResourceManager.GetString("RESPONSE_EPISODELIST_81189", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
         ///&lt;Data&gt;
         ///&lt;Series&gt;
         ///&lt;seriesid&gt;81189&lt;/seriesid&gt;
@@ -90,6 +110,51 @@ namespace nRage.Tests.Unit.Properties {
         internal static string RESPONSE_MIRRORS {
             get {
                 return ResourceManager.GetString("RESPONSE_MIRRORS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///&lt;Data&gt;
+        ///  &lt;Series&gt;
+        ///    &lt;id&gt;81189&lt;/id&gt;
+        ///    &lt;Actors&gt;|Bryan Cranston|Aaron Paul|Dean Norris|RJ Mitte|Betsy Brandt|Anna Gunn|Christopher Cousins|Steven Michael Quezada|Jonathan Banks|Giancarlo Esposito|Bob Odenkirk|&lt;/Actors&gt;
+        ///    &lt;Airs_DayOfWeek&gt;Sunday&lt;/Airs_DayOfWeek&gt;
+        ///    &lt;Airs_Time&gt;10:00 PM&lt;/Airs_Time&gt;
+        ///    &lt;ContentRating&gt;TV-MA&lt;/ContentRating&gt;
+        ///    &lt;FirstAired&gt;2008-01-20&lt;/FirstAired&gt;
+        ///    &lt;Genre&gt;|Drama|&lt;/Genre&gt;
+        ///    &lt;IMDB_ID&gt;tt0903747&lt;/IMDB_ID&gt;
+        ///    &lt;Language&gt;en&lt;/La [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RESPONSE_SERIESINFO_81189 {
+            get {
+                return ResourceManager.GetString("RESPONSE_SERIESINFO_81189", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///&lt;Items&gt;
+        ///&lt;Time&gt;1355812429&lt;/Time&gt;
+        ///&lt;Series&gt;70327&lt;/Series&gt;
+        ///&lt;Series&gt;70328&lt;/Series&gt;
+        ///&lt;Series&gt;70329&lt;/Series&gt;
+        ///&lt;Series&gt;70330&lt;/Series&gt;
+        ///&lt;Series&gt;70331&lt;/Series&gt;
+        ///&lt;Series&gt;257855&lt;/Series&gt;
+        ///&lt;Series&gt;70333&lt;/Series&gt;
+        ///&lt;Series&gt;70334&lt;/Series&gt;
+        ///&lt;Series&gt;70335&lt;/Series&gt;
+        ///&lt;Series&gt;70336&lt;/Series&gt;
+        ///&lt;Series&gt;70337&lt;/Series&gt;
+        ///&lt;Series&gt;70338&lt;/Series&gt;
+        ///&lt;Series&gt;257843&lt;/Series&gt;
+        ///&lt;/Items&gt;.
+        /// </summary>
+        internal static string RESPONSE_UPDATES_ALL_123412341 {
+            get {
+                return ResourceManager.GetString("RESPONSE_UPDATES_ALL_123412341", resourceCulture);
             }
         }
         
