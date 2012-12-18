@@ -12,41 +12,27 @@ using nRage.Contract.TheTVDB;
 
 namespace nRage.Clients {
 
-    public class TheTVDBClient
-    {        
-        private IRetriever Retriever {get;set;}
-
-        public TheTVDBClient() {
-            this.Retriever = new WebRetriever();
-        }
-
-        public TheTVDBClient(IRetriever retriever) {
-            this.Retriever = retriever;
-        }
-
-        // API Key
-        // Mirror
-
-        #region URL generation                
+    public class TheTVDBClient : ClientBase
+    {
         /// <TODO>
         /// This should - in theory - be configurable to support mirrors. In practice... well... there's never any mirrors.
         /// </TODO>
-        private const string API_ROOT = @"http://www.thetvdb.com/api/";
-        private const string API_KEY = @"2A7162D6C1E477B0";
-        
-        protected string FormatURLParam(string param) {
-            return new string(param.Where(c => char.IsLetterOrDigit(c)).ToArray());
+        public override string ApiRoot {
+            get { return @"http://www.thetvdb.com/api"; }
         }
 
+        #region URL generation                        
+        private const string API_KEY = @"2A7162D6C1E477B0";
+
         private string GetURLForMirrors() {
-            return String.Format(@"{0}{1}/mirrors.xml", API_ROOT, API_KEY);
+            return GetURL(@"{1}/mirrors.xml", API_KEY);
         }
         #endregion
 
         #region Public methods        
         public MirrorsResponse GetMirrors()
         {
-            var response = XDocument.Load(Retriever.Get(GetURLForMirrors()));
+            var response = GetXML(GetURLForMirrors());
             return MapXMLToMirrors(response);            
         }
         #endregion

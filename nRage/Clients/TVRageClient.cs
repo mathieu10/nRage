@@ -12,18 +12,11 @@ using nRage.Contract.TVRage;
 
 namespace nRage.Clients {
 
-    public class TVRageClient : ClientBase {
-
-        #region .ctor
-        public TVRageClient() : this(new WebRetriever()){}
-
-        public TVRageClient(IRetriever retriever)
-        {
-            this.Retriever = retriever;
-
-            ApiRoot= @"http://services.tvrage.com/feeds";
+    public class TVRageClient : ClientBase
+    {
+        public override string ApiRoot {
+            get { return @"http://services.tvrage.com/feeds"; }
         }
-        #endregion
 
         #region URL generation
         protected string FormatURLParam(string param) {
