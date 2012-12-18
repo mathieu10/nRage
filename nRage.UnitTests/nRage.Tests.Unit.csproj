@@ -50,24 +50,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TVRageClient\LastUpdatesTests.cs">
+    <Compile Include="TheTVDB\TheTVDBClientTestBase.cs" />
+    <Compile Include="TVRage\LastUpdatesTests.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TVRageClient\ShowListTests.cs" />
-    <Compile Include="TVRageClient\EpisodeInfoTests.cs" />
-    <Compile Include="TVRageClient\FullShowInfoTests.cs" />
-    <Compile Include="TVRageClient\EpisodeListTests.cs" />
-    <Compile Include="TVRageClient\ShowInfoTests.cs" />
-    <Compile Include="TVRageClient\TVRageClientTestBase.cs" />
-    <Compile Include="TVRageClient\FullSearchTests.cs" />
-    <Compile Include="TVRageClient\MockRetriever.cs" />
+    <Compile Include="TVRage\ShowListTests.cs" />
+    <Compile Include="TVRage\EpisodeInfoTests.cs" />
+    <Compile Include="TVRage\FullShowInfoTests.cs" />
+    <Compile Include="TVRage\EpisodeListTests.cs" />
+    <Compile Include="TVRage\ShowInfoTests.cs" />
+    <Compile Include="TVRage\TVRageClientTestBase.cs" />
+    <Compile Include="TVRage\FullSearchTests.cs" />
+    <Compile Include="MockRetriever.cs" />
     <Compile Include="Properties\TVRage1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TVRage.resx</DependentUpon>
     </Compile>
-    <Compile Include="TVRageClient\SearchTests.cs" />
+    <Compile Include="TVRage\SearchTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TVRage\TVRageMockRetriever.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\nRage\nRage.csproj">
@@ -82,6 +84,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

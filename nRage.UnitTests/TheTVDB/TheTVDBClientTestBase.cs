@@ -7,22 +7,22 @@ using Ninject;
 using Xunit;
 using nRage.Clients;
 
-namespace nRage.Tests.Unit.TVRageClient
+namespace nRage.Tests.Unit.TheTVDB
 {
-    public class TVRageClientTestBase
+    public class TheTVDBClientTestBase
     {        
         protected IKernel _ioc;
 
-        protected nRage.Clients.TVRageClient client;        
+        protected TheTVDBClient client;        
 
         public virtual void InitialiseIOC(){
             _ioc = new StandardKernel();
             _ioc.Bind<IRetriever>().To<MockRetriever>();
         }
 
-        public TVRageClientTestBase() { 
+        public TheTVDBClientTestBase() { 
             InitialiseIOC();
-            client = _ioc.Get<nRage.Clients.TVRageClient>();
+            client = _ioc.Get<TheTVDBClient>();
         }       
     }
 }

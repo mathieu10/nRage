@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Ninject;
 using Xunit;
 
-namespace nRage.Tests.Unit.TVRageClient
+namespace nRage.Tests.Unit.TVRage
 {
     public class EpisodeInfoTests : TVRageClientTestBase
     {                
@@ -29,14 +29,14 @@ namespace nRage.Tests.Unit.TVRageClient
         public void GetCallsEpisodeInfoCorrectURL()
         { 
             client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.EPISODEINFO_5481_2x13);
+            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.EPISODEINFO_5481_2x13);
         }
         
         [Fact]
         public void GetEpisodeInfoBySeasonAndNumberCallsCorrectURL()
         { 
             client.GetEpisodeInfo(showId,seasonNumber,episodeNumber);
-            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.EPISODEINFO_5481_2x13);
+            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.EPISODEINFO_5481_2x13);
         }
 
         [Fact]

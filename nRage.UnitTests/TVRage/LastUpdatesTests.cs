@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Ninject;
 using Xunit;
 
-namespace nRage.Tests.Unit.TVRageClient
+namespace nRage.Tests.Unit.TVRage
 {
 
     public class LastUpdatesTests : TVRageClientTestBase
@@ -27,35 +27,35 @@ namespace nRage.Tests.Unit.TVRageClient
         public void GetLastUpdatesCallsCorrectURL()
         { 
             client.LastUpdates();
-            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.LASTUPDATES);
+            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.LASTUPDATES);
         }
 
         [Fact]
         public void GetLastUpdatesByTimespanInHoursCallsCorrectURL()
         { 
             client.LastUpdates(span_4hours);
-            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.LASTUPDATES_4);
+            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.LASTUPDATES_4);
         }
 
         [Fact]
         public void GetLastUpdatesByTimespanInDaysCallsCorrectURL()
         { 
             client.LastUpdates(span_1day);
-            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.LASTUPDATES_24);
+            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.LASTUPDATES_24);
         }
 
         [Fact]
         public void GetLastUpdatesByTimespanInDaysAndHoursCallsCorrectURL()
         { 
             client.LastUpdates(span_41days_15hours);
-            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.LASTUPDATES_999);
+            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.LASTUPDATES_999);
         }
 
         [Fact]
         public void GetLastUpdatesByTimespanInMoreThan24HoursCallsCorrectURL()
         { 
             client.LastUpdates(span_999hours);
-            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.LASTUPDATES_999);
+            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.LASTUPDATES_999);
         }
 
         [Fact]

@@ -127,4 +127,11 @@
   &lt;/Mirror&gt;
 &lt;/Mirrors&gt;</value>
   </data>
+  <data name="RESPONSE_UPDATES_NONE" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;Items&gt;
+&lt;Time&gt;1355786893&lt;/Time&gt;
+&lt;/Items&gt;</value>
+    <comment>Used to get the server time</comment>
+  </data>
 </root>

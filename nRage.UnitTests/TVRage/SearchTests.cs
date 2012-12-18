@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Ninject;
 using Xunit;
 
-namespace nRage.Tests.Unit.TVRageClient
+namespace nRage.Tests.Unit.TVRage
 {
 
     public class SearchTests : TVRageClientTestBase
@@ -26,7 +26,7 @@ namespace nRage.Tests.Unit.TVRageClient
         public void GetSearchCallsCorrectURL()
         { 
             client.SearchByTitle(title);
-            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.SEARCH_WILFRED);
+            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.SEARCH_WILFRED);
         }
 
         [Fact]

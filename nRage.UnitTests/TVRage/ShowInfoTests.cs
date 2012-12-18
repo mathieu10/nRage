@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Ninject;
 using Xunit;
 
-namespace nRage.Tests.Unit.TVRageClient
+namespace nRage.Tests.Unit.TVRage
 {
 
     public class ShowInfoTests : TVRageClientTestBase
@@ -25,7 +25,7 @@ namespace nRage.Tests.Unit.TVRageClient
         public void GetShowInfoCallsCorrectURL()
         { 
             client.GetShowInfo(show_id);
-            Assert.True(MockRetriever.GetLastURLCalled() == MockRetriever.SHOWINFO_18753);
+            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.SHOWINFO_18753);
         }
 
         [Fact]
