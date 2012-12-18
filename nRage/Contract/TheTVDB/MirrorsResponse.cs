@@ -7,5 +7,4 @@ namespace nRage.Contract.TheTVDB
     {
         public List<Mirror> Mirrors{get;set;}
     }
-
 }
