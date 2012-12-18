@@ -50,7 +50,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TheTVDB\TheTVDBClientTestBase.cs" />
+    <Compile Include="Properties\TheTVDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TheTVDB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\TVRage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TVRage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TheTVDB\MirrorsTests.cs" />
+    <Compile Include="TheTVDB\TestBase.cs" />
+    <Compile Include="TheTVDB\TheTVDBMockRetriever.cs" />
     <Compile Include="TVRage\LastUpdatesTests.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -59,14 +71,9 @@
     <Compile Include="TVRage\FullShowInfoTests.cs" />
     <Compile Include="TVRage\EpisodeListTests.cs" />
     <Compile Include="TVRage\ShowInfoTests.cs" />
-    <Compile Include="TVRage\TVRageClientTestBase.cs" />
+    <Compile Include="TVRage\TestBase.cs" />
     <Compile Include="TVRage\FullSearchTests.cs" />
     <Compile Include="MockRetriever.cs" />
-    <Compile Include="Properties\TVRage1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TVRage.resx</DependentUpon>
-    </Compile>
     <Compile Include="TVRage\SearchTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TVRage\TVRageMockRetriever.cs" />
@@ -78,10 +85,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\TVRage.resx">
+    <EmbeddedResource Include="Properties\TheTVDB.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>TVRage1.Designer.cs</LastGenOutput>
+      <LastGenOutput>TheTVDB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\TVRage.resx">
       <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TVRage.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

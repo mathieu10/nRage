@@ -13,9 +13,7 @@ using nRage.Contract.TheTVDB;
 namespace nRage.Clients {
 
     public class TheTVDBClient
-    {
-        private const string API_KEY = "2A7162D6C1E477B0";
-
+    {        
         private IRetriever Retriever {get;set;}
 
         public TheTVDBClient() {
@@ -30,17 +28,39 @@ namespace nRage.Clients {
         // Mirror
 
         #region URL generation                
-        //http://www.thetvdb.com/api/2A7162D6C1E477B0/mirrors.xml
-        #endregion
+        /// <TODO>
+        /// This should - in theory - be configurable to support mirrors. In practice... well... there's never any mirrors.
+        /// </TODO>
+        private const string API_ROOT = @"http://www.thetvdb.com/api/";
+        private const string API_KEY = @"2A7162D6C1E477B0";
+        
+        protected string FormatURLParam(string param) {
+            return new string(param.Where(c => char.IsLetterOrDigit(c)).ToArray());
+        }
 
-        #region Public methods        
-        public List<Mirror> GetMirrors()
-        {
-            throw new NotImplementedException();
+        private string GetURLForMirrors() {
+            return String.Format(@"{0}/{1}/mirrors.xml", API_ROOT, API_KEY);
         }
         #endregion
 
-        #region OXM (Object-XML Mapper) - because the software world needs more acronyms       
+        #region Public methods        
+        public MirrorsResponse GetMirrors()
+        {
+            var response = XDocument.Load(GetURLForMirrors());
+            return MapXMLToMirrors(response);            
+        }
+        #endregion
+
+        #region OXM (Object-XML Mapper) - because the software world needs more acronyms
+         private MirrorsResponse MapXMLToMirrors(XDocument xml) {
+            return new MirrorsResponse {
+                Mirrors = xml.Descendants("Mirror").Select(x => new Mirror{
+                    ID = (int)x.Element("id"),
+                    MirrorPath = (string)x.Element("mirrorpath"),
+                    TypeMask = (byte)(int)x.Element("typemask"),
+                }).ToList(),
+            };
+        }
         #endregion
                  
     }

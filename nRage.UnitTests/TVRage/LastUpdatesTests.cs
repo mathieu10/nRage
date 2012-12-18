@@ -9,7 +9,7 @@ using Xunit;
 namespace nRage.Tests.Unit.TVRage
 {
 
-    public class LastUpdatesTests : TVRageClientTestBase
+    public class LastUpdatesTests : TestBase
     {
         private readonly TimeSpan span_4hours = new TimeSpan(0,4,0,0);
         private readonly TimeSpan span_1day = new TimeSpan(1,0,0,0);

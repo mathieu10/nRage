@@ -9,7 +9,7 @@ using nRage.Clients;
 
 namespace nRage.Tests.Unit.TVRage
 {
-    public class TVRageClientTestBase
+    public class TestBase
     {        
         protected IKernel _ioc;
 
@@ -20,7 +20,7 @@ namespace nRage.Tests.Unit.TVRage
             _ioc.Bind<IRetriever>().To<TVRageMockRetriever>();
         }
 
-        public TVRageClientTestBase() { 
+        public TestBase() { 
             InitialiseIOC();
             client = _ioc.Get<TVRageClient>();
         }       

@@ -8,7 +8,7 @@ using Xunit;
 
 namespace nRage.Tests.Unit.TVRage
 {
-    public class EpisodeInfoTests : TVRageClientTestBase
+    public class EpisodeInfoTests : TestBase
     {                
         private const int showId = 5481;
         private const int seasonNumber = 2;

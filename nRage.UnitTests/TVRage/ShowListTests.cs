@@ -9,7 +9,7 @@ using Xunit;
 namespace nRage.Tests.Unit.TVRage
 {
 
-    public class ShowListTests : TVRageClientTestBase
+    public class ShowListTests : TestBase
     {                
         [Fact]
         public void CanGetShowList()

@@ -9,7 +9,7 @@ using nRage.Clients;
 
 namespace nRage.Tests.Unit.TheTVDB
 {
-    public class TheTVDBClientTestBase
+    public class TestBase
     {        
         protected IKernel _ioc;
 
@@ -17,10 +17,10 @@ namespace nRage.Tests.Unit.TheTVDB
 
         public virtual void InitialiseIOC(){
             _ioc = new StandardKernel();
-            _ioc.Bind<IRetriever>().To<MockRetriever>();
+            _ioc.Bind<IRetriever>().To<TheTVDBMockRetriever>();
         }
 
-        public TheTVDBClientTestBase() { 
+        public TestBase() { 
             InitialiseIOC();
             client = _ioc.Get<TheTVDBClient>();
         }       
