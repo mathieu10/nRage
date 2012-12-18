@@ -25,14 +25,22 @@ namespace nRage.Clients {
             //return new string(param.Where(c => char.IsLetterOrDigit(c)).ToArray());
         }
 
-        protected string GetURLForSearch(string title) { return GetURL(@"search.php?show={0}", FormatURLParam(title)); }
-        protected string GetURLForFullSearch(string title) { return GetURL(@"full_search.php?show={0}", FormatURLParam(title)); }
-        protected string GetURLForShowInfo(int showID) { return GetURL(@"showinfo.php?sid={0}", showID); }
-        protected string GetURLForEpisodeList(int showID) { return GetURL(@"episode_list.php?sid={0}", showID); }
-        protected string GetURLForEpisoddeInfo(int showID, string episodeLabel) { return GetURL(@"episodeinfo.php?sid={0}&ep={1}", showID, FormatURLParam(episodeLabel)); }
-        protected string GetURLForFullShowInfo(int showID) { return GetURL(@"full_show_info.php?sid={0}", showID); }
-        protected string GetURLForShowList() { return GetURL(@"show_list.php"); }
-        protected string GetURLForLastUpdates(int hours) { return GetURL(@"last_updates.php?hours={0}", hours); }
+        protected string GetURLForSearch(string title) {
+            return GetURL(@"search.php?show={0}", FormatURLParam(title)); }
+        protected string GetURLForFullSearch(string title) {
+            return GetURL(@"full_search.php?show={0}", FormatURLParam(title)); }
+        protected string GetURLForShowInfo(int showID) {
+            return GetURL(@"showinfo.php?sid={0}", showID); }
+        protected string GetURLForEpisodeList(int showID) {
+            return GetURL(@"episode_list.php?sid={0}", showID); }
+        protected string GetURLForEpisoddeInfo(int showID, string episodeLabel) {
+            return GetURL(@"episodeinfo.php?sid={0}&ep={1}", showID, FormatURLParam(episodeLabel)); }
+        protected string GetURLForFullShowInfo(int showID) {
+            return GetURL(@"full_show_info.php?sid={0}", showID); }
+        protected string GetURLForShowList() {
+            return GetURL(@"show_list.php"); }
+        protected string GetURLForLastUpdates(int hours) {
+            return GetURL(@"last_updates.php?hours={0}", hours); }
         #endregion
 
         #region Public methods

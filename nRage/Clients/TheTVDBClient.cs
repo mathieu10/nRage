@@ -20,7 +20,10 @@ namespace nRage.Clients {
         public override string ApiRoot { get { return @"http://www.thetvdb.com/api"; } }
         private const string API_KEY = @"2A7162D6C1E477B0";
 
-        private string GetURLForMirrors() { return GetURL(@"{0}/mirrors.xml", API_KEY); }
+        private string GetURLForMirrors() {
+            return GetURL(@"{0}/mirrors.xml", API_KEY); }
+        private string GetURLForServerTime() {
+            return GetURL(@"Updates.php?type=none"); }
         #endregion
 
         #region Public methods        
@@ -29,6 +32,11 @@ namespace nRage.Clients {
             var response = GetXML(GetURLForMirrors());
             return MapXMLToMirrors(response);
         }
+
+        public ServerTimeResponse GetServerTime(){
+            var response = GetXML(GetURLForServerTime());
+            return MapXMLToServerTime(response);
+        }        
         #endregion
 
         #region OXM (Object-XML Mapper) - because the software world needs more acronyms
@@ -41,8 +49,19 @@ namespace nRage.Clients {
                 }).ToList(),
             };
         }
+
+        private ServerTimeResponse MapXMLToServerTime(XDocument xml) { 
+            return new ServerTimeResponse{
+                Time = xml.Descendants("Time").Single().Value,
+            };
+        }
         #endregion
                  
+    }
+
+    public class ServerTimeResponse
+    {
+        public string Time{get;set;}
     }
 
 }
