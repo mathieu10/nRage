@@ -39,14 +39,14 @@ namespace nRage.Clients {
         }
 
         private string GetURLForMirrors() {
-            return String.Format(@"{0}/{1}/mirrors.xml", API_ROOT, API_KEY);
+            return String.Format(@"{0}{1}/mirrors.xml", API_ROOT, API_KEY);
         }
         #endregion
 
         #region Public methods        
         public MirrorsResponse GetMirrors()
         {
-            var response = XDocument.Load(GetURLForMirrors());
+            var response = XDocument.Load(Retriever.Get(GetURLForMirrors()));
             return MapXMLToMirrors(response);            
         }
         #endregion
