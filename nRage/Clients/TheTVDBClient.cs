@@ -16,19 +16,11 @@ namespace nRage.Clients {
     {
         public TheTVDBClient(IRetriever retriever) : base(retriever) { }
 
-        /// <TODO>
-        /// This should - in theory - be configurable to support mirrors. In practice... well... there's never any mirrors.
-        /// </TODO>
-        public override string ApiRoot {
-            get { return @"http://www.thetvdb.com/api"; }
-        }
-
         #region URL generation                        
+        public override string ApiRoot { get { return @"http://www.thetvdb.com/api"; } }
         private const string API_KEY = @"2A7162D6C1E477B0";
 
-        private string GetURLForMirrors() {
-            return GetURL(@"{0}/mirrors.xml", API_KEY);
-        }
+        private string GetURLForMirrors() { return GetURL(@"{0}/mirrors.xml", API_KEY); }
         #endregion
 
         #region Public methods        
