@@ -6,7 +6,7 @@ namespace nRage.Tests.Unit.TheTVDB
     {
         #region URL constants
         public static readonly string MIRRORS = @"mirrors.xml";
-        public static readonly string SERVERTIME = @"sexml";
+        public static readonly string SERVERTIME = @"Updates.php?type=none";
         public static readonly string EPISODELIST = @"mxml";
         public static readonly string SEARCH = @"mir.xml";
         public static readonly string SERIESINFO = @"ml";

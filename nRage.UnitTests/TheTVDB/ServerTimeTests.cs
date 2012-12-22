@@ -27,10 +27,10 @@ namespace nRage.Tests.Unit.TheTVDB
         }
 
         [Fact]
-        public void GetServerTimeReturnsCorrectX()
+        public void GetServerTimeReturnsCorrectServerTime()
         {
             var response = client.GetServerTime();
-            Assert.False(true);
+            Assert.True(response.Time=="1355786893");
         }
 
     }
