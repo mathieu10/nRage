@@ -15,21 +15,21 @@ namespace nRage.Tests.Unit.TheTVDB
         [Fact]
         public void CanGetSearch()
         { 
-            var response = client.Search(1);
+            var response = client.Search("");
             Assert.True(response != null);
         }
 
         [Fact]
         public void GetSearchCallsCorrectURL()
         { 
-            client.Search(1);
+            client.Search("");
             Assert.True(MockRetriever.GetLastURLCalled() == TheTVDBMockRetriever.SEARCH);
         }
 
         [Fact]
         public void GetSearchReturnsCorrectX()
         {
-            var response = client.Search(1);
+            var response = client.Search("");
             Assert.False(true);
         }
 

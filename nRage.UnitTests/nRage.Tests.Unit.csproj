@@ -60,6 +60,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TVRage.resx</DependentUpon>
     </Compile>
+    <Compile Include="TheTVDB\GetUpdatesTests.cs" />
+    <Compile Include="TheTVDB\EpisodeListTests.cs" />
+    <Compile Include="TheTVDB\SeriesInfoTests.cs" />
+    <Compile Include="TheTVDB\SearchTests.cs" />
+    <Compile Include="TheTVDB\ServerTimeTests.cs" />
     <Compile Include="TheTVDB\MirrorsTests.cs" />
     <Compile Include="TheTVDB\TestBase.cs" />
     <Compile Include="TheTVDB\TheTVDBMockRetriever.cs" />
