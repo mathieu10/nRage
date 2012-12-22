@@ -297,9 +297,9 @@ namespace nRage.Clients {
             if (rawResponse.Length < 40)
             {
                 var sr = new StreamReader(rawResponse);
-                if (sr.ReadLine().Substring(0, 15) == "No Show Results") throw new ShowNotFoundException();
-                rawResponse.Position = 0;
+                if (sr.ReadLine().Substring(0, 15) == "No Show Results") throw new ShowNotFoundException();                
             }
+            rawResponse.Position = 0;
         }        
     }    
 }

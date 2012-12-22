@@ -64,5 +64,6 @@ TheTVDB API notes
 ================
 
 Mirror flags:
-* None 0
-* 
+
+* None: 0
+* Zip, banner and XML: 7
