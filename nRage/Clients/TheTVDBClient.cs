@@ -66,6 +66,9 @@ namespace nRage.Clients {
 
         public GetUpdatesResponse GetUpdates(int updatedSince)
         {
+            //TODO: Validate input
+            var dateTime = Helper.ToDateTime(updatedSince);
+
             var response = GetXML(GetURLForUpdates(updatedSince));
             return MapXMLToUpdates(response);
         }
@@ -91,7 +94,11 @@ namespace nRage.Clients {
         private SearchResponse MapXMLToSearch(XDocument response) { throw new NotImplementedException(); }        
         private SeriesInfoResponse MapXMLToSeriesInfo(XDocument response) { throw new NotImplementedException(); }
         private EpisodeListResponse MapXMLToEpisodeList(XDocument response) { throw new NotImplementedException(); }
-        private GetUpdatesResponse MapXMLToUpdates(XDocument response) { throw new NotImplementedException(); }
+        private GetUpdatesResponse MapXMLToUpdates(XDocument response) { 
+            return new GetUpdatesResponse{
+                   
+            };
+        }
         #endregion                 
     }    
 }
