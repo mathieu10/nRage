@@ -12,7 +12,7 @@ namespace nRage.Tests.Unit.TheTVDB
     {      
         public UpdatesTests() : base(){}
 
-        private const int timeStamp = 1355786893;
+        private const int timeStamp = 123412341;
           
         [Fact]
         public void CanGetUpdates()

@@ -31,7 +31,7 @@ namespace nRage.Clients {
         private string GetURLForEpisodeList(int seriesId) {
             return GetURL(@"{0}/series/{1}/all", API_KEY, seriesId); }
         private string GetURLForUpdates(int updatedSince) {
-            return GetURL(@"Updates.php?type=all&time=",updatedSince); }
+            return GetURL(@"Updates.php?type=all&time={0}",updatedSince); }
         #endregion
 
         #region Public methods        
