@@ -96,7 +96,7 @@ namespace nRage.Clients {
         private EpisodeListResponse MapXMLToEpisodeList(XDocument xml) { throw new NotImplementedException(); }
         private GetUpdatesResponse MapXMLToUpdates(XDocument xml) { 
             return new GetUpdatesResponse{
-                   Time = (string)xml.Element("Time"),
+                   Time = (string)xml.Descendants("Time").Single(),
                    Series = xml.Descendants("Series").Select(x=>x.Value).ToList(),
             };
         }

@@ -12,7 +12,8 @@ namespace nRage.Tests.Unit.TheTVDB
     {      
         public UpdatesTests() : base(){}
 
-        private const int timeStamp = 123412341;
+        private const int timeStamp = 1355812429;
+        private const int invalidTimeStamp = -1;
           
         [Fact]
         public void CanGetUpdates()
@@ -25,19 +26,26 @@ namespace nRage.Tests.Unit.TheTVDB
         public void GetUpdatesCallsCorrectURL()
         { 
             client.GetUpdates(timeStamp);
-            Assert.True(MockRetriever.GetLastURLCalled() == TheTVDBMockRetriever.UPDATES);
+            Assert.True(MockRetriever.GetLastURLCalled() == TheTVDBMockRetriever.UPDATES_1355812429);
         }
 
         [Fact]
         public void GetUpdatesWithInvalidTimeThrowsException()
         { 
             Assert.Throws<Exception>(()=>
-                client.GetUpdates(-1)
+                client.GetUpdates(invalidTimeStamp)
             );
         }
 
         [Fact]
-        public void GetUpdatesReturnsCorrectX()
+        public void GetUpdatesReturnsCorrectTime()
+        {
+            var response = client.GetUpdates(timeStamp);
+            Assert.True(response.Time == timeStamp.ToString());
+        }
+
+        [Fact]
+        public void GetUpdatesReturnsCorrectSeries()
         {
             var response = client.GetUpdates(1);
             Assert.False(true);
