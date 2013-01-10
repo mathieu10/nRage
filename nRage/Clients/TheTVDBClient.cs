@@ -91,12 +91,13 @@ namespace nRage.Clients {
             };
         }
 
-        private SearchResponse MapXMLToSearch(XDocument response) { throw new NotImplementedException(); }        
-        private SeriesInfoResponse MapXMLToSeriesInfo(XDocument response) { throw new NotImplementedException(); }
-        private EpisodeListResponse MapXMLToEpisodeList(XDocument response) { throw new NotImplementedException(); }
-        private GetUpdatesResponse MapXMLToUpdates(XDocument response) { 
+        private SearchResponse MapXMLToSearch(XDocument xml) { throw new NotImplementedException(); }
+        private SeriesInfoResponse MapXMLToSeriesInfo(XDocument xml) { throw new NotImplementedException(); }
+        private EpisodeListResponse MapXMLToEpisodeList(XDocument xml) { throw new NotImplementedException(); }
+        private GetUpdatesResponse MapXMLToUpdates(XDocument xml) { 
             return new GetUpdatesResponse{
-                   
+                   Time = (string)xml.Element("Time"),
+                   Series = xml.Descendants("Series").Select(x=>x.Value).ToList(),
             };
         }
         #endregion                 
