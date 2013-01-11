@@ -1,7 +1,7 @@
 nRage
 ===========
 
-A .NET library for searching and retreiving metadata for TV shows. The name comes from TVRage which was the first external API supported by nRage.
+A .NET library for searching and retreiving metadata for TV shows and movies. The name comes from TVRage which was the first external API supported by nRage.
 
 History
 -------
@@ -17,10 +17,14 @@ Roadmap
 -------
 
 ###v0.3
-+ Common data model abstraction
++ Common data model abstraction for TV shows
 + TheTVDB basic support
 
 ###v0.4
++ Very basic TheMovieDB and RottenTomatoes support
++ Common data model abstraction for movies
+
+###v0.5
 + Basic local cache 
 
 ###v1.0
