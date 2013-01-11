@@ -5,14 +5,13 @@ namespace nRage.Tests.Unit.TheTVDB
     public class TheTVDBMockRetriever : MockRetriever
     {
         #region URL constants
-        public static readonly string MIRRORS = @"mirrors.xml";
-        public static readonly string SERVERTIME = @"Updates.php?type=none";
-        public static readonly string EPISODELIST = @"mxml";
-        public static readonly string SEARCH = @"mir.xml";
-        public static readonly string SERIESINFO = @"ml";
-        public static readonly string UPDATES = @"Updates.php?type=all&time=";
-        public static readonly string UPDATES_1355812429 = @"Updates.php?type=all&time=1355812429";
-        
+        public static readonly string MIRRORS = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/mirrors.xml";
+        public static readonly string SERVERTIME = @"http://www.thetvdb.com/api/Updates.php?type=none";
+        public static readonly string EPISODELIST = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/series/xxxx/all";
+        public static readonly string SEARCH = @"http://www.thetvdb.com/api/GetSeries.php?seriesname=81189";
+        public static readonly string SERIESINFO = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/series/81189";
+        public static readonly string UPDATES = @"http://www.thetvdb.com/api/Updates.php?type=all&time=";
+        public static readonly string UPDATES_1355812429 = @"http://www.thetvdb.com/api/Updates.php?type=all&time=1355812429";        
         #endregion
 
         public TheTVDBMockRetriever() : base(){
