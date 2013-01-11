@@ -14,9 +14,7 @@ namespace nRage.Tests.Unit.TheTVDB
         public static readonly string UPDATES_1355812429 = @"http://www.thetvdb.com/api/Updates.php?type=all&time=1355812429";        
         #endregion
 
-        public TheTVDBMockRetriever() : base(){
-            
-        }
+        public TheTVDBMockRetriever() : base(){ }
         
         protected override void FillCache()
         { 
