@@ -35,11 +35,10 @@ namespace nRage.Tests.Unit
         public Stream Get(string url)
         {
             Debug.WriteLine("MockRetriever getting URL: " + url);
+            
+            _urlHistory.Push(url);
 
-            string key = url.Split('/').Last();
-            _urlHistory.Push(key);            
-
-            string value = _mockResults[key];                       
+            string value = _mockResults[url];
             byte[] byteArray = Encoding.UTF8.GetBytes(value);
             return new MemoryStream(byteArray);
         }        
