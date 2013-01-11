@@ -32,7 +32,7 @@ namespace nRage.Tests.Unit.TheTVDB
         [Fact]
         public void GetUpdatesWithInvalidTimeThrowsException()
         { 
-            Assert.Throws<Exception>(()=>
+            Assert.Throws<ArgumentOutOfRangeException>(()=>
                 client.GetUpdates(invalidTimeStamp)
             );
         }
@@ -47,8 +47,10 @@ namespace nRage.Tests.Unit.TheTVDB
         [Fact]
         public void GetUpdatesReturnsCorrectSeries()
         {
-            var response = client.GetUpdates(1);
-            Assert.False(true);
+            var response = client.GetUpdates(timeStamp);
+            Assert.True(response.Series.Count == 13);
+            Assert.True(response.Series[0] == "707327");
+            Assert.True(response.Series[12] == "257843");            
         }
 
     }

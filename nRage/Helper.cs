@@ -12,6 +12,8 @@ namespace nRage
 
         public static DateTime ToDateTime(int unixTimestamp)
         {
+            if(unixTimestamp < 0) 
+                throw new ArgumentOutOfRangeException("unixTimestamp",unixTimestamp,"Timestamp must be greater than zero");
             return DATETIME_EPOCH_ORIGIN.AddSeconds(unixTimestamp);
         }
 

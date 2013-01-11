@@ -66,7 +66,6 @@ namespace nRage.Clients {
 
         public GetUpdatesResponse GetUpdates(int updatedSince)
         {
-            //TODO: Validate input
             var dateTime = Helper.ToDateTime(updatedSince);
 
             var response = GetXML(GetURLForUpdates(updatedSince));
