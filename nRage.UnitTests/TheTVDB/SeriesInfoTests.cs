@@ -9,13 +9,15 @@ using Xunit;
 namespace nRage.Tests.Unit.TheTVDB
 {
     public class SeriesInfoTests : TestBase
-    {      
+    {        
         public SeriesInfoTests() : base(){}
+
+        private const int seriesId = 81189;
           
         [Fact]
         public void CanGetSeriesInfo()
         { 
-            var response = client.GetSeriesInfo(1);
+            var response = client.GetSeriesInfo(seriesId);
             Assert.True(response != null);
         }
 
