@@ -32,7 +32,7 @@ namespace nRage.Clients {
         /// This should - in theory - be configurable to support mirrors. In practice... well... there's never any mirrors.
         /// </TODO>
         private const string API_ROOT = @"http://www.thetvdb.com/api/";
-        private const string API_KEY = @"2A7162D6C1E477B0";
+        private readonly string API_KEY = Common.APIKEY_THETVDB;
         
         protected string FormatURLParam(string param) {
             return new string(param.Where(c => char.IsLetterOrDigit(c)).ToArray());
