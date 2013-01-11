@@ -52,14 +52,13 @@ namespace nRage.Clients {
             return MapXMLToSearch(response);
         }
 
-        public SeriesInfoResponse GetSeriesInfo(int seriesId){   
-            // http://www.thetvdb.com/api/2A7162D6C1E477B0/series/81189/all/en.xml
+        public SeriesInfoResponse GetSeriesInfo(int seriesId){               
+            //TODO: how to handle invalid series ID / no result?
             var response = GetXML(GetURLForSeriesInfo(seriesId));
             return MapXMLToSeriesInfo(response);
         }
 
-        public EpisodeListResponse GetEpisodeList(int seriesId){   
-            // http://www.thetvdb.com/api/2A7162D6C1E477B0/series/81189/all/en.xml
+        public EpisodeListResponse GetEpisodeList(int seriesId){
             var response = GetXML(GetURLForEpisodeList(seriesId));
             return MapXMLToEpisodeList(response);
         }
@@ -90,15 +89,47 @@ namespace nRage.Clients {
             };
         }
 
-        private SearchResponse MapXMLToSearch(XDocument xml) { throw new NotImplementedException(); }
-        private SeriesInfoResponse MapXMLToSeriesInfo(XDocument xml) { throw new NotImplementedException(); }
-        private EpisodeListResponse MapXMLToEpisodeList(XDocument xml) { throw new NotImplementedException(); }
-        private GetUpdatesResponse MapXMLToUpdates(XDocument xml) { 
-            return new GetUpdatesResponse{
-                   Time = (string)xml.Descendants("Time").Single(),
-                   Series = xml.Descendants("Series").Select(x=>x.Value).ToList(),
+        private GetUpdatesResponse MapXMLToUpdates(XDocument xml)
+        {
+            return new GetUpdatesResponse
+            {
+                Time = (string)xml.Descendants("Time").Single(),
+                Series = xml.Descendants("Series").Select(x => x.Value).ToList(),
             };
         }
+
+        private SeriesInfoResponse MapXMLToSeriesInfo(XDocument xml)
+        {
+            return xml.Descendants("Series").Select(x => new SeriesInfoResponse {
+                ID = (int)x.Element("id"),                
+                Actors = (string)x.Element(""),
+                AirsDayOfWeek = (string)x.Element(""),
+                AirsTime = (string)x.Element(""),
+                ContentRating = (string)x.Element(""),
+                FirstAired = (string)x.Element(""),
+                Genre = (string)x.Element(""),
+                ImdbId = (string)x.Element(""),
+                Language = (string)x.Element(""),
+                Network = (string)x.Element(""),
+                NetworkId = (string)x.Element(""),
+                Overview = (string)x.Element(""),
+                Rating = (string)x.Element(""),
+                RatingCount = (string)x.Element(""),
+                SeriesId = (string)x.Element(""),
+                SeriesName = (string)x.Element(""),
+                Status = (string)x.Element(""),
+                Added = (string)x.Element(""),
+                AddedBy = (string)x.Element(""),
+                Banner = (string)x.Element(""),
+                FanArt = (string)x.Element(""),
+                LastUpdated = (string)x.Element(""),
+                Poster = (string)x.Element(""),
+                Zap2ItId = (string)x.Element(""),
+            }).Single();            
+        }
+
+        private SearchResponse MapXMLToSearch(XDocument xml) { throw new NotImplementedException(); }        
+        private EpisodeListResponse MapXMLToEpisodeList(XDocument xml) { throw new NotImplementedException(); }        
         #endregion                 
     }    
 }
