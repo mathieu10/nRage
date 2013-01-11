@@ -7,31 +7,32 @@ namespace nRage.Tests.Unit.TVRage
         public TVRageMockRetriever() : base(){}
 
         #region URL constants
-        public static readonly string SHOWLIST = @"show_list.php";
+        private static readonly string APIKEY = @"http://services.tvrage.com/feeds/";
+        public static readonly string SHOWLIST = APIKEY + @"show_list.php";
 
-        public static readonly string LASTUPDATES = @"last_updates.php?hours=0";
-        public static readonly string LASTUPDATES_4 = @"last_updates.php?hours=4";
-        public static readonly string LASTUPDATES_24 = @"last_updates.php?hours=24";
-        public static readonly string LASTUPDATES_999 = @"last_updates.php?hours=999";
+        public static readonly string LASTUPDATES = APIKEY + @"last_updates.php?hours=0";
+        public static readonly string LASTUPDATES_4 = APIKEY + @"last_updates.php?hours=4";
+        public static readonly string LASTUPDATES_24 = APIKEY + @"last_updates.php?hours=24";
+        public static readonly string LASTUPDATES_999 = APIKEY + @"last_updates.php?hours=999";
 
-        public static readonly string SEARCH_WILFRED = @"search.php?show=wilfred";
-        public static readonly string SEARCH_WILFFERXJD = @"search.php?show=wilfferxjd";
+        public static readonly string SEARCH_WILFRED = APIKEY + @"search.php?show=wilfred";
+        public static readonly string SEARCH_WILFFERXJD = APIKEY + @"search.php?show=wilfferxjd";
 
-        public static readonly string SEARCHFULL_BREAKINGBAD = @"full_search.php?show=breakingbad";
-        public static readonly string SEARCHFULL_BRACVNKINGBADGA = @"full_search.php?show=bracvnkingbadga";
+        public static readonly string SEARCHFULL_BREAKINGBAD = APIKEY + @"full_search.php?show=breakingbad";
+        public static readonly string SEARCHFULL_BRACVNKINGBADGA = APIKEY + @"full_search.php?show=bracvnkingbadga";
 
-        public static readonly string SHOWINFO_18753 = @"showinfo.php?sid=18753";
-        public static readonly string SHOWINFO_842999999 = @"showinfo.php?sid=842999999";
+        public static readonly string SHOWINFO_18753 = APIKEY + @"showinfo.php?sid=18753";
+        public static readonly string SHOWINFO_842999999 = APIKEY + @"showinfo.php?sid=842999999";
 
-        public static readonly string EPISODEINFO_5481_2x13 = @"episodeinfo.php?sid=5481&ep=02x13";
-        public static readonly string EPISODEINFO_5481_99x99 = @"episodeinfo.php?sid=5481&ep=99x99";
-        public static readonly string EPISODEINFO_999999999_99x99 = @"episodeinfo.php?sid=999999999&ep=99x99";
+        public static readonly string EPISODEINFO_5481_2x13 = APIKEY + @"episodeinfo.php?sid=5481&ep=02x13";
+        public static readonly string EPISODEINFO_5481_99x99 = APIKEY + @"episodeinfo.php?sid=5481&ep=99x99";
+        public static readonly string EPISODEINFO_999999999_99x99 = APIKEY + @"episodeinfo.php?sid=999999999&ep=99x99";
 
-        public static readonly string EPISODELIST_15352 = @"episode_list.php?sid=15352";
-        public static readonly string EPISODELIST_20260 = @"episode_list.php?sid=20260";
+        public static readonly string EPISODELIST_15352 = APIKEY + @"episode_list.php?sid=15352";
+        public static readonly string EPISODELIST_20260 = APIKEY + @"episode_list.php?sid=20260";
 
-        public static readonly string FULLSHOWINFO_32517 = @"full_show_info.php?sid=32517";
-        public static readonly string FULLSHOWINFO_999999999 = @"full_show_info.php?sid=999999999";
+        public static readonly string FULLSHOWINFO_32517 = APIKEY + @"full_show_info.php?sid=32517";
+        public static readonly string FULLSHOWINFO_999999999 = APIKEY + @"full_show_info.php?sid=999999999";
         #endregion
 
         protected override void FillCache()
