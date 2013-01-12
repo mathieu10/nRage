@@ -33,7 +33,7 @@ namespace nRage.Tests.Unit.TheTVDB
         [Fact]
         public void GetSeriesInfoCallsCorrectURL()
         { 
-            client.GetSeriesInfo(1);
+            client.GetSeriesInfo(seriesId);
             Assert.True(MockRetriever.GetLastURLCalled() == TheTVDBMockRetriever.SERIESINFO_81189);
         }
 
