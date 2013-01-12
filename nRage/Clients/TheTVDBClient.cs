@@ -53,7 +53,6 @@ namespace nRage.Clients {
         }
 
         public SeriesInfoResponse GetSeriesInfo(int seriesId){               
-            //TODO: how to handle invalid series ID / no result?
             var response = GetXML(GetURLForSeriesInfo(seriesId));
             return MapXMLToSeriesInfo(response);
         }
@@ -120,6 +119,7 @@ namespace nRage.Clients {
                 Overview = (string)x.Element("Overview"),
                 Rating = (string)x.Element("Rating"),
                 RatingCount = (string)x.Element("RatingCount"),
+                Runtime = (string)x.Element("Runtime"),
                 SeriesId = (string)x.Element("SeriesID"),
                 SeriesName = (string)x.Element("SeriesName"),
                 Status = (string)x.Element("Status"),
