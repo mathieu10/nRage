@@ -73,7 +73,12 @@ namespace nRage.Clients {
         #endregion
 
         #region OXM (Object-XML Mapper) - because the software world needs more acronyms
-         private MirrorsResponse MapXMLToMirrors(XDocument xml) {
+
+        private List<string> ConvertPipedStringToList(string input) {
+            return input.Split('|').Where(x=>x.Length > 0).ToList();
+        }
+
+        private MirrorsResponse MapXMLToMirrors(XDocument xml) {
             return new MirrorsResponse {
                 Mirrors = xml.Descendants("Mirror").Select(x => new Mirror{
                     ID = (int)x.Element("id"),
@@ -102,29 +107,29 @@ namespace nRage.Clients {
         {
             return xml.Descendants("Series").Select(x => new SeriesInfoResponse {
                 ID = (int)x.Element("id"),                
-                Actors = (string)x.Element(""),
-                AirsDayOfWeek = (string)x.Element(""),
-                AirsTime = (string)x.Element(""),
-                ContentRating = (string)x.Element(""),
-                FirstAired = (string)x.Element(""),
-                Genre = (string)x.Element(""),
-                ImdbId = (string)x.Element(""),
-                Language = (string)x.Element(""),
-                Network = (string)x.Element(""),
-                NetworkId = (string)x.Element(""),
-                Overview = (string)x.Element(""),
-                Rating = (string)x.Element(""),
-                RatingCount = (string)x.Element(""),
-                SeriesId = (string)x.Element(""),
-                SeriesName = (string)x.Element(""),
-                Status = (string)x.Element(""),
-                Added = (string)x.Element(""),
-                AddedBy = (string)x.Element(""),
-                Banner = (string)x.Element(""),
-                FanArt = (string)x.Element(""),
-                LastUpdated = (string)x.Element(""),
-                Poster = (string)x.Element(""),
-                Zap2ItId = (string)x.Element(""),
+                Actors = ConvertPipedStringToList((string)x.Element("Actors")),
+                AirsDayOfWeek = (string)x.Element("Airs_DayOfWeek"),
+                AirsTime = (string)x.Element("Airs_Time"),
+                ContentRating = (string)x.Element("ContentRating"),
+                FirstAired = (string)x.Element("FirstAired"),
+                Genre = ConvertPipedStringToList((string)x.Element("Genre")),
+                ImdbId = (string)x.Element("IMDB_ID"),
+                Language = (string)x.Element("Language"),
+                Network = (string)x.Element("Network"),
+                NetworkId = (string)x.Element("NetworkID"),
+                Overview = (string)x.Element("Overview"),
+                Rating = (string)x.Element("9.3"),
+                RatingCount = (string)x.Element("RatingCount"),
+                SeriesId = (string)x.Element("SeriesID"),
+                SeriesName = (string)x.Element("SeriesName"),
+                Status = (string)x.Element("Status"),
+                Added = (string)x.Element("added"),
+                AddedBy = (string)x.Element("addedBy"),
+                Banner = (string)x.Element("banner"),
+                FanArt = (string)x.Element("fanart"),
+                LastUpdated = (string)x.Element("lastupdated"),
+                Poster = (string)x.Element("poster"),
+                Zap2ItId = (string)x.Element("zap2it_id"),
             }).Single();            
         }
 
