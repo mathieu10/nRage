@@ -118,7 +118,7 @@ namespace nRage.Clients {
                 Network = (string)x.Element("Network"),
                 NetworkId = (string)x.Element("NetworkID"),
                 Overview = (string)x.Element("Overview"),
-                Rating = (string)x.Element("9.3"),
+                Rating = (string)x.Element("Rating"),
                 RatingCount = (string)x.Element("RatingCount"),
                 SeriesId = (string)x.Element("SeriesID"),
                 SeriesName = (string)x.Element("SeriesName"),
