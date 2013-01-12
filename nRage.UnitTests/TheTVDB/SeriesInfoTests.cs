@@ -13,7 +13,7 @@ namespace nRage.Tests.Unit.TheTVDB
         public SeriesInfoTests() : base(){}
 
         private const int seriesId = 81189;
-        private const int invalidSeriesId = -1;
+        private const int invalidSeriesId = 1;
           
         [Fact]
         public void CanGetSeriesInfo()
@@ -25,7 +25,7 @@ namespace nRage.Tests.Unit.TheTVDB
         [Fact]
         public void GetSeriesInfoThrowsIfInvalidSeriesId()
         {
-            Assert.Throws<ArgumentOutOfRangeException>(() =>
+            Assert.Throws<ShowNotFoundException>(() =>
                 client.GetSeriesInfo(invalidSeriesId)
             );
         }

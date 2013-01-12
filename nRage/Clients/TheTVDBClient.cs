@@ -52,8 +52,11 @@ namespace nRage.Clients {
             return MapXMLToSearch(response);
         }
 
-        public SeriesInfoResponse GetSeriesInfo(int seriesId){               
-            var response = GetXML(GetURLForSeriesInfo(seriesId));
+        public SeriesInfoResponse GetSeriesInfo(int seriesId){
+            var rawResponse = Retriever.Get(GetURLForSeriesInfo(seriesId));
+            ValidateResponse(rawResponse);
+
+            var response = XDocument.Load(rawResponse);
             return MapXMLToSeriesInfo(response);
         }
 
@@ -135,6 +138,14 @@ namespace nRage.Clients {
 
         private SearchResponse MapXMLToSearch(XDocument xml) { throw new NotImplementedException(); }        
         private EpisodeListResponse MapXMLToEpisodeList(XDocument xml) { throw new NotImplementedException(); }        
-        #endregion                 
+        #endregion             
+    
+        private void ValidateResponse(Stream rawResponse)
+        {            
+            var sr = new StreamReader(rawResponse);
+            if (sr.ReadLine().Substring(0,5)!="<?xml")
+                throw new ShowNotFoundException();
+            rawResponse.Position = 0;
+        }    
     }    
 }
