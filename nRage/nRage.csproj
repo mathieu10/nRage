@@ -40,6 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clients\ClientBase.cs" />
+    <Compile Include="Contract\TheTVDB\EpisodeListResponse.cs" />
+    <Compile Include="Contract\TheTVDB\GetUpdatesResponse.cs" />
+    <Compile Include="Contract\TheTVDB\SearchResponse.cs" />
+    <Compile Include="Contract\TheTVDB\SeriesInfoResponse.cs" />
+    <Compile Include="Contract\TheTVDB\ServerTimeResponse.cs" />
     <Compile Include="Contract\TheTVDB\MirrorsResponse.cs" />
     <Compile Include="Contract\Common\TVShow.cs" />
     <Compile Include="Contract\TheTVDB\Mirror.cs" />
@@ -64,8 +70,11 @@
     <Compile Include="Exceptions.cs" />
     <Compile Include="Clients\TVRageClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helper.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Contract\RottenTomatoes\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

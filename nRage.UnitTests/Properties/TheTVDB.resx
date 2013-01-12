@@ -117,6 +117,115 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RESPONSE_EPISODELIST_81189" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;Data&gt;&lt;Series&gt;
+  &lt;id&gt;81189&lt;/id&gt;
+  &lt;Actors&gt;|Bryan Cranston|Aaron Paul|Dean Norris|RJ Mitte|Betsy Brandt|Anna Gunn|Christopher Cousins|Steven Michael Quezada|Jonathan Banks|Giancarlo Esposito|Bob Odenkirk|&lt;/Actors&gt;
+  &lt;Airs_DayOfWeek&gt;Sunday&lt;/Airs_DayOfWeek&gt;
+  &lt;Airs_Time&gt;10:00 PM&lt;/Airs_Time&gt;
+  &lt;ContentRating&gt;TV-MA&lt;/ContentRating&gt;
+  &lt;FirstAired&gt;2008-01-20&lt;/FirstAired&gt;
+  &lt;Genre&gt;|Drama|&lt;/Genre&gt;
+  &lt;IMDB_ID&gt;tt0903747&lt;/IMDB_ID&gt;
+  &lt;Language&gt;en&lt;/Language&gt;
+  &lt;Network&gt;AMC&lt;/Network&gt;
+  &lt;NetworkID&gt;&lt;/NetworkID&gt;
+  &lt;Overview&gt;Walter White, a struggling high school chemistry teacher is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman with the aim of securing his family's financial future before he dies.&lt;/Overview&gt;
+  &lt;Rating&gt;9.3&lt;/Rating&gt;
+  &lt;RatingCount&gt;397&lt;/RatingCount&gt;
+  &lt;Runtime&gt;60&lt;/Runtime&gt;
+  &lt;SeriesID&gt;74713&lt;/SeriesID&gt;
+  &lt;SeriesName&gt;Breaking Bad&lt;/SeriesName&gt;
+  &lt;Status&gt;Continuing&lt;/Status&gt;
+  &lt;added&gt;&lt;/added&gt;
+  &lt;addedBy&gt;&lt;/addedBy&gt;
+  &lt;banner&gt;graphical/81189-g13.jpg&lt;/banner&gt;
+  &lt;fanart&gt;fanart/original/81189-38.jpg&lt;/fanart&gt;
+  &lt;lastupdated&gt;1355787349&lt;/lastupdated&gt;
+  &lt;poster&gt;posters/81189-2.jpg&lt;/poster&gt;
+  &lt;zap2it_id&gt;SH01009396&lt;/zap2it_id&gt;
+&lt;/Series&gt;
+&lt;Episode&gt;
+  &lt;id&gt;3859781&lt;/id&gt;
+  &lt;Combined_episodenumber&gt;1&lt;/Combined_episodenumber&gt;
+  &lt;Combined_season&gt;0&lt;/Combined_season&gt;
+  &lt;DVD_chapter&gt;&lt;/DVD_chapter&gt;
+  &lt;DVD_discid&gt;&lt;/DVD_discid&gt;
+  &lt;DVD_episodenumber&gt;&lt;/DVD_episodenumber&gt;
+  &lt;DVD_season&gt;&lt;/DVD_season&gt;
+  &lt;Director&gt;&lt;/Director&gt;
+  &lt;EpImgFlag&gt;2&lt;/EpImgFlag&gt;
+  &lt;EpisodeName&gt;Good Cop Bad Cop&lt;/EpisodeName&gt;
+  &lt;EpisodeNumber&gt;1&lt;/EpisodeNumber&gt;
+  &lt;FirstAired&gt;2009-02-17&lt;/FirstAired&gt;
+  &lt;GuestStars&gt;&lt;/GuestStars&gt;
+  &lt;IMDB_ID&gt;&lt;/IMDB_ID&gt;
+  &lt;Language&gt;en&lt;/Language&gt;
+  &lt;Overview&gt;Hank and Marie try to spice up their relationship on Valentine's Day.&lt;/Overview&gt;
+  &lt;ProductionCode&gt;&lt;/ProductionCode&gt;
+  &lt;Rating&gt;6.0&lt;/Rating&gt;
+  &lt;RatingCount&gt;1&lt;/RatingCount&gt;
+  &lt;SeasonNumber&gt;0&lt;/SeasonNumber&gt;
+  &lt;Writer&gt;&lt;/Writer&gt;
+  &lt;absolute_number&gt;&lt;/absolute_number&gt;
+  &lt;airsafter_season&gt;&lt;/airsafter_season&gt;
+  &lt;airsbefore_episode&gt;&lt;/airsbefore_episode&gt;
+  &lt;airsbefore_season&gt;&lt;/airsbefore_season&gt;
+  &lt;filename&gt;episodes/81189/3859781.jpg&lt;/filename&gt;
+  &lt;lastupdated&gt;1301948371&lt;/lastupdated&gt;
+  &lt;seasonid&gt;439371&lt;/seasonid&gt;
+  &lt;seriesid&gt;81189&lt;/seriesid&gt;
+&lt;/Episode&gt;
+&lt;Episode&gt;
+  &lt;id&gt;3859791&lt;/id&gt;
+  &lt;Combined_episodenumber&gt;2&lt;/Combined_episodenumber&gt;
+  &lt;Combined_season&gt;0&lt;/Combined_season&gt;
+  &lt;DVD_chapter&gt;&lt;/DVD_chapter&gt;
+  &lt;DVD_discid&gt;&lt;/DVD_discid&gt;
+  &lt;DVD_episodenumber&gt;&lt;/DVD_episodenumber&gt;
+  &lt;DVD_season&gt;&lt;/DVD_season&gt;
+  &lt;Director&gt;&lt;/Director&gt;
+  &lt;EpImgFlag&gt;2&lt;/EpImgFlag&gt;
+  &lt;EpisodeName&gt;Wedding Day&lt;/EpisodeName&gt;
+  &lt;EpisodeNumber&gt;2&lt;/EpisodeNumber&gt;
+  &lt;FirstAired&gt;2009-02-17&lt;/FirstAired&gt;
+  &lt;GuestStars&gt;&lt;/GuestStars&gt;
+  &lt;IMDB_ID&gt;&lt;/IMDB_ID&gt;
+  &lt;Language&gt;en&lt;/Language&gt;
+  &lt;Overview&gt;Walt and Hank have a talk before Hank gets married.&lt;/Overview&gt;
+  &lt;ProductionCode&gt;&lt;/ProductionCode&gt;
+  &lt;Rating&gt;&lt;/Rating&gt;
+  &lt;RatingCount&gt;0&lt;/RatingCount&gt;
+  &lt;SeasonNumber&gt;0&lt;/SeasonNumber&gt;
+  &lt;Writer&gt;&lt;/Writer&gt;
+  &lt;absolute_number&gt;&lt;/absolute_number&gt;
+  &lt;airsafter_season&gt;&lt;/airsafter_season&gt;
+  &lt;airsbefore_episode&gt;&lt;/airsbefore_episode&gt;
+  &lt;airsbefore_season&gt;&lt;/airsbefore_season&gt;
+  &lt;filename&gt;episodes/81189/3859791.jpg&lt;/filename&gt;
+  &lt;lastupdated&gt;1299705850&lt;/lastupdated&gt;
+  &lt;seasonid&gt;439371&lt;/seasonid&gt;
+  &lt;seriesid&gt;81189&lt;/seriesid&gt;
+&lt;/Episode&gt;
+&lt;/Data&gt;</value>
+  </data>
+  <data name="RESPONSE_GETSERIES_BREAKINGBAD" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;Data&gt;
+&lt;Series&gt;
+&lt;seriesid&gt;81189&lt;/seriesid&gt;
+&lt;language&gt;en&lt;/language&gt;
+&lt;SeriesName&gt;Breaking Bad&lt;/SeriesName&gt;
+&lt;banner&gt;graphical/81189-g13.jpg&lt;/banner&gt;
+&lt;Overview&gt;Walter White, a struggling high school chemistry teacher is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman with the aim of securing his family's financial future before he dies.&lt;/Overview&gt;
+&lt;FirstAired&gt;2008-01-20&lt;/FirstAired&gt;
+&lt;IMDB_ID&gt;tt0903747&lt;/IMDB_ID&gt;
+&lt;zap2it_id&gt;SH01009396&lt;/zap2it_id&gt;
+&lt;id&gt;81189&lt;/id&gt;
+&lt;/Series&gt;
+&lt;/Data&gt;</value>
+  </data>
   <data name="RESPONSE_MIRRORS" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;Mirrors&gt;
@@ -126,6 +235,99 @@
     &lt;typemask&gt;7&lt;/typemask&gt;
   &lt;/Mirror&gt;
 &lt;/Mirrors&gt;</value>
+  </data>
+  <data name="RESPONSE_SERIESINFO_1" xml:space="preserve">
+    <value>&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+//&lt;![CDATA[
+window.__CF=window.__CF||{};window.__CF.AJS={"ga_key":{"ua":"UA-9131861-1","ga_bs":"2"}};
+//]]&gt;
+&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+//&lt;![CDATA[
+try{if (!window.CloudFlare) { var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",mirage:{responsive:0,lazy:0},oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/abv=1870252173/"},atok:"bd59c2ce05cdbf8ec4c7ca4c564b57d5",zone:"thetvdb.com",rocket:"0",apps:{"ga_key":{"ua":"UA-9131861-1","ga_bs":"2"}}}];var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="//ajax.cloudflare.com/cdn-cgi/nexp/abv=4114775854/cloudflare.min.js";b.parentNode.insertBefore(a,b);}}catch(e){};
+//]]&gt;
+&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+/* &lt;![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-9131861-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&amp;&amp;"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&amp;&amp;"Event"in FB&amp;&amp;"subscribe"in FB.Event&amp;&amp;(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&amp;&amp;"events"in twttr&amp;&amp;"bind"in twttr.events&amp;&amp;twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&amp;&amp;a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&amp;]+=([^&amp;]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;/head&gt;&lt;body&gt;&lt;script type="text/javascript"&gt;
+//&lt;![CDATA[
+new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
+//]]&gt;
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;img src="/cdn-cgi/ping?cf[location]=404&amp;amp;cf[js]=0" alt=""/&gt;
+&lt;/noscript&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL /data/series/1 was not found on this server.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="RESPONSE_SERIESINFO_81189" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;Data&gt;
+  &lt;Series&gt;
+    &lt;id&gt;81189&lt;/id&gt;
+    &lt;Actors&gt;|Bryan Cranston|Aaron Paul|Dean Norris|RJ Mitte|Betsy Brandt|Anna Gunn|Christopher Cousins|Steven Michael Quezada|Jonathan Banks|Giancarlo Esposito|Bob Odenkirk|&lt;/Actors&gt;
+    &lt;Airs_DayOfWeek&gt;Sunday&lt;/Airs_DayOfWeek&gt;
+    &lt;Airs_Time&gt;10:00 PM&lt;/Airs_Time&gt;
+    &lt;ContentRating&gt;TV-MA&lt;/ContentRating&gt;
+    &lt;FirstAired&gt;2008-01-20&lt;/FirstAired&gt;
+    &lt;Genre&gt;|Drama|&lt;/Genre&gt;
+    &lt;IMDB_ID&gt;tt0903747&lt;/IMDB_ID&gt;
+    &lt;Language&gt;en&lt;/Language&gt;
+    &lt;Network&gt;AMC&lt;/Network&gt;
+    &lt;NetworkID&gt;&lt;/NetworkID&gt;
+    &lt;Overview&gt;Walter White, a struggling high school chemistry teacher is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman with the aim of securing his family's financial future before he dies.&lt;/Overview&gt;
+    &lt;Rating&gt;9.3&lt;/Rating&gt;
+    &lt;RatingCount&gt;397&lt;/RatingCount&gt;
+    &lt;Runtime&gt;60&lt;/Runtime&gt;
+    &lt;SeriesID&gt;74713&lt;/SeriesID&gt;
+    &lt;SeriesName&gt;Breaking Bad&lt;/SeriesName&gt;
+    &lt;Status&gt;Continuing&lt;/Status&gt;
+    &lt;added&gt;&lt;/added&gt;
+    &lt;addedBy&gt;&lt;/addedBy&gt;
+    &lt;banner&gt;graphical/81189-g13.jpg&lt;/banner&gt;
+    &lt;fanart&gt;fanart/original/81189-38.jpg&lt;/fanart&gt;
+    &lt;lastupdated&gt;1355787349&lt;/lastupdated&gt;
+    &lt;poster&gt;posters/81189-2.jpg&lt;/poster&gt;
+    &lt;zap2it_id&gt;SH01009396&lt;/zap2it_id&gt;
+  &lt;/Series&gt;
+&lt;/Data&gt;</value>
+    <comment>Breaking Bad</comment>
+  </data>
+  <data name="RESPONSE_UPDATES_ALL_1355812429" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;Items&gt;
+&lt;Time&gt;1355812429&lt;/Time&gt;
+&lt;Series&gt;70327&lt;/Series&gt;
+&lt;Series&gt;70328&lt;/Series&gt;
+&lt;Series&gt;70329&lt;/Series&gt;
+&lt;Series&gt;70330&lt;/Series&gt;
+&lt;Series&gt;70331&lt;/Series&gt;
+&lt;Series&gt;257855&lt;/Series&gt;
+&lt;Series&gt;70333&lt;/Series&gt;
+&lt;Series&gt;70334&lt;/Series&gt;
+&lt;Series&gt;70335&lt;/Series&gt;
+&lt;Series&gt;70336&lt;/Series&gt;
+&lt;Series&gt;70337&lt;/Series&gt;
+&lt;Series&gt;70338&lt;/Series&gt;
+&lt;Series&gt;257843&lt;/Series&gt;
+&lt;/Items&gt;</value>
   </data>
   <data name="RESPONSE_UPDATES_NONE" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;

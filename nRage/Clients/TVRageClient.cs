@@ -12,47 +12,36 @@ using nRage.Contract.TVRage;
 
 namespace nRage.Clients {
 
-    public class TVRageClient {
-        private IRetriever Retriever {get;set;}
-
-        public TVRageClient() {
-            this.Retriever = new WebRetriever();
-        }
-
-        public TVRageClient(IRetriever retriever) {
-            this.Retriever = retriever;
-        }
+    public class TVRageClient : ClientBase
+    {
+        public TVRageClient():base(){}
+        public TVRageClient(IRetriever retriever) : base(retriever) {}        
 
         #region URL generation
-        private const string API_ROOT = @"http://services.tvrage.com/feeds/";
+        public override string ApiRoot { get { return @"http://services.tvrage.com/feeds"; } }
+
         protected string FormatURLParam(string param) {
-            return new string(param.Where(c => char.IsLetterOrDigit(c)).ToArray());
+            return param;
+            ////TODO: what about '+', spaces, formatted chars etc? Need to investigate
+            //return new string(param.Where(c => char.IsLetterOrDigit(c)).ToArray());
         }
 
         protected string GetURLForSearch(string title) {
-            return String.Format(@"{0}search.php?show={1}", API_ROOT, FormatURLParam(title));
-        }
+            return GetURL(@"search.php?show={0}", FormatURLParam(title)); }
         protected string GetURLForFullSearch(string title) {
-            return String.Format(@"{0}full_search.php?show={1}", API_ROOT, FormatURLParam(title));
-        }
+            return GetURL(@"full_search.php?show={0}", FormatURLParam(title)); }
         protected string GetURLForShowInfo(int showID) {
-            return String.Format(@"{0}showinfo.php?sid={1}", API_ROOT, showID);
-        }
+            return GetURL(@"showinfo.php?sid={0}", showID); }
         protected string GetURLForEpisodeList(int showID) {
-            return String.Format(@"{0}episode_list.php?sid={1}", API_ROOT, showID);
-        }
+            return GetURL(@"episode_list.php?sid={0}", showID); }
         protected string GetURLForEpisoddeInfo(int showID, string episodeLabel) {
-            return String.Format(@"{0}episodeinfo.php?sid={1}&ep={2}", API_ROOT, showID, FormatURLParam(episodeLabel));
-        }
+            return GetURL(@"episodeinfo.php?sid={0}&ep={1}", showID, FormatURLParam(episodeLabel)); }
         protected string GetURLForFullShowInfo(int showID) {
-            return String.Format(@"{0}full_show_info.php?sid={1}", API_ROOT, showID);
-        }
+            return GetURL(@"full_show_info.php?sid={0}", showID); }
         protected string GetURLForShowList() {
-            return String.Format(@"{0}show_list.php",API_ROOT);
-        }
+            return GetURL(@"show_list.php"); }
         protected string GetURLForLastUpdates(int hours) {
-            return String.Format(@"{0}last_updates.php?hours={1}", API_ROOT, hours);
-        }
+            return GetURL(@"last_updates.php?hours={0}", hours); }
         #endregion
 
         #region Public methods
@@ -69,7 +58,7 @@ namespace nRage.Clients {
 
         public LastUpdatesResponse LastUpdates(int hours)
         { 
-            var response = XDocument.Load(Retriever.Get(GetURLForLastUpdates(hours)));
+            var response = GetXML(GetURLForLastUpdates(hours));
             
             return MapXMLToEpisodeLastUpdates(response);
         }        
@@ -79,7 +68,7 @@ namespace nRage.Clients {
                 Results = new List<SearchResult>()
             };
 
-            var response = XDocument.Load(Retriever.Get(GetURLForSearch(title)));
+            var response = GetXML(GetURLForSearch(title));
             if (response.Root == null || response.Root.Value == "0")
                 return result;
 
@@ -92,7 +81,7 @@ namespace nRage.Clients {
                 Results = new List<FullSearchResult>()
             };
 
-            var response = XDocument.Load(Retriever.Get(GetURLForFullSearch(title)));
+            var response = GetXML(GetURLForFullSearch(title));
             if (response.Root == null || response.Root.Value == "0")
                 return result;
 
@@ -101,7 +90,7 @@ namespace nRage.Clients {
         }
 
         public ShowInfoResponse GetShowInfo(int showId) {
-            var response = XDocument.Load(Retriever.Get(GetURLForShowInfo(showId)));
+            var response = GetXML(GetURLForShowInfo(showId));
             
             if (response.Root == null || response.Root.Value == "")
                 throw new ShowNotFoundException();
@@ -110,7 +99,7 @@ namespace nRage.Clients {
         }
 
         public EpisodeListResponse GetEpisodeList(int showId) {
-            var response = XDocument.Load(Retriever.Get(GetURLForEpisodeList(showId)));
+            var response = GetXML(GetURLForEpisodeList(showId));
             
             return MapXMLToEpisodeListResponse(response);
         }
@@ -138,7 +127,7 @@ namespace nRage.Clients {
         }
 
         public ShowListResponse GetShowList() {
-            var response = XDocument.Load(Retriever.Get(GetURLForShowList()));
+            var response = GetXML(GetURLForShowList());
             var result = new ShowListResponse();
             result.Results = MapXMLToShowListResponse(response);
             return result;
@@ -308,9 +297,9 @@ namespace nRage.Clients {
             if (rawResponse.Length < 40)
             {
                 var sr = new StreamReader(rawResponse);
-                if (sr.ReadLine().Substring(0, 15) == "No Show Results") throw new ShowNotFoundException();
-                rawResponse.Position = 0;
+                if (sr.ReadLine().Substring(0, 15) == "No Show Results") throw new ShowNotFoundException();                
             }
+            rawResponse.Position = 0;
         }        
     }    
 }

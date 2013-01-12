@@ -56,8 +56,20 @@ namespace nRage.Clients {
             var rawResponse = Retriever.Get(GetURLForSeriesInfo(seriesId));
             ValidateResponse(rawResponse);
 
+<<<<<<< HEAD
+        #region URL generation                
+        /// <TODO>
+        /// This should - in theory - be configurable to support mirrors. In practice... well... there's never any mirrors.
+        /// </TODO>
+        private const string API_ROOT = @"http://www.thetvdb.com/api/";
+        private readonly string API_KEY = Common.APIKEY_THETVDB;
+        
+        protected string FormatURLParam(string param) {
+            return new string(param.Where(c => char.IsLetterOrDigit(c)).ToArray());
+=======
             var response = XDocument.Load(rawResponse);
             return MapXMLToSeriesInfo(response);
+>>>>>>> tvdb
         }
 
         public EpisodeListResponse GetEpisodeList(int seriesId){

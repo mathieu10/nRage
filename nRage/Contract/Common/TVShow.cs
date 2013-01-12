@@ -27,4 +27,5 @@ namespace nRage.Contract.Common {
         public DataSourceEnum DataSource{get;set;}
         public string Value{get;set;}
     }
+
 }
