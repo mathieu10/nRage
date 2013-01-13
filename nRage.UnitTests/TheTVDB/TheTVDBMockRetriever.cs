@@ -7,7 +7,8 @@ namespace nRage.Tests.Unit.TheTVDB
         #region URL constants
         public static readonly string MIRRORS = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/mirrors.xml";
         public static readonly string SERVERTIME = @"http://www.thetvdb.com/api/Updates.php?type=none";
-        public static readonly string EPISODELIST_81189 = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/series/xxxx/all";
+        public static readonly string EPISODELIST_81189 = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/series/81189/all";
+        public static readonly string EPISODELIST_1 = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/series/1/all";
         public static readonly string SEARCH = @"http://www.thetvdb.com/api/GetSeries.php?seriesname=81189";
         public static readonly string SERIESINFO_81189 = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/series/81189";
         public static readonly string SERIESINFO_1 = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/series/1";
@@ -22,6 +23,7 @@ namespace nRage.Tests.Unit.TheTVDB
             Cache(MIRRORS, Properties.TheTVDB.RESPONSE_MIRRORS);
             Cache(SERVERTIME, Properties.TheTVDB.RESPONSE_UPDATES_NONE);
             Cache(EPISODELIST_81189, Properties.TheTVDB.RESPONSE_EPISODELIST_81189);
+            Cache(EPISODELIST_1, Properties.TheTVDB.RESPONSE_EPISODELIST_1);
             //Cache(SEARCH, Properties.TheTVDB.RESPONSE_SEARCH);
             Cache(SERIESINFO_81189, Properties.TheTVDB.RESPONSE_SERIESINFO_81189);
             Cache(SERIESINFO_1, Properties.TheTVDB.RESPONSE_SERIESINFO_1);
