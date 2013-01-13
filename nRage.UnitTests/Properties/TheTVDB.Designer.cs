@@ -61,6 +61,25 @@ namespace nRage.Tests.Unit.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+        ///&lt;html&gt;&lt;head&gt;
+        ///&lt;title&gt;404 Not Found&lt;/title&gt;
+        ///&lt;script type=&quot;text/javascript&quot;&gt;
+        /////&lt;![CDATA[
+        ///window.__CF=window.__CF||{};window.__CF.AJS={&quot;ga_key&quot;:{&quot;ua&quot;:&quot;UA-9131861-1&quot;,&quot;ga_bs&quot;:&quot;2&quot;}};
+        /////]]&gt;
+        ///&lt;/script&gt;
+        ///&lt;script type=&quot;text/javascript&quot;&gt;
+        /////&lt;![CDATA[
+        ///try{if (!window.CloudFlare) { var CloudFlare=[{verbose:0,p:0,byc:0,owlid:&quot;cf&quot;,mirage:{responsive:0,lazy:0},oracle:0,paths:{cloudflare:&quot;/cdn-cgi/nexp/abv=1870252173/&quot;},atok:&quot;bd59c2ce05cdbf8ec4c7ca4c564b57d5&quot;,zone:&quot;th [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RESPONSE_EPISODELIST_1 {
+            get {
+                return ResourceManager.GetString("RESPONSE_EPISODELIST_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
         ///&lt;Data&gt;&lt;Series&gt;
         ///  &lt;id&gt;81189&lt;/id&gt;

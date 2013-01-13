@@ -117,6 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RESPONSE_EPISODELIST_1" xml:space="preserve">
+    <value>&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+//&lt;![CDATA[
+window.__CF=window.__CF||{};window.__CF.AJS={"ga_key":{"ua":"UA-9131861-1","ga_bs":"2"}};
+//]]&gt;
+&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+//&lt;![CDATA[
+try{if (!window.CloudFlare) { var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",mirage:{responsive:0,lazy:0},oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/abv=1870252173/"},atok:"bd59c2ce05cdbf8ec4c7ca4c564b57d5",zone:"thetvdb.com",rocket:"0",apps:{"ga_key":{"ua":"UA-9131861-1","ga_bs":"2"}}}];var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="//ajax.cloudflare.com/cdn-cgi/nexp/abv=4114775854/cloudflare.min.js";b.parentNode.insertBefore(a,b);}}catch(e){};
+//]]&gt;
+&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+/* &lt;![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-9131861-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&amp;&amp;"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&amp;&amp;"Event"in FB&amp;&amp;"subscribe"in FB.Event&amp;&amp;(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&amp;&amp;"events"in twttr&amp;&amp;"bind"in twttr.events&amp;&amp;twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&amp;&amp;a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&amp;]+=([^&amp;]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;/head&gt;&lt;body&gt;&lt;script type="text/javascript"&gt;
+//&lt;![CDATA[
+new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
+//]]&gt;
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;img src="/cdn-cgi/ping?cf[location]=404&amp;amp;cf[js]=0" alt=""/&gt;
+&lt;/noscript&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL /data/series/1 was not found on this server.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
   <data name="RESPONSE_EPISODELIST_81189" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;Data&gt;&lt;Series&gt;
