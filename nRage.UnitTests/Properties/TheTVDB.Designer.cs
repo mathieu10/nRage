@@ -102,6 +102,17 @@ namespace nRage.Tests.Unit.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
         ///&lt;Data&gt;
+        ///&lt;/Data&gt;.
+        /// </summary>
+        internal static string RESPONSE_GETSERIES_SROTIJSRTRH {
+            get {
+                return ResourceManager.GetString("RESPONSE_GETSERIES_SROTIJSRTRH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///&lt;Data&gt;
         ///&lt;Series&gt;
         ///&lt;seriesid&gt;73244&lt;/seriesid&gt;
         ///&lt;language&gt;en&lt;/language&gt;
@@ -115,6 +126,17 @@ namespace nRage.Tests.Unit.Properties {
         internal static string RESPONSE_GETSERIES_THEOFFICE {
             get {
                 return ResourceManager.GetString("RESPONSE_GETSERIES_THEOFFICE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///&lt;Data&gt;
+        ///&lt;/Data&gt;.
+        /// </summary>
+        internal static string RESPONSE_GETSERIESBYID_1 {
+            get {
+                return ResourceManager.GetString("RESPONSE_GETSERIESBYID_1", resourceCulture);
             }
         }
         
@@ -223,15 +245,6 @@ namespace nRage.Tests.Unit.Properties {
         internal static string RESPONSE_UPDATES_NONE {
             get {
                 return ResourceManager.GetString("RESPONSE_UPDATES_NONE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string String1 {
-            get {
-                return ResourceManager.GetString("String1", resourceCulture);
             }
         }
     }

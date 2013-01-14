@@ -251,6 +251,11 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
 &lt;/Episode&gt;
 &lt;/Data&gt;</value>
   </data>
+  <data name="RESPONSE_GETSERIESBYID_1" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;Data&gt;
+&lt;/Data&gt;</value>
+  </data>
   <data name="RESPONSE_GETSERIESBYID_TT0290978" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;Data&gt;
@@ -264,6 +269,11 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
 &lt;IMDB_ID&gt;tt0290978&lt;/IMDB_ID&gt;
 &lt;id&gt;78107&lt;/id&gt;
 &lt;/Series&gt;
+&lt;/Data&gt;</value>
+  </data>
+  <data name="RESPONSE_GETSERIES_SROTIJSRTRH" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;Data&gt;
 &lt;/Data&gt;</value>
   </data>
   <data name="RESPONSE_GETSERIES_THEOFFICE" xml:space="preserve">
@@ -410,8 +420,5 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
 &lt;Time&gt;1355786893&lt;/Time&gt;
 &lt;/Items&gt;</value>
     <comment>Used to get the server time</comment>
-  </data>
-  <data name="String1" xml:space="preserve">
-    <value />
   </data>
 </root>
