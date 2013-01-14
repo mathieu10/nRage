@@ -5,6 +5,7 @@ using System.Text;
 
 namespace nRage.Contract.TheTVDB
 {
-    public class SearchResponse {
+    public class GetSeriesResponse
+    {
     }
 }

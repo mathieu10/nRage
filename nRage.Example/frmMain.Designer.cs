@@ -60,7 +60,7 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(112, 27);
             this.btnSearch.TabIndex = 0;
-            this.btnSearch.Text = "Basic Search";
+            this.btnSearch.Text = "Basic GetSeries";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -77,7 +77,7 @@
             this.groupBox1.Size = new System.Drawing.Size(236, 80);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Search";
+            this.groupBox1.Text = "GetSeries";
             // 
             // txtShowName
             // 
@@ -102,7 +102,7 @@
             this.btnFullSearch.Name = "btnFullSearch";
             this.btnFullSearch.Size = new System.Drawing.Size(112, 27);
             this.btnFullSearch.TabIndex = 4;
-            this.btnFullSearch.Text = "Detailed Search";
+            this.btnFullSearch.Text = "Detailed GetSeries";
             this.btnFullSearch.UseVisualStyleBackColor = true;
             // 
             // groupBox2

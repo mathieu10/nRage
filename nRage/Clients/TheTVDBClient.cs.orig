@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,9 +12,13 @@ namespace nRage.Clients {
 
     public class TheTVDBClient : ClientBase
     {
-        public TheTVDBClient(IRetriever retriever) : base(retriever) { }
+        private ITvdbResponseMapper _mapper;
 
-        #region URL generation                        
+        public TheTVDBClient(IRetriever retriever) : base(retriever) { 
+            _mapper = new TheTVDBResponseMapper();
+        }
+
+        #region URL generation
         public override string ApiRoot { get { return @"http://www.thetvdb.com/api"; } }
         private const string API_KEY = @"2A7162D6C1E477B0";
 
@@ -24,8 +26,10 @@ namespace nRage.Clients {
             return GetURL(@"{0}/mirrors.xml", API_KEY); }
         private string GetURLForServerTime() {
             return GetURL(@"Updates.php?type=none"); }
-        private string GetURLForSearch(string query) {
+        private string GetURLForGetSeries(string query) {
             return GetURL(@"GetSeries.php?seriesname={0}",query); }
+        private string GetURLForGetSeriesById(string query) {
+            return GetURL(@"GetSeriesByRemoteID.php?imdbid={0}", query); }
         private string GetURLForSeriesInfo(int seriesId) {
             return GetURL(@"{0}/series/{1}", API_KEY, seriesId); }
         private string GetURLForEpisodeList(int seriesId) {
@@ -38,43 +42,43 @@ namespace nRage.Clients {
         public MirrorsResponse GetMirrors()
         {
             var response = GetXML(GetURLForMirrors());
-            return MapXMLToMirrors(response);
+            return _mapper.MapXMLToMirrors(response);
         }
 
         public ServerTimeResponse GetServerTime(){
             var response = GetXML(GetURLForServerTime());
-            return MapXMLToServerTime(response);
+            return _mapper.MapXMLToServerTime(response);
         }        
 
-        public SearchResponse Search(string query){
+        /// <summary>
+        /// Should more appropriately be called "SearchForSeries"
+        /// </summary>
+        public GetSeriesResponse GetSeries(string query){
             //TODO: format/clean input (eg ' ' to '+')            
-            var response = GetXML(GetURLForSearch(query));
-            return MapXMLToSearch(response);
+            var response = GetXML(GetURLForGetSeries(query));
+            return _mapper.MapXMLToGetSeries(response);
+        }
+
+        public GetSeriesByIdResponse GetSeriesById(string imdbId)
+        {
+            var response = GetXML(GetURLForGetSeriesById(imdbId));
+            return _mapper.MapXMLToGetSeriesById(response);
         }
 
         public SeriesInfoResponse GetSeriesInfo(int seriesId){
             var rawResponse = Retriever.Get(GetURLForSeriesInfo(seriesId));
-            ValidateResponse(rawResponse);
+            ValidateResponse<ShowNotFoundException>(rawResponse);
 
-<<<<<<< HEAD
-        #region URL generation                
-        /// <TODO>
-        /// This should - in theory - be configurable to support mirrors. In practice... well... there's never any mirrors.
-        /// </TODO>
-        private const string API_ROOT = @"http://www.thetvdb.com/api/";
-        private readonly string API_KEY = Common.APIKEY_THETVDB;
-        
-        protected string FormatURLParam(string param) {
-            return new string(param.Where(c => char.IsLetterOrDigit(c)).ToArray());
-=======
             var response = XDocument.Load(rawResponse);
-            return MapXMLToSeriesInfo(response);
->>>>>>> tvdb
+            return _mapper.MapXMLToSeriesInfo(response);
         }
 
         public EpisodeListResponse GetEpisodeList(int seriesId){
-            var response = GetXML(GetURLForEpisodeList(seriesId));
-            return MapXMLToEpisodeList(response);
+            var rawResponse = Retriever.Get(GetURLForEpisodeList(seriesId));
+            ValidateResponse<ShowNotFoundException>(rawResponse);
+
+            var response = XDocument.Load(rawResponse);
+            return _mapper.MapXMLToEpisodeList(response);
         }
 
         public GetUpdatesResponse GetUpdates(int updatedSince)
@@ -82,82 +86,21 @@ namespace nRage.Clients {
             var dateTime = Helper.ToDateTime(updatedSince);
 
             var response = GetXML(GetURLForUpdates(updatedSince));
-            return MapXMLToUpdates(response);
+            return _mapper.MapXMLToUpdates(response);
         }
         #endregion
-
-        #region OXM (Object-XML Mapper) - because the software world needs more acronyms
-
-        private List<string> ConvertPipedStringToList(string input) {
-            return input.Split('|').Where(x=>x.Length > 0).ToList();
-        }
-
-        private MirrorsResponse MapXMLToMirrors(XDocument xml) {
-            return new MirrorsResponse {
-                Mirrors = xml.Descendants("Mirror").Select(x => new Mirror{
-                    ID = (int)x.Element("id"),
-                    MirrorPath = (string)x.Element("mirrorpath"),
-                    TypeMask = (byte)(int)x.Element("typemask"),
-                }).ToList(),
-            };
-        }
-
-        private ServerTimeResponse MapXMLToServerTime(XDocument xml) { 
-            return new ServerTimeResponse{
-                Time = xml.Descendants("Time").Single().Value,
-            };
-        }
-
-        private GetUpdatesResponse MapXMLToUpdates(XDocument xml)
-        {
-            return new GetUpdatesResponse
-            {
-                Time = (string)xml.Descendants("Time").Single(),
-                Series = xml.Descendants("Series").Select(x => x.Value).ToList(),
-            };
-        }
-
-        private SeriesInfoResponse MapXMLToSeriesInfo(XDocument xml)
-        {
-            return xml.Descendants("Series").Select(x => new SeriesInfoResponse {
-                ID = (int)x.Element("id"),                
-                Actors = ConvertPipedStringToList((string)x.Element("Actors")),
-                AirsDayOfWeek = (string)x.Element("Airs_DayOfWeek"),
-                AirsTime = (string)x.Element("Airs_Time"),
-                ContentRating = (string)x.Element("ContentRating"),
-                FirstAired = (string)x.Element("FirstAired"),
-                Genre = ConvertPipedStringToList((string)x.Element("Genre")),
-                ImdbId = (string)x.Element("IMDB_ID"),
-                Language = (string)x.Element("Language"),
-                Network = (string)x.Element("Network"),
-                NetworkId = (string)x.Element("NetworkID"),
-                Overview = (string)x.Element("Overview"),
-                Rating = (string)x.Element("Rating"),
-                RatingCount = (string)x.Element("RatingCount"),
-                Runtime = (string)x.Element("Runtime"),
-                SeriesId = (string)x.Element("SeriesID"),
-                SeriesName = (string)x.Element("SeriesName"),
-                Status = (string)x.Element("Status"),
-                Added = (string)x.Element("added"),
-                AddedBy = (string)x.Element("addedBy"),
-                Banner = (string)x.Element("banner"),
-                FanArt = (string)x.Element("fanart"),
-                LastUpdated = (string)x.Element("lastupdated"),
-                Poster = (string)x.Element("poster"),
-                Zap2ItId = (string)x.Element("zap2it_id"),
-            }).Single();            
-        }
-
-        private SearchResponse MapXMLToSearch(XDocument xml) { throw new NotImplementedException(); }        
-        private EpisodeListResponse MapXMLToEpisodeList(XDocument xml) { throw new NotImplementedException(); }        
-        #endregion             
     
-        private void ValidateResponse(Stream rawResponse)
+        private void ValidateResponse<T>(Stream rawResponse) where T : Exception, new()
         {            
             var sr = new StreamReader(rawResponse);
             if (sr.ReadLine().Substring(0,5)!="<?xml")
-                throw new ShowNotFoundException();
+                throw new T();
             rawResponse.Position = 0;
         }    
+<<<<<<< HEAD
     }    
 }
+=======
+    }
+}
+>>>>>>> tvdb
