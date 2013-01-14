@@ -103,16 +103,34 @@ namespace nRage.Tests.Unit.Properties {
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
         ///&lt;Data&gt;
         ///&lt;Series&gt;
-        ///&lt;seriesid&gt;81189&lt;/seriesid&gt;
+        ///&lt;seriesid&gt;73244&lt;/seriesid&gt;
         ///&lt;language&gt;en&lt;/language&gt;
-        ///&lt;SeriesName&gt;Breaking Bad&lt;/SeriesName&gt;
-        ///&lt;banner&gt;graphical/81189-g13.jpg&lt;/banner&gt;
-        ///&lt;Overview&gt;Walter White, a struggling high school chemistry teacher is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman with the aim of securing his family&apos;s financial future before he dies.&lt;/Overview&gt;
-        ///&lt;FirstAired&gt;200 [rest of string was truncated]&quot;;.
+        ///&lt;SeriesName&gt;The Office (US)&lt;/SeriesName&gt;
+        ///&lt;banner&gt;graphical/73244-g9.jpg&lt;/banner&gt;
+        ///&lt;Overview&gt;A fresh and funny mockumentary-style glimpse into the daily interactions of the eccentric workers at the Dunder Mifflin paper supply company. This fast-paced comedy parodies contemporary American water-cooler culture.&lt;/Overview&gt;
+        ///&lt;FirstAired&gt;2005-03-24&lt;/FirstAired&gt;
+        ///&lt;IMDB_ID&gt;tt0386676&lt;/IMDB_ID&gt;
+        ///&lt;zap2it_id [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string RESPONSE_GETSERIES_BREAKINGBAD {
+        internal static string RESPONSE_GETSERIES_THEOFFICE {
             get {
-                return ResourceManager.GetString("RESPONSE_GETSERIES_BREAKINGBAD", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_GETSERIES_THEOFFICE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///&lt;Data&gt;
+        ///&lt;Series&gt;
+        ///&lt;seriesid&gt;78107&lt;/seriesid&gt;
+        ///&lt;language&gt;en&lt;/language&gt;
+        ///&lt;SeriesName&gt;The Office (UK)&lt;/SeriesName&gt;
+        ///&lt;banner&gt;graphical/78107-g10.jpg&lt;/banner&gt;
+        ///&lt;Overview&gt;A mockumentary about life in a mid-sized suboffice paper merchants in a bleak British industrial town, where manager David Brent thinks he&apos;s the coolest, funniest, and most popular boss ever. He isn&apos;t. That doesn&apos;t stop him from embarrassing himself in front of the cameras on a regular basis, whether from [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RESPONSE_GETSERIESBYID_TT0290978 {
+            get {
+                return ResourceManager.GetString("RESPONSE_GETSERIESBYID_TT0290978", resourceCulture);
             }
         }
         
@@ -205,6 +223,15 @@ namespace nRage.Tests.Unit.Properties {
         internal static string RESPONSE_UPDATES_NONE {
             get {
                 return ResourceManager.GetString("RESPONSE_UPDATES_NONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string String1 {
+            get {
+                return ResourceManager.GetString("String1", resourceCulture);
             }
         }
     }
