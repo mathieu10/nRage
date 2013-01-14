@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -66,14 +67,17 @@ namespace nRage.Clients {
 
         public SeriesInfoResponse GetSeriesInfo(int seriesId){
             var rawResponse = Retriever.Get(GetURLForSeriesInfo(seriesId));
-            ValidateResponse(rawResponse);
+            ValidateResponse<ShowNotFoundException>(rawResponse);
 
             var response = XDocument.Load(rawResponse);
             return _mapper.MapXMLToSeriesInfo(response);
         }
 
         public EpisodeListResponse GetEpisodeList(int seriesId){
-            var response = GetXML(GetURLForEpisodeList(seriesId));
+            var rawResponse = Retriever.Get(GetURLForSeriesInfo(seriesId));
+            ValidateResponse<ShowNotFoundException>(rawResponse);
+
+            var response = XDocument.Load(rawResponse);
             return _mapper.MapXMLToEpisodeList(response);
         }
 
@@ -86,11 +90,11 @@ namespace nRage.Clients {
         }
         #endregion
     
-        private void ValidateResponse(Stream rawResponse)
+        private void ValidateResponse<T>(Stream rawResponse) where T : Exception, new()
         {            
             var sr = new StreamReader(rawResponse);
             if (sr.ReadLine().Substring(0,5)!="<?xml")
-                throw new ShowNotFoundException();
+                throw new T();
             rawResponse.Position = 0;
         }    
     }
