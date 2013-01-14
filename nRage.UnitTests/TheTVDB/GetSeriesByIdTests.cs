@@ -99,7 +99,14 @@ namespace nRage.Tests.Unit.TheTVDB
         {
             var response = client.GetSeriesById(seriesId);
             Assert.True(response.Series[0].ImdbId == "tt0290978");
-        }        
+        }
+
+        [Fact]
+        public void GetSeriesReturnsCorrectZap2ItId()
+        {
+            var response = client.GetSeriesById(seriesId);
+            Assert.True(response.Series[0].Zap2ItId == null);
+        }
 
     }
 }
