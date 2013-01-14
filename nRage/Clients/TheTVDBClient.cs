@@ -14,7 +14,7 @@ namespace nRage.Clients {
     {
         private ITvdbResponseMapper _mapper;
 
-        public TheTVDBClient(IRetriever retriever) : base(retriever) { _mapper = new TheTVDBResponseMapper(); }
+        public TheTVDBClient(IRetriever retriever) : base(retriever) { _mapper = new TvdbMapper(); }
 
         #region URL generation
 

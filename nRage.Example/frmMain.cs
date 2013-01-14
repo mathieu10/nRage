@@ -39,7 +39,7 @@ namespace nRage.Example {
         private void btnSearch_Click(object sender, EventArgs e) {
             using(new LoadingBar(this))
             {
-                var db = new TVRageClient();
+                var db = new TvrageClient();
                 var result = db.SearchByTitle(txtShowName.Text);
                 DisplayResults(result);
             }
