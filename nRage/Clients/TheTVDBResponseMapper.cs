@@ -8,7 +8,7 @@ namespace nRage.Clients
 {
     public class TheTVDBResponseMapper : ITvdbResponseMapper
     {
-        public List<string> ConvertPipedStringToList(string input)
+        private List<string> ConvertPipedStringToList(string input)
         {
             return input.Split('|').Where(x => x.Length > 0).ToList();
         }
@@ -75,7 +75,16 @@ namespace nRage.Clients
                 }).Single();
         }
 
-        public SearchResponse MapXMLToSearch(XDocument xml) { throw new NotImplementedException(); }
-        public EpisodeListResponse MapXMLToEpisodeList(XDocument xml) { throw new NotImplementedException(); }      
+        public EpisodeListResponse MapXMLToEpisodeList(XDocument xml)
+        {
+            return new EpisodeListResponse
+            {
+
+            };
+        }
+
+        public GetSeriesResponse MapXMLToGetSeries(XDocument xml) { throw new NotImplementedException(); }        
+
+        public GetSeriesByIdResponse MapXMLToGetSeriesById(XDocument xml) { throw new NotImplementedException(); }
     }
 }

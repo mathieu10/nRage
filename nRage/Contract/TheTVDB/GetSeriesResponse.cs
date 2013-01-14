@@ -8,8 +8,4 @@ namespace nRage.Contract.TheTVDB
     public class GetSeriesResponse
     {
     }
-
-    public class GetSeriesByIdResponse
-    {
-    }
 }
