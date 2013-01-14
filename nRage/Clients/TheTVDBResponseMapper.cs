@@ -79,8 +79,38 @@ namespace nRage.Clients
         {
             return new EpisodeListResponse
             {
+                Series = xml.Descendants("Series").Select(x => new SeriesInfoResponse
+                {
+                    ID = (int)x.Element("id"),
+                    Actors = ConvertPipedStringToList((string)x.Element("Actors")),
+                    AirsDayOfWeek = (string)x.Element("Airs_DayOfWeek"),
+                    AirsTime = (string)x.Element("Airs_Time"),
+                    ContentRating = (string)x.Element("ContentRating"),
+                    FirstAired = (string)x.Element("FirstAired"),
+                    Genre = ConvertPipedStringToList((string)x.Element("Genre")),
+                    ImdbId = (string)x.Element("IMDB_ID"),
+                    Language = (string)x.Element("Language"),
+                    Network = (string)x.Element("Network"),
+                    NetworkId = (string)x.Element("NetworkID"),
+                    Overview = (string)x.Element("Overview"),
+                    Rating = (string)x.Element("Rating"),
+                    RatingCount = (string)x.Element("RatingCount"),
+                    Runtime = (string)x.Element("Runtime"),
+                    SeriesId = (string)x.Element("SeriesID"),
+                    SeriesName = (string)x.Element("SeriesName"),
+                    Status = (string)x.Element("Status"),
+                    Added = (string)x.Element("added"),
+                    AddedBy = (string)x.Element("addedBy"),
+                    Banner = (string)x.Element("banner"),
+                    FanArt = (string)x.Element("fanart"),
+                    LastUpdated = (string)x.Element("lastupdated"),
+                    Poster = (string)x.Element("poster"),
+                    Zap2ItId = (string)x.Element("zap2it_id"),
+                }).Single(),
+                Episodes = xml.Descendants("Episode").Select(x => new EpisodeListResponseEpisode{
 
-            };
+                }).ToList(),
+            };            
         }
 
         public GetSeriesResponse MapXMLToGetSeries(XDocument xml) { throw new NotImplementedException(); }        

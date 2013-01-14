@@ -33,6 +33,8 @@ namespace nRage.Contract.TheTVDB
         public string Writer{ get;set; }
         public string AbsoluteNumber{ get;set; }
         public string AirsAfterSeason{ get;set; }
+        public string AirsBeforeEpisode { get; set; }
+        public string AirsBeforeSeason { get; set; }
         public string FileName{ get;set; }
         public string LastUpdated{ get;set; }
         public string SeasonId{ get;set; }

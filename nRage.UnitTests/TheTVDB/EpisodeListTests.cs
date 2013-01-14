@@ -38,12 +38,245 @@ namespace nRage.Tests.Unit.TheTVDB
         }
 
         [Fact]
-        public void GetEpisodeListReturnsCorrectX()
+        public void GetEpisodeListReturnsCorrectEpisodeCount()
         {
             var response = client.GetEpisodeList(seriesId);
-            Assert.False(true);
+            Assert.NotNull(response.Episodes);
+            Assert.True(response.Episodes.Count == 2);
         }
 
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeId()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.Id == "3859781");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeCombinedEpisodeNumber()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.CombinedEpisodeNumber == "2");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeCombinedSeason()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.CombinedSeason == "0");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeDvdChapter()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.DvdChapter == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeDvdDiscId()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.DvdDiscId == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeDvdEpisodeNumber()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.DvdEpisodeNumber == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeDvdSeason()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.DvdSeason == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeDirector()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.Director == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeEpImgFlag()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.EpImgFlag == "2");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeEpisodeName()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.EpisodeName == "Good Cop Bad Cop");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeEpisodeNumber()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.EpisodeNumber == "1");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeFirstAired()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.FirstAired == "2009-02-17");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeGuestStars()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.GuestStars.Count == 0);
+        }
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeImdbId()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.ImdbId == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeLanguage()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.Langauge == "en");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeOverview()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.Overview == "Hank and Marie try to spice up theuir relationship on Valentine's Day.");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeProductionCode()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.ProductionCode == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeRating()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.Rating == "6.0");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeRatingCount()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.RatingCount == "1");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeSeasonNumber()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.SeasonNumber == "0");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeWriter()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.Writer == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeAbsoluteNumber()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.AbsoluteNumber == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeAirsAfterSeason()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.AirsAfterSeason == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeAirsBeforeEpisode()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.AirsBeforeEpisode == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeAirsBeforeSeason()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.AirsBeforeSeason == "");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeFileName()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.FileName == @"episodes/81189/3859781.jpg");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeLastUpdated()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.LastUpdated == "1301948371");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeSeasonId()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.SeasonId == "439371");
+        }
+
+        [Fact]
+        public void GetEpisodeListReturnsCorrectEpisodeSeriesId()
+        {
+            var response = client.GetEpisodeList(seriesId);
+            var result = response.Episodes[0];
+            Assert.True(result.SeriesId == "81189");
+        }                
+
+        #region Series info tests
         [Fact]
         public void GetEpisodeListReturnsCorrectSeriesID()
         {
@@ -221,6 +454,7 @@ namespace nRage.Tests.Unit.TheTVDB
             var response = client.GetEpisodeList(seriesId);
             Assert.True(response.Series.Zap2ItId == "SH01009396");
         }
+        #endregion
 
     }
 }
