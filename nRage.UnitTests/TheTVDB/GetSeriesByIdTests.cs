@@ -12,13 +12,13 @@ namespace nRage.Tests.Unit.TheTVDB
     {      
         public GetSeriesByIdTests() : base(){}
 
-        private const string seriesId = "TT0290978";
+        private const string seriesId = "tt0290978";
         private const string invalidSeriesId = "";
 
         [Fact]
         public void CanGetSeriesById()
         { 
-            var response = client.GetSeriesById("");
+            var response = client.GetSeriesById(seriesId);
             Assert.True(response != null);
         }
 
