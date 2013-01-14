@@ -6,8 +6,11 @@ A .NET library for searching and retreiving metadata for TV shows and movies. Th
 History
 -------
 
+###v0.2.5 (2013-Jan-14)
++ TheTVDB API support
+
 ###v0.2 (2012-Dec-17)
-+ Support TVRage update/scheduling API
++ TVRage update/scheduling API support
 
 ###v0.1 (2012-Dec-15)
 + Initial official release
