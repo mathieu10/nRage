@@ -11,18 +11,21 @@ namespace nRage.Tests.Unit.TheTVDB
     public class GetSeriesTests : TestBase
     {      
         public GetSeriesTests() : base(){}
+
+        private const string query = "the Office";
+        private const string invalidQuery = "SROTIJSRTRH";
           
         [Fact]
         public void CanGetSeries()
         { 
-            var response = client.GetSeries("");
+            var response = client.GetSeries(query);
             Assert.True(response != null);
         }
 
         [Fact]
         public void GetSeriesCallsCorrectURL()
         { 
-            client.GetSeries("");
+            client.GetSeries(query);
             Assert.True(MockRetriever.GetLastURLCalled() == TheTVDBMockRetriever.GETSERIES_THEOFFICE);
         }
 
