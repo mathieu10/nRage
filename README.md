@@ -21,7 +21,6 @@ Roadmap
 
 ###v0.3
 + Common data model abstraction for TV shows
-+ TheTVDB basic support
 
 ###v0.4
 + Very basic TheMovieDB and RottenTomatoes support
@@ -35,7 +34,7 @@ Roadmap
 + nRage documenation
 
 ###Very low priority
-+ TV schedule API
++ TVRage TV schedule API
 + TVRage API documentation 
 
 TODO / Notes to self
@@ -74,3 +73,4 @@ Mirror flags:
 
 * None: 0
 * Zip, banner and XML: 7
+
