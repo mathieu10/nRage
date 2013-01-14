@@ -7,5 +7,6 @@ namespace nRage.Contract.TheTVDB
 {
     public class GetSeriesResponse
     {
+        public List<GetSeriesResult> Series { get; set; }
     }
 }

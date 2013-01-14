@@ -14,47 +14,43 @@ namespace nRage.Clients {
     {
         private ITvdbResponseMapper _mapper;
 
-        public TheTVDBClient(IRetriever retriever) : base(retriever) { 
-            _mapper = new TheTVDBResponseMapper();
-        }
+        public TheTVDBClient(IRetriever retriever) : base(retriever) { _mapper = new TheTVDBResponseMapper(); }
 
         #region URL generation
+
         public override string ApiRoot { get { return @"http://www.thetvdb.com/api"; } }
         private const string API_KEY = @"2A7162D6C1E477B0";
 
-        private string GetURLForMirrors() {
-            return GetURL(@"{0}/mirrors.xml", API_KEY); }
-        private string GetURLForServerTime() {
-            return GetURL(@"Updates.php?type=none"); }
-        private string GetURLForGetSeries(string query) {
-            return GetURL(@"GetSeries.php?seriesname={0}",query); }
-        private string GetURLForGetSeriesById(string query) {
-            return GetURL(@"GetSeriesByRemoteID.php?imdbid={0}", query); }
-        private string GetURLForSeriesInfo(int seriesId) {
-            return GetURL(@"{0}/series/{1}", API_KEY, seriesId); }
-        private string GetURLForEpisodeList(int seriesId) {
-            return GetURL(@"{0}/series/{1}/all", API_KEY, seriesId); }
-        private string GetURLForUpdates(int updatedSince) {
-            return GetURL(@"Updates.php?type=all&time={0}",updatedSince); }
+        private string GetURLForMirrors() { return GetURL(@"{0}/mirrors.xml", API_KEY); }
+        private string GetURLForServerTime() { return GetURL(@"Updates.php?type=none"); }
+        private string GetURLForGetSeries(string query) { return GetURL(@"GetSeries.php?seriesname={0}", query); }
+        private string GetURLForGetSeriesById(string query) { return GetURL(@"GetSeriesByRemoteID.php?imdbid={0}", query); }
+        private string GetURLForSeriesInfo(int seriesId) { return GetURL(@"{0}/series/{1}", API_KEY, seriesId); }
+        private string GetURLForEpisodeList(int seriesId) { return GetURL(@"{0}/series/{1}/all", API_KEY, seriesId); }
+        private string GetURLForUpdates(int updatedSince) { return GetURL(@"Updates.php?type=all&time={0}", updatedSince); }
+
         #endregion
 
         #region Public methods        
+
         public MirrorsResponse GetMirrors()
         {
             var response = GetXML(GetURLForMirrors());
             return _mapper.MapXMLToMirrors(response);
         }
 
-        public ServerTimeResponse GetServerTime(){
+        public ServerTimeResponse GetServerTime()
+        {
             var response = GetXML(GetURLForServerTime());
             return _mapper.MapXMLToServerTime(response);
-        }        
+        }
 
         /// <summary>
         /// Should more appropriately be called "SearchForSeries"
         /// </summary>
-        public GetSeriesResponse GetSeries(string query){
-            //TODO: format/clean input (eg ' ' to '+')            
+        public GetSeriesResponse GetSeries(string query)
+        {
+            query = CleanQueryString(query);
             var response = GetXML(GetURLForGetSeries(query));
             return _mapper.MapXMLToGetSeries(response);
         }
@@ -65,7 +61,8 @@ namespace nRage.Clients {
             return _mapper.MapXMLToGetSeriesById(response);
         }
 
-        public SeriesInfoResponse GetSeriesInfo(int seriesId){
+        public SeriesInfoResponse GetSeriesInfo(int seriesId)
+        {
             var rawResponse = Retriever.Get(GetURLForSeriesInfo(seriesId));
             ValidateResponse<ShowNotFoundException>(rawResponse);
 
@@ -73,7 +70,8 @@ namespace nRage.Clients {
             return _mapper.MapXMLToSeriesInfo(response);
         }
 
-        public EpisodeListResponse GetEpisodeList(int seriesId){
+        public EpisodeListResponse GetEpisodeList(int seriesId)
+        {
             var rawResponse = Retriever.Get(GetURLForEpisodeList(seriesId));
             ValidateResponse<ShowNotFoundException>(rawResponse);
 
@@ -88,9 +86,22 @@ namespace nRage.Clients {
             var response = GetXML(GetURLForUpdates(updatedSince));
             return _mapper.MapXMLToUpdates(response);
         }
+
         #endregion
-    
-        private void ValidateResponse<T>(Stream rawResponse) where T : Exception, new()
+
+        private string CleanQueryString(string query)
+        {
+            return query
+                .Replace(' ', '+')
+                .Replace('/', '+')
+                .Replace('\\', '+')
+                .Replace('_', '+')
+                .Replace('-', '+')
+                .Replace(':', '+');
+        }
+
+
+    private void ValidateResponse<T>(Stream rawResponse) where T : Exception, new()
         {            
             var sr = new StreamReader(rawResponse);
             if (sr.ReadLine().Substring(0,5)!="<?xml")
