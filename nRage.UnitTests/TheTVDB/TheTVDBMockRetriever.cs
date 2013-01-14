@@ -11,7 +11,7 @@ namespace nRage.Tests.Unit.TheTVDB
         public static readonly string EPISODELIST_1 = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/series/1/all";
         public static readonly string GETSERIES_THEOFFICE = @"http://www.thetvdb.com/api/GetSeries.php?seriesname=the+Office";
         public static readonly string GETSERIES_SROTIJSRTRH = @"http://www.thetvdb.com/api/GetSeries.php?seriesname=SROTIJSRTRH";
-        public static readonly string GETSERIESBYID_TT029097 = @"http://www.thetvdb.com/api/GetSeriesByRemoteID.php?imdbid=tt029097";
+        public static readonly string GETSERIESBYID_TT029097 = @"http://www.thetvdb.com/api/GetSeriesByRemoteID.php?imdbid=tt0290978";
         public static readonly string GETSERIESBYID_1 = @"http://www.thetvdb.com/api/GetSeriesByRemoteID.php?imdbid=1";
         public static readonly string SERIESINFO_81189 = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/series/81189";
         public static readonly string SERIESINFO_1 = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/series/1";
