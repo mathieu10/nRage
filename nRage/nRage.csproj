@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clients\ClientBase.cs" />
+    <Compile Include="Clients\ITvdbResponseMapper.cs" />
+    <Compile Include="Clients\TheTVDBResponseMapper.cs" />
     <Compile Include="Contract\TheTVDB\EpisodeListResponse.cs" />
     <Compile Include="Contract\TheTVDB\GetUpdatesResponse.cs" />
     <Compile Include="Contract\TheTVDB\SearchResponse.cs" />
