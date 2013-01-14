@@ -169,7 +169,7 @@ namespace nRage.Tests.Unit.TheTVDB
         {
             var response = client.GetEpisodeList(seriesId);
             var result = response.Episodes[0];
-            Assert.True(result.Overview == "Hank and Marie try to spice up theuir relationship on Valentine's Day.");
+            Assert.True(result.Overview == "Hank and Marie try to spice up their relationship on Valentine's Day.");
         }
 
         [Fact]
