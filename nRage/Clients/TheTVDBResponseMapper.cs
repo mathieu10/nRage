@@ -155,8 +155,20 @@ namespace nRage.Clients
             };
         }        
 
-        public GetSeriesByIdResponse MapXMLToGetSeriesById(XDocument xml) { 
-            return (GetSeriesByIdResponse)MapXMLToGetSeries(xml);
+        public GetSeriesByIdResponse MapXMLToGetSeriesById(XDocument xml) {
+            return new GetSeriesByIdResponse()
+            {
+                Series = xml.Descendants("Series").Select(x => new GetSeriesResult
+                {
+                    Id = (string)x.Element("id"),
+                    SeriesId = (string)x.Element("seriesid"),
+                    SeriesName = (string)x.Element("SeriesName"),
+                    Language = (string)x.Element("language"),
+                    Banner = (string)x.Element("banner"),
+                    Overview = (string)x.Element("Overview"),
+                    FirstAired = (string)x.Element("FirstAired"),
+                }).ToList(),
+            };
         }
     }
 }
