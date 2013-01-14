@@ -74,7 +74,7 @@ namespace nRage.Clients {
         }
 
         public EpisodeListResponse GetEpisodeList(int seriesId){
-            var rawResponse = Retriever.Get(GetURLForSeriesInfo(seriesId));
+            var rawResponse = Retriever.Get(GetURLForEpisodeList(seriesId));
             ValidateResponse<ShowNotFoundException>(rawResponse);
 
             var response = XDocument.Load(rawResponse);
