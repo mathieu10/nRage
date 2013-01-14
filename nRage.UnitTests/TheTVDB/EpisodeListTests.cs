@@ -58,7 +58,7 @@ namespace nRage.Tests.Unit.TheTVDB
         {
             var response = client.GetEpisodeList(seriesId);
             var result = response.Episodes[0];
-            Assert.True(result.CombinedEpisodeNumber == "2");
+            Assert.True(result.CombinedEpisodeNumber == "1");
         }
 
         [Fact]
