@@ -2,5 +2,5 @@
 
 namespace nRage.Contract.TheTVDB
 {
-    public class GetSeriesByIdResponse : GetSeriesResult { }
+    public class GetSeriesByIdResponse : GetSeriesResponse { }
 }

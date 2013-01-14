@@ -141,8 +141,22 @@ namespace nRage.Clients
             };            
         }
 
-        public GetSeriesResponse MapXMLToGetSeries(XDocument xml) { throw new NotImplementedException(); }        
+        public GetSeriesResponse MapXMLToGetSeries(XDocument xml) {
+            return new GetSeriesResponse {
+                Series = xml.Descendants("Series").Select(x=> new GetSeriesResult{
+                       Id = (string)x.Element("id"),
+                       SeriesId = (string)x.Element("seriesid"),
+                       SeriesName = (string)x.Element("SeriesName"),
+                       Language = (string)x.Element("language"),
+                       Banner = (string)x.Element("banner"),
+                       Overview = (string)x.Element("Overview"),
+                       FirstAired = (string)x.Element("FirstAired"),
+                }).ToList(),
+            };
+        }        
 
-        public GetSeriesByIdResponse MapXMLToGetSeriesById(XDocument xml) { throw new NotImplementedException(); }
+        public GetSeriesByIdResponse MapXMLToGetSeriesById(XDocument xml) { 
+            return (GetSeriesByIdResponse)MapXMLToGetSeries(xml);
+        }
     }
 }
