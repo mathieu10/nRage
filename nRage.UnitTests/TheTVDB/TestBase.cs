@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Ninject;
 using Xunit;
-using nRage.Clients;
+using nRage.Mapper;
 
 namespace nRage.Tests.Unit.TheTVDB
 {
