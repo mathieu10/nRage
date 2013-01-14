@@ -25,8 +25,10 @@ namespace nRage.Clients {
             return GetURL(@"{0}/mirrors.xml", API_KEY); }
         private string GetURLForServerTime() {
             return GetURL(@"Updates.php?type=none"); }
-        private string GetURLForSearch(string query) {
+        private string GetURLForGetSeries(string query) {
             return GetURL(@"GetSeries.php?seriesname={0}",query); }
+        private string GetURLForGetSeriesById(string query) {
+            return GetURL(@"GetSeriesByRemoteID.php?imdbid={0}", query); }
         private string GetURLForSeriesInfo(int seriesId) {
             return GetURL(@"{0}/series/{1}", API_KEY, seriesId); }
         private string GetURLForEpisodeList(int seriesId) {
@@ -47,10 +49,19 @@ namespace nRage.Clients {
             return _mapper.MapXMLToServerTime(response);
         }        
 
-        public SearchResponse Search(string query){
+        /// <summary>
+        /// Should more appropriately be called "SearchForSeries"
+        /// </summary>
+        public GetSeriesResponse GetSeries(string query){
             //TODO: format/clean input (eg ' ' to '+')            
-            var response = GetXML(GetURLForSearch(query));
-            return _mapper.MapXMLToSearch(response);
+            var response = GetXML(GetURLForGetSeries(query));
+            return _mapper.MapXMLToGetSeries(response);
+        }
+
+        public GetSeriesResponse GetSeriesById(string imdbId)
+        {
+            var response = GetXML(GetURLForGetSeriesById(imdbId));
+            return _mapper.MapXMLToGetSeriesById(response);
         }
 
         public SeriesInfoResponse GetSeriesInfo(int seriesId){
