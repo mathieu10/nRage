@@ -1,6 +1,6 @@
 ﻿namespace nRage.Contract.TheTVDB
 {
-    public class GetSeriesResult
+    public class GetSeriesByIdResult
     {
         public string Id { get; set; }
         public string SeriesId { get; set; }

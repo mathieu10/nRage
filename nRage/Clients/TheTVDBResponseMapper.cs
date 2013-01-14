@@ -151,6 +151,8 @@ namespace nRage.Clients
                        Banner = (string)x.Element("banner"),
                        Overview = (string)x.Element("Overview"),
                        FirstAired = (string)x.Element("FirstAired"),
+                       ImdbId = (string)x.Element("IMDB_ID"),
+                       Zap2ItId = (string)x.Element("zap2it_id"),
                 }).ToList(),
             };
         }        
@@ -158,7 +160,7 @@ namespace nRage.Clients
         public GetSeriesByIdResponse MapXMLToGetSeriesById(XDocument xml) {
             return new GetSeriesByIdResponse()
             {
-                Series = xml.Descendants("Series").Select(x => new GetSeriesResult
+                Series = xml.Descendants("Series").Select(x => new GetSeriesByIdResult
                 {
                     Id = (string)x.Element("id"),
                     SeriesId = (string)x.Element("seriesid"),
@@ -167,6 +169,8 @@ namespace nRage.Clients
                     Banner = (string)x.Element("banner"),
                     Overview = (string)x.Element("Overview"),
                     FirstAired = (string)x.Element("FirstAired"),
+                    ImdbId = (string)x.Element("IMDB_ID"),
+                    Zap2ItId = (string)x.Element("zap2it_id"),
                 }).ToList(),
             };
         }

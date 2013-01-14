@@ -58,7 +58,9 @@ namespace nRage.Clients {
         public GetSeriesByIdResponse GetSeriesById(string imdbId)
         {
             var response = GetXML(GetURLForGetSeriesById(imdbId));
-            return _mapper.MapXMLToGetSeriesById(response);
+            var result = _mapper.MapXMLToGetSeriesById(response);
+            if(result.Series.Count == 0) throw new ShowNotFoundException();
+            return result;
         }
 
         public SeriesInfoResponse GetSeriesInfo(int seriesId)

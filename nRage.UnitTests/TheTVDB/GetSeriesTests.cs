@@ -86,5 +86,19 @@ namespace nRage.Tests.Unit.TheTVDB
             Assert.True(response.Series[0].FirstAired == "2005-03-24");
         }
 
+        [Fact]
+        public void GetSeriesReturnsCorrectImdbId()
+        {
+            var response = client.GetSeries(query);
+            Assert.True(response.Series[0].ImdbId == "tt0386676");
+        }
+
+        [Fact]
+        public void GetSeriesReturnsCorrectZap2ItId()
+        {
+            var response = client.GetSeries(query);
+            Assert.True(response.Series[0].Zap2ItId == "SH00726133");
+        }
+
     }
 }
