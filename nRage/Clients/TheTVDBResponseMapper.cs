@@ -136,7 +136,7 @@ namespace nRage.Clients
                     SeasonId = (string)x.Element("seasonid"),
                     SeasonNumber = (string)x.Element("SeasonNumber"),
                     Writer = (string)x.Element("Writer"),
-                    GuestStars = null, //(string)x.Element("GuestStars"), //TODO how to map this?
+                    GuestStars = ConvertPipedStringToList((string)x.Element("GuestStars")),
                 }).ToList(),
             };            
         }
