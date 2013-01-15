@@ -134,9 +134,9 @@ namespace nRage.Tests.Unit.Properties {
         ///&lt;Data&gt;
         ///&lt;/Data&gt;.
         /// </summary>
-        internal static string RESPONSE_GETSERIESBYId_1 {
+        internal static string RESPONSE_GETSERIESBYID_1 {
             get {
-                return ResourceManager.GetString("RESPONSE_GETSERIESBYId_1", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_GETSERIESBYID_1", resourceCulture);
             }
         }
         
@@ -150,9 +150,9 @@ namespace nRage.Tests.Unit.Properties {
         ///&lt;banner&gt;graphical/78107-g10.jpg&lt;/banner&gt;
         ///&lt;Overview&gt;A mockumentary about life in a mid-sized suboffice paper merchants in a bleak British industrial town, where manager David Brent thinks he&apos;s the coolest, funniest, and most popular boss ever. He isn&apos;t. That doesn&apos;t stop him from embarrassing himself in front of the cameras on a regular basis, whether from [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string RESPONSE_GETSERIESBYId_TT0290978 {
+        internal static string RESPONSE_GETSERIESBYID_TT0290978 {
             get {
-                return ResourceManager.GetString("RESPONSE_GETSERIESBYId_TT0290978", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_GETSERIESBYID_TT0290978", resourceCulture);
             }
         }
         

@@ -41,7 +41,7 @@ namespace nRage.Tests.Unit.TheTVDB
         public void GetSeriesInfoReturnsCorrectSeriesID()
         {
             var response = client.GetSeriesInfo(seriesId);
-            Assert.True(response.ID == seriesId);
+            Assert.True(response.Id == seriesId);
         }
 
         [Fact]

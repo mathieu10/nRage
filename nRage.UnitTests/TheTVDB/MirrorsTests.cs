@@ -33,7 +33,7 @@ namespace nRage.Tests.Unit.TheTVDB
             var response = client.GetMirrors();
             var result = response.Mirrors.First();
 
-            Assert.True(result.ID == 1);
+            Assert.True(result.Id == 1);
         }
 
         [Fact]

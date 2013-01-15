@@ -278,7 +278,7 @@ namespace nRage.Tests.Unit.TheTVDB
 
         #region Series info tests
         [Fact]
-        public void GetEpisodeListReturnsCorrectSeriesId()
+        public void GetEpisodeListReturnsCorrectId()
         {
             var response = client.GetEpisodeList(seriesId);
             Assert.True(response.Series.Id == seriesId);
@@ -389,7 +389,7 @@ namespace nRage.Tests.Unit.TheTVDB
         public void GetEpisodeListReturnsCorrectSeriesId()
         {
             var response = client.GetEpisodeList(seriesId);
-            Assert.True(response.Series.SeriesId == "74713");
+            Assert.True(response.Series.SeriesId == seriesId.ToString());
         }
 
         [Fact]

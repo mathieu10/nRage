@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Resources;
 using System.Text;
 using System.Xml.Linq;
+using nRage.Interface;
 
 namespace nRage.Tests.Unit
 {    

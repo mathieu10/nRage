@@ -90,7 +90,7 @@ namespace nRage.Tests.Unit.TVRage
         public void GetLastUpdatesReturnsCorrectShowID()
         { 
             var response = client.LastUpdates(span_4hours);
-            Assert.True(response.Shows.ElementAt(0).ShowID == 31);
+            Assert.True(response.Shows.ElementAt(0).ShowId == 31);
         }
 
         [Fact]

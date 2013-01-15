@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Ninject;
 using Xunit;
+using nRage.Client;
+using nRage.Interface;
 using nRage.Mapper;
 
 namespace nRage.Tests.Unit.TheTVDB

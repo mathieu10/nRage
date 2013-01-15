@@ -42,7 +42,7 @@ namespace nRage.Tests.Unit.TVRage
             var response = client.FullSearchByTitle(title);
             var result = response.Results.First();
 
-            Assert.True(result.ShowID==18164);            
+            Assert.True(result.ShowId==18164);            
         }
 
         [Fact]
