@@ -2,7 +2,7 @@
 using System.Xml.Linq;
 using nRage.Contract.Tvdb;
 
-namespace nRage.Clients
+namespace nRage.Client
 {
     public interface ITvdbResponseMapper
     {

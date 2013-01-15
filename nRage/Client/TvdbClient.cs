@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 using nRage.Contract.Tvdb;
 using nRage.Mapper;
 
-namespace nRage.Clients {
+namespace nRage.Client {
 
     public class TvdbClient : ClientBase
     {

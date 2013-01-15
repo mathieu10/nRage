@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
-using nRage.Clients;
+using nRage.Client;
 using nRage.Contract.Tvdb;
 using nRage.Interface;
 

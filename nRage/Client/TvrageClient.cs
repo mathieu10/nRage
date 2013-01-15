@@ -11,7 +11,7 @@ using System.Xml.Serialization;
 using nRage.Contract.Tvrage;
 using nRage.Mapper;
 
-namespace nRage.Clients {
+namespace nRage.Client {
 
     public class TvrageClient : ClientBase
     {
