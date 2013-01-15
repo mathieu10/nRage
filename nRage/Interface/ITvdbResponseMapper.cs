@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Xml.Linq;
-using nRage.Contract.TheTVDB;
+using nRage.Contract.Tvdb;
 
 namespace nRage.Clients
 {

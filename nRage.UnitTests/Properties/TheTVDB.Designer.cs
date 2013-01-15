@@ -89,7 +89,7 @@ namespace nRage.Tests.Unit.Properties {
         ///  &lt;ContentRating&gt;TV-MA&lt;/ContentRating&gt;
         ///  &lt;FirstAired&gt;2008-01-20&lt;/FirstAired&gt;
         ///  &lt;Genre&gt;|Drama|&lt;/Genre&gt;
-        ///  &lt;IMDB_ID&gt;tt0903747&lt;/IMDB_ID&gt;
+        ///  &lt;IMDB_Id&gt;tt0903747&lt;/IMDB_Id&gt;
         ///  &lt;Language&gt;en&lt;/Language&gt;
         ///  &lt;Network&gt;AM [rest of string was truncated]&quot;;.
         /// </summary>
@@ -120,7 +120,7 @@ namespace nRage.Tests.Unit.Properties {
         ///&lt;banner&gt;graphical/73244-g9.jpg&lt;/banner&gt;
         ///&lt;Overview&gt;A fresh and funny mockumentary-style glimpse into the daily interactions of the eccentric workers at the Dunder Mifflin paper supply company. This fast-paced comedy parodies contemporary American water-cooler culture.&lt;/Overview&gt;
         ///&lt;FirstAired&gt;2005-03-24&lt;/FirstAired&gt;
-        ///&lt;IMDB_ID&gt;tt0386676&lt;/IMDB_ID&gt;
+        ///&lt;IMDB_Id&gt;tt0386676&lt;/IMDB_Id&gt;
         ///&lt;zap2it_id [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string RESPONSE_GETSERIES_THEOFFICE {
@@ -134,9 +134,9 @@ namespace nRage.Tests.Unit.Properties {
         ///&lt;Data&gt;
         ///&lt;/Data&gt;.
         /// </summary>
-        internal static string RESPONSE_GETSERIESBYID_1 {
+        internal static string RESPONSE_GETSERIESBYId_1 {
             get {
-                return ResourceManager.GetString("RESPONSE_GETSERIESBYID_1", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_GETSERIESBYId_1", resourceCulture);
             }
         }
         
@@ -150,9 +150,9 @@ namespace nRage.Tests.Unit.Properties {
         ///&lt;banner&gt;graphical/78107-g10.jpg&lt;/banner&gt;
         ///&lt;Overview&gt;A mockumentary about life in a mid-sized suboffice paper merchants in a bleak British industrial town, where manager David Brent thinks he&apos;s the coolest, funniest, and most popular boss ever. He isn&apos;t. That doesn&apos;t stop him from embarrassing himself in front of the cameras on a regular basis, whether from [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string RESPONSE_GETSERIESBYID_TT0290978 {
+        internal static string RESPONSE_GETSERIESBYId_TT0290978 {
             get {
-                return ResourceManager.GetString("RESPONSE_GETSERIESBYID_TT0290978", resourceCulture);
+                return ResourceManager.GetString("RESPONSE_GETSERIESBYId_TT0290978", resourceCulture);
             }
         }
         
@@ -202,7 +202,7 @@ namespace nRage.Tests.Unit.Properties {
         ///    &lt;ContentRating&gt;TV-MA&lt;/ContentRating&gt;
         ///    &lt;FirstAired&gt;2008-01-20&lt;/FirstAired&gt;
         ///    &lt;Genre&gt;|Drama|&lt;/Genre&gt;
-        ///    &lt;IMDB_ID&gt;tt0903747&lt;/IMDB_ID&gt;
+        ///    &lt;IMDB_Id&gt;tt0903747&lt;/IMDB_Id&gt;
         ///    &lt;Language&gt;en&lt;/La [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string RESPONSE_SERIESINFO_81189 {

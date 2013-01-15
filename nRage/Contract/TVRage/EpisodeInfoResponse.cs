@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace nRage.Contract.TVRage
+namespace nRage.Contract.Tvrage
 {
     public class EpisodeInfoResponse
     {        

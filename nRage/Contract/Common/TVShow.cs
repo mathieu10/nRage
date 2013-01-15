@@ -11,17 +11,17 @@ namespace nRage.Contract.Common {
     /// </summary>
     public class TVShow
     {
-        public string ID{get;set;}
+        public string Id{get;set;}
         public string Name{get;set;}
-        public List<ExternalID> ExternalIDs{get;set;}
+        public List<ExternalId> ExternalIds{get;set;}
     }
 
-    public class ExternalID
+    public class ExternalId
     {
         public enum DataSourceEnum{
             Unknown = -1,
-            TVRage = 100,
-            TheTVDB = 200,
+            Tvrage = 100,
+            Tvdb = 200,
         }
 
         public DataSourceEnum DataSource{get;set;}

@@ -59,7 +59,7 @@ Observed inconsistencies
 
   Actual usage is:
 
-    > http://services.tvrage.com/feeds/episodeinfo.php?sid={SHOWID}&ep={SEASON}x{EPISODE}
+    > http://services.tvrage.com/feeds/episodeinfo.php?sid={SHOWId}&ep={SEASON}x{EPISODE}
 
 * LastUpdates does not appear to support the advertised ability to get updates from a specific point in time
 * Inconsistent naming (eg sometimes "id" or "name" othertimes "showid" or "showname")

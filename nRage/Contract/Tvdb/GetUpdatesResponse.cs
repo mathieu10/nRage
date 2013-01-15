@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace nRage.Contract.TheTVDB
+namespace nRage.Contract.Tvdb
 {
     public class GetUpdatesResponse
     {

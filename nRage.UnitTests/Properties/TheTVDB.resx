@@ -168,15 +168,15 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
   &lt;ContentRating&gt;TV-MA&lt;/ContentRating&gt;
   &lt;FirstAired&gt;2008-01-20&lt;/FirstAired&gt;
   &lt;Genre&gt;|Drama|&lt;/Genre&gt;
-  &lt;IMDB_ID&gt;tt0903747&lt;/IMDB_ID&gt;
+  &lt;IMDB_Id&gt;tt0903747&lt;/IMDB_Id&gt;
   &lt;Language&gt;en&lt;/Language&gt;
   &lt;Network&gt;AMC&lt;/Network&gt;
-  &lt;NetworkID&gt;&lt;/NetworkID&gt;
+  &lt;NetworkId&gt;&lt;/NetworkId&gt;
   &lt;Overview&gt;Walter White, a struggling high school chemistry teacher is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman with the aim of securing his family's financial future before he dies.&lt;/Overview&gt;
   &lt;Rating&gt;9.3&lt;/Rating&gt;
   &lt;RatingCount&gt;397&lt;/RatingCount&gt;
   &lt;Runtime&gt;60&lt;/Runtime&gt;
-  &lt;SeriesID&gt;74713&lt;/SeriesID&gt;
+  &lt;SeriesId&gt;74713&lt;/SeriesId&gt;
   &lt;SeriesName&gt;Breaking Bad&lt;/SeriesName&gt;
   &lt;Status&gt;Continuing&lt;/Status&gt;
   &lt;added&gt;&lt;/added&gt;
@@ -201,7 +201,7 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
   &lt;EpisodeNumber&gt;1&lt;/EpisodeNumber&gt;
   &lt;FirstAired&gt;2009-02-17&lt;/FirstAired&gt;
   &lt;GuestStars&gt;&lt;/GuestStars&gt;
-  &lt;IMDB_ID&gt;&lt;/IMDB_ID&gt;
+  &lt;IMDB_Id&gt;&lt;/IMDB_Id&gt;
   &lt;Language&gt;en&lt;/Language&gt;
   &lt;Overview&gt;Hank and Marie try to spice up their relationship on Valentine's Day.&lt;/Overview&gt;
   &lt;ProductionCode&gt;&lt;/ProductionCode&gt;
@@ -232,7 +232,7 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
   &lt;EpisodeNumber&gt;2&lt;/EpisodeNumber&gt;
   &lt;FirstAired&gt;2009-02-17&lt;/FirstAired&gt;
   &lt;GuestStars&gt;&lt;/GuestStars&gt;
-  &lt;IMDB_ID&gt;&lt;/IMDB_ID&gt;
+  &lt;IMDB_Id&gt;&lt;/IMDB_Id&gt;
   &lt;Language&gt;en&lt;/Language&gt;
   &lt;Overview&gt;Walt and Hank have a talk before Hank gets married.&lt;/Overview&gt;
   &lt;ProductionCode&gt;&lt;/ProductionCode&gt;
@@ -251,12 +251,12 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
 &lt;/Episode&gt;
 &lt;/Data&gt;</value>
   </data>
-  <data name="RESPONSE_GETSERIESBYID_1" xml:space="preserve">
+  <data name="RESPONSE_GETSERIESBYId_1" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;Data&gt;
 &lt;/Data&gt;</value>
   </data>
-  <data name="RESPONSE_GETSERIESBYID_TT0290978" xml:space="preserve">
+  <data name="RESPONSE_GETSERIESBYId_TT0290978" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;Data&gt;
 &lt;Series&gt;
@@ -266,7 +266,7 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
 &lt;banner&gt;graphical/78107-g10.jpg&lt;/banner&gt;
 &lt;Overview&gt;A mockumentary about life in a mid-sized suboffice paper merchants in a bleak British industrial town, where manager David Brent thinks he's the coolest, funniest, and most popular boss ever. He isn't. That doesn't stop him from embarrassing himself in front of the cameras on a regular basis, whether from his political sermonizing, his stand-up 'comedy', or his incredibly unique dancing. Meanwhile, long-suffering Tim longs after Dawn the engaged receptionist and keeps himself sane by playing childish practical jokes on his insufferable, army-obsessed deskmate Gareth. Will the Slough office be closed? Will the BBC give David a game show? Will Tim and Dawn end up with each other? And more importantly, will Gareth realize what a hopeless prat he is?&lt;/Overview&gt;
 &lt;FirstAired&gt;2001-07-01&lt;/FirstAired&gt;
-&lt;IMDB_ID&gt;tt0290978&lt;/IMDB_ID&gt;
+&lt;IMDB_Id&gt;tt0290978&lt;/IMDB_Id&gt;
 &lt;id&gt;78107&lt;/id&gt;
 &lt;/Series&gt;
 &lt;/Data&gt;</value>
@@ -286,7 +286,7 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
 &lt;banner&gt;graphical/73244-g9.jpg&lt;/banner&gt;
 &lt;Overview&gt;A fresh and funny mockumentary-style glimpse into the daily interactions of the eccentric workers at the Dunder Mifflin paper supply company. This fast-paced comedy parodies contemporary American water-cooler culture.&lt;/Overview&gt;
 &lt;FirstAired&gt;2005-03-24&lt;/FirstAired&gt;
-&lt;IMDB_ID&gt;tt0386676&lt;/IMDB_ID&gt;
+&lt;IMDB_Id&gt;tt0386676&lt;/IMDB_Id&gt;
 &lt;zap2it_id&gt;SH00726133&lt;/zap2it_id&gt;
 &lt;id&gt;73244&lt;/id&gt;
 &lt;/Series&gt;
@@ -297,7 +297,7 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
 &lt;banner&gt;graphical/254748-g.jpg&lt;/banner&gt;
 &lt;Overview&gt;The office is a Swedish comedy series on TV4 based on the British model The Office. The series premiered February 12, 2012 and is a mockumentary, a fictional series produced in documentary style. The series plays Henrik Dorsin starring as Ove Sundberg , head of  Svensk kontorshygien AB. Ove Sundberg is also one of the main characters in TV4's Solsidan. Chief Assistant Viking played by Björn Gustafsson, the long-term employees Erik played by Kim Sulocki, and the receptionist Terese played by Sissela Benn.&lt;/Overview&gt;
 &lt;FirstAired&gt;2012-02-12&lt;/FirstAired&gt;
-&lt;IMDB_ID&gt;tt2263665&lt;/IMDB_ID&gt;
+&lt;IMDB_Id&gt;tt2263665&lt;/IMDB_Id&gt;
 &lt;id&gt;254748&lt;/id&gt;
 &lt;/Series&gt;
 &lt;Series&gt;
@@ -373,15 +373,15 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
     &lt;ContentRating&gt;TV-MA&lt;/ContentRating&gt;
     &lt;FirstAired&gt;2008-01-20&lt;/FirstAired&gt;
     &lt;Genre&gt;|Drama|&lt;/Genre&gt;
-    &lt;IMDB_ID&gt;tt0903747&lt;/IMDB_ID&gt;
+    &lt;IMDB_Id&gt;tt0903747&lt;/IMDB_Id&gt;
     &lt;Language&gt;en&lt;/Language&gt;
     &lt;Network&gt;AMC&lt;/Network&gt;
-    &lt;NetworkID&gt;&lt;/NetworkID&gt;
+    &lt;NetworkId&gt;&lt;/NetworkId&gt;
     &lt;Overview&gt;Walter White, a struggling high school chemistry teacher is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman with the aim of securing his family's financial future before he dies.&lt;/Overview&gt;
     &lt;Rating&gt;9.3&lt;/Rating&gt;
     &lt;RatingCount&gt;397&lt;/RatingCount&gt;
     &lt;Runtime&gt;60&lt;/Runtime&gt;
-    &lt;SeriesID&gt;74713&lt;/SeriesID&gt;
+    &lt;SeriesId&gt;74713&lt;/SeriesId&gt;
     &lt;SeriesName&gt;Breaking Bad&lt;/SeriesName&gt;
     &lt;Status&gt;Continuing&lt;/Status&gt;
     &lt;added&gt;&lt;/added&gt;

@@ -15,7 +15,7 @@ namespace nRage.Tests.Unit.TVRage
         private const int nonexistent_show_id = 842999999;
 
         [Fact]
-        public void CanGetShowInfoByShowID()
+        public void CanGetShowInfoByShowId()
         { 
             var response = client.GetShowInfo(show_id);
             Assert.True(response != null);
@@ -29,7 +29,7 @@ namespace nRage.Tests.Unit.TVRage
         }
 
         [Fact]
-        public void GetShowInfoThrowsWhenInvalidShowID()
+        public void GetShowInfoThrowsWhenInvalidShowId()
         { 
             Assert.Throws<ShowNotFoundException>(()=>{
                 client.GetShowInfo(nonexistent_show_id);
@@ -37,10 +37,10 @@ namespace nRage.Tests.Unit.TVRage
         }
 
         [Fact]
-        public void GetShowInfoReturnsCorrectShowID()
+        public void GetShowInfoReturnsCorrectShowId()
         { 
             var response = client.GetShowInfo(show_id);
-            Assert.True(response.ShowID == 18753);
+            Assert.True(response.ShowId == 18753);
         }
 
         [Fact]

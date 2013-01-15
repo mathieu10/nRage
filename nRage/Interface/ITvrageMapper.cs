@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Xml.Linq;
-using nRage.Contract.TVRage;
+using nRage.Contract.Tvrage;
 
 namespace nRage.Interface
 {

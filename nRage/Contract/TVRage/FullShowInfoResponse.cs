@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 
-namespace nRage.Contract.TVRage
+namespace nRage.Contract.Tvrage
 {
     public class FullShowInfoResponse
     {
         public string Name{get;set;}
         public string TotalSeasons{get;set;}
-        public int ShowID{get;set;}
+        public int ShowId{get;set;}
         public string ShowLink{get;set;}
         public string Started{get;set;}
         public string Ended{get;set;}

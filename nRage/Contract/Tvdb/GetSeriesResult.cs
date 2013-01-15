@@ -1,4 +1,4 @@
-﻿namespace nRage.Contract.TheTVDB
+﻿namespace nRage.Contract.Tvdb
 {
     public class GetSeriesResult
     {

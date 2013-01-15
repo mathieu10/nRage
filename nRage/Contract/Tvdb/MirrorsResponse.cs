@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using nRage.Contract.TheTVDB;
+using nRage.Contract.Tvdb;
 
-namespace nRage.Contract.TheTVDB
+namespace nRage.Contract.Tvdb
 {
     public class MirrorsResponse
     {

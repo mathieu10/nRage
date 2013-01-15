@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace nRage.Contract.TheTVDB
+namespace nRage.Contract.Tvdb
 {
     public class SeriesInfoResponse
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public List<string> Actors { get; set; }
         public string AirsDayOfWeek { get; set; }
         public string AirsTime { get; set; }

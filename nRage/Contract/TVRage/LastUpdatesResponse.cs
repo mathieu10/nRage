@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace nRage.Contract.TVRage
+namespace nRage.Contract.Tvrage
 {
     public class LastUpdatesResponse
     {

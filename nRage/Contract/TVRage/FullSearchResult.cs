@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace nRage.Contract.TVRage
+namespace nRage.Contract.Tvrage
 {
     [Serializable]
     public class FullSearchResult : SearchResult

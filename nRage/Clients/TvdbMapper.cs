@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
-using nRage.Contract.TheTVDB;
+using nRage.Clients;
+using nRage.Contract.Tvdb;
 using nRage.Interface;
 
 namespace nRage.Mapper
@@ -20,7 +21,7 @@ namespace nRage.Mapper
                 {
                     Mirrors = xml.Descendants("Mirror").Select(x => new Mirror
                         {
-                            ID = (int)x.Element("id"),
+                            Id = (int)x.Element("id"),
                             MirrorPath = (string)x.Element("mirrorpath"),
                             TypeMask = (byte)(int)x.Element("typemask"),
                         }).ToList(),
@@ -48,22 +49,22 @@ namespace nRage.Mapper
         {
             return xml.Descendants("Series").Select(x => new SeriesInfoResponse
                 {
-                    ID = (int)x.Element("id"),
+                    Id = (int)x.Element("id"),
                     Actors = ConvertPipedStringToList((string)x.Element("Actors")),
                     AirsDayOfWeek = (string)x.Element("Airs_DayOfWeek"),
                     AirsTime = (string)x.Element("Airs_Time"),
                     ContentRating = (string)x.Element("ContentRating"),
                     FirstAired = (string)x.Element("FirstAired"),
                     Genre = ConvertPipedStringToList((string)x.Element("Genre")),
-                    ImdbId = (string)x.Element("IMDB_ID"),
+                    ImdbId = (string)x.Element("IMDB_Id"),
                     Language = (string)x.Element("Language"),
                     Network = (string)x.Element("Network"),
-                    NetworkId = (string)x.Element("NetworkID"),
+                    NetworkId = (string)x.Element("NetworkId"),
                     Overview = (string)x.Element("Overview"),
                     Rating = (string)x.Element("Rating"),
                     RatingCount = (string)x.Element("RatingCount"),
                     Runtime = (string)x.Element("Runtime"),
-                    SeriesId = (string)x.Element("SeriesID"),
+                    SeriesId = (string)x.Element("SeriesId"),
                     SeriesName = (string)x.Element("SeriesName"),
                     Status = (string)x.Element("Status"),
                     Added = (string)x.Element("added"),
@@ -82,22 +83,22 @@ namespace nRage.Mapper
             {
                 Series = xml.Descendants("Series").Select(x => new SeriesInfoResponse
                 {
-                    ID = (int)x.Element("id"),
+                    Id = (int)x.Element("id"),
                     Actors = ConvertPipedStringToList((string)x.Element("Actors")),
                     AirsDayOfWeek = (string)x.Element("Airs_DayOfWeek"),
                     AirsTime = (string)x.Element("Airs_Time"),
                     ContentRating = (string)x.Element("ContentRating"),
                     FirstAired = (string)x.Element("FirstAired"),
                     Genre = ConvertPipedStringToList((string)x.Element("Genre")),
-                    ImdbId = (string)x.Element("IMDB_ID"),
+                    ImdbId = (string)x.Element("IMDB_Id"),
                     Language = (string)x.Element("Language"),
                     Network = (string)x.Element("Network"),
-                    NetworkId = (string)x.Element("NetworkID"),
+                    NetworkId = (string)x.Element("NetworkId"),
                     Overview = (string)x.Element("Overview"),
                     Rating = (string)x.Element("Rating"),
                     RatingCount = (string)x.Element("RatingCount"),
                     Runtime = (string)x.Element("Runtime"),
-                    SeriesId = (string)x.Element("SeriesID"),
+                    SeriesId = (string)x.Element("SeriesId"),
                     SeriesName = (string)x.Element("SeriesName"),
                     Status = (string)x.Element("Status"),
                     Added = (string)x.Element("added"),
@@ -115,7 +116,7 @@ namespace nRage.Mapper
                     Overview = (string)x.Element("Overview"),
                     Rating = (string)x.Element("Rating"),
                     SeriesId = (string)x.Element("seriesid"),
-                    ImdbId = (string)x.Element("IMDB_ID"),
+                    ImdbId = (string)x.Element("IMDB_Id"),
                     RatingCount = (string)x.Element("RatingCount"),
                     AirsAfterSeason = (string)x.Element("airsafter_season"),
                     AirsBeforeEpisode = (string)x.Element("airsbefore_episode"),
@@ -152,7 +153,7 @@ namespace nRage.Mapper
                        Banner = (string)x.Element("banner"),
                        Overview = (string)x.Element("Overview"),
                        FirstAired = (string)x.Element("FirstAired"),
-                       ImdbId = (string)x.Element("IMDB_ID"),
+                       ImdbId = (string)x.Element("IMDB_Id"),
                        Zap2ItId = (string)x.Element("zap2it_id"),
                 }).ToList(),
             };
@@ -170,7 +171,7 @@ namespace nRage.Mapper
                     Banner = (string)x.Element("banner"),
                     Overview = (string)x.Element("Overview"),
                     FirstAired = (string)x.Element("FirstAired"),
-                    ImdbId = (string)x.Element("IMDB_ID"),
+                    ImdbId = (string)x.Element("IMDB_Id"),
                     Zap2ItId = (string)x.Element("zap2it_id"),
                 }).ToList(),
             };

@@ -1,6 +1,6 @@
 ﻿using System.Xml.Linq;
 
-namespace nRage.Mapper
+namespace nRage.Clients
 {
     public abstract class ClientBase
     {

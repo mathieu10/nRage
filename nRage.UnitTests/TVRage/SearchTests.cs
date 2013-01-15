@@ -37,12 +37,12 @@ namespace nRage.Tests.Unit.TVRage
         }           
 
         [Fact]
-        public void SearchByTitleReturnsCorrectShowID()
+        public void SearchByTitleReturnsCorrectShowId()
         {
             var response = client.SearchByTitle(title);
             var result = response.Results.First();
 
-            Assert.True(result.ShowID==15352);            
+            Assert.True(result.ShowId==15352);            
         }
 
         [Fact]

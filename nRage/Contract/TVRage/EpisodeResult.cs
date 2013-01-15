@@ -1,4 +1,4 @@
-﻿namespace nRage.Contract.TVRage
+﻿namespace nRage.Contract.Tvrage
 {
     public class EpisodeResult{
         public string Number{get;set;}

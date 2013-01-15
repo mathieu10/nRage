@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace nRage.Contract.TVRage
+namespace nRage.Contract.Tvrage
 {
     [Serializable]
     public class ShowInfoResponse
     {
 
         /// <summary>
-        /// TVRage.com show ID
+        /// Tvrage.com show Id
         /// </summary>
-        public int ShowID { get; set; }
+        public int ShowId { get; set; }
 
         /// <summary>
         /// Show name
@@ -18,7 +18,7 @@ namespace nRage.Contract.TVRage
         public string ShowName { get; set; }
 
         /// <summary>
-        /// TVRage.com URL for show info
+        /// Tvrage.com URL for show info
         /// </summary>
         public string ShowLink { get; set; }        
 

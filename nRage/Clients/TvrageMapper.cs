@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
-using nRage.Contract.TVRage;
+using nRage.Contract.Tvrage;
+using nRage.Interface;
 
 namespace nRage.Clients
 {
@@ -11,7 +12,7 @@ namespace nRage.Clients
 
         public ShowInfoResponse MapXMLToShowInfoResponse(XDocument xml) {
             return xml.Descendants("Showinfo").Select(x => new ShowInfoResponse {
-                ShowID = (int)x.Element("showid"),
+                ShowId = (int)x.Element("showid"),
                 ShowName = (string)x.Element("showname"),
                 ShowLink = (string)x.Element("showlink"),
                 Seasons = (string)x.Element("seasons"),
@@ -72,7 +73,7 @@ namespace nRage.Clients
 
         public FullShowInfoResponse MapXMLToFullShowInfoResponse(XDocument xml) {
             return xml.Descendants("Show").Select(x => new FullShowInfoResponse {
-                ShowID = (int)x.Element("showid"),
+                ShowId = (int)x.Element("showid"),
                 Name = (string)x.Element("name"),
                 ShowLink = (string)x.Element("showlink"),
                 TotalSeasons = (string)x.Element("totalseasons"),
@@ -104,7 +105,7 @@ namespace nRage.Clients
 
         public List<ShowListResult> MapXMLToShowListResponse(XDocument xml) {
             return xml.Descendants("show").Select(x => new ShowListResult {
-                ID = (int)x.Element("id"),
+                Id = (int)x.Element("id"),
                 Name = (string)x.Element("name"),
                 Country = (string)x.Element("country"),
                 Status = (string)x.Element("status"),
@@ -113,7 +114,7 @@ namespace nRage.Clients
 
         public List<FullSearchResult> MapXMLToFullSearchResults(XDocument xml) {
             return xml.Descendants("show").Select(x => new FullSearchResult {
-                ShowID = (int)x.Element("showid"),
+                ShowId = (int)x.Element("showid"),
                 Name = (string)x.Element("name"),
                 Link = (string)x.Element("link"),
                 Country = (string)x.Element("country"),
@@ -136,7 +137,7 @@ namespace nRage.Clients
 
         public List<SearchResult> MapXMLToSearchResponse(XDocument xml) {
             return xml.Descendants("show").Select(x => new SearchResult {
-                ShowID = (int)x.Element("showid"),
+                ShowId = (int)x.Element("showid"),
                 Name = (string)x.Element("name"),
                 Link = (string)x.Element("link"),
                 Country = (string)x.Element("country"),
@@ -157,7 +158,7 @@ namespace nRage.Clients
                 ShowingPeriod = (string)xml.Element("updates").Attribute("showing"),
 
                 Shows = xml.Descendants("show").Select(x=>new LastUpdatesShowResult{
-                    ShowID = (int)x.Element("id"),
+                    ShowId = (int)x.Element("id"),
                     Last = (string)x.Element("last"),
                     LatestEpisode = (string)x.Element("lastepisode"),
                 }).ToList(),

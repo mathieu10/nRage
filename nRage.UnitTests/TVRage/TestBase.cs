@@ -13,7 +13,7 @@ namespace nRage.Tests.Unit.TVRage
     {        
         protected IKernel _ioc;
 
-        protected TVRageClient client;        
+        protected ITvrageClient client;        
 
         public virtual void InitialiseIOC(){
             _ioc = new StandardKernel();
@@ -22,7 +22,7 @@ namespace nRage.Tests.Unit.TVRage
 
         public TestBase() { 
             InitialiseIOC();
-            client = _ioc.Get<TVRageClient>();
+            client = _ioc.Get<TvrageClient>();
         }       
     }
 }

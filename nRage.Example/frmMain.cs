@@ -16,7 +16,7 @@ namespace nRage.Example {
             InitializeComponent();
         }
 
-        internal class LoadingBar : IDisposable
+        internal class LoadingBar : Idisposable
         {
             private frmMain _form;
 
@@ -54,7 +54,7 @@ namespace nRage.Example {
             txtResult.Clear();
             foreach(var show in result.Results)
             {
-                Write("ID: " + show.ShowID);
+                Write("Id: " + show.ShowId);
                 Write("Name: " + show.Name);
                 Write("Seasons: " + show.Seasons);
                 Write("TVRage URL: " + show.Link);
@@ -68,7 +68,7 @@ namespace nRage.Example {
             txtResult.Clear();
             foreach(var show in result.Results)
             {
-                Write("ID: " + show.ShowID);
+                Write("Id: " + show.ShowId);
                 Write("Name: " + show.Name);
                 Write("Seasons: " + show.Seasons);
                 Write("TVRage URL: " + show.Link);

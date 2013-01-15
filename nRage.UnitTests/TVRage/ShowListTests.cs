@@ -27,17 +27,17 @@ namespace nRage.Tests.Unit.TVRage
         }
 
         [Fact]
-        public void ShowListReturnsCorrectID()
+        public void ShowListReturnsCorrectId()
         { 
             var response = client.GetShowList();
-            Assert.True(response.Results.First().ID==1);
+            Assert.True(response.Results.First().Id==1);
         }
 
         [Fact]
         public void ShowListReturnsCorrectName()
         { 
             var response = client.GetShowList();
-            var result = response.Results.Where(x=>x.ID==2).Single();
+            var result = response.Results.Where(x=>x.Id==2).Single();
             Assert.True(result.Name=="America 2Night");
         }
 
@@ -45,7 +45,7 @@ namespace nRage.Tests.Unit.TVRage
         public void ShowListReturnsCorrectCountry()
         { 
             var response = client.GetShowList();
-            var result = response.Results.Where(x=>x.ID==31).Single();
+            var result = response.Results.Where(x=>x.Id==31).Single();
             Assert.True(result.Country=="AJ");
         }
 
@@ -53,7 +53,7 @@ namespace nRage.Tests.Unit.TVRage
         public void ShowListReturnsCorrectShowName()
         { 
             var response = client.GetShowList();
-            var result = response.Results.Where(x=>x.ID==23).Single();
+            var result = response.Results.Where(x=>x.Id==23).Single();
             Assert.True(result.Status=="2");
         }
 

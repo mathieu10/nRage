@@ -1,8 +1,8 @@
-﻿namespace nRage.Contract.TVRage
+﻿namespace nRage.Contract.Tvrage
 {
     public class LastUpdatesShowResult
     {
-        public int ShowID{get;set;}
+        public int ShowId{get;set;}
         public string Last{get;set;}
         public string LatestEpisode{get;set;}
     }

@@ -6,13 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
-using nRage.Contract.TheTVDB;
+using nRage.Contract.Tvdb;
+using nRage.Mapper;
 
 namespace nRage.Clients {
 
     public class TvdbClient : ClientBase
     {
-        private ITvdbResponseMapper _mapper;
+         private ITvdbResponseMapper _mapper;
 
         public TvdbClient(IRetriever retriever) : base(retriever) { _mapper = new TvdbMapper(); }
 

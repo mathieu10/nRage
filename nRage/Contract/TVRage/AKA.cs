@@ -1,6 +1,6 @@
 using System;
 
-namespace nRage.Contract.TVRage
+namespace nRage.Contract.Tvrage
 {
     [Serializable]
     public class AKA

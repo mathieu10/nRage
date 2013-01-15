@@ -29,7 +29,7 @@ namespace nRage.Tests.Unit.TVRage
         }
 
         [Fact]
-        public void GetFullShowInfoThrowsWhenInvalidShowID()
+        public void GetFullShowInfoThrowsWhenInvalidShowId()
         { 
             Assert.Throws<ShowNotFoundException>(()=>{
                 client.GetFullShowInfo(nonexistent_show_id);
@@ -37,10 +37,10 @@ namespace nRage.Tests.Unit.TVRage
         }
 
         [Fact]
-        public void GetFullShowInfoReturnsCorrectShowID()
+        public void GetFullShowInfoReturnsCorrectShowId()
         { 
             var response = client.GetFullShowInfo(show_id);
-            Assert.True(response.ShowID == 32517);
+            Assert.True(response.ShowId == 32517);
         }
 
         [Fact]

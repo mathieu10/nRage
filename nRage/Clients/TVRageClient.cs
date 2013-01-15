@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
-using nRage.Contract.TVRage;
+using nRage.Contract.Tvrage;
+using nRage.Mapper;
 
 namespace nRage.Clients {
 
