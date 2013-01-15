@@ -2,7 +2,7 @@
 using System.Net;
 using System.Xml.Linq;
 
-namespace nRage
+namespace nRage.Interface
 {
     // This may eventually support a combination of local cache (in-memory? DB? etc) and web look-up.    
 
