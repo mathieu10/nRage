@@ -4,12 +4,10 @@ using System.Xml.Linq;
 using nRage.Contract.Tvrage;
 using nRage.Interface;
 
-namespace nRage.Clients
+namespace nRage.Mapper
 {
     internal class TvrageMapper : ITvrageMapper
     {
-        public TvrageMapper() { }
-
         public ShowInfoResponse MapXMLToShowInfoResponse(XDocument xml) {
             return xml.Descendants("Showinfo").Select(x => new ShowInfoResponse {
                 ShowId = (int)x.Element("showid"),
