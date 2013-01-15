@@ -40,8 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clients\ClientBase.cs" />
-    <Compile Include="Clients\TvdbClient.cs" />
+    <Compile Include="Client\ClientBase.cs" />
+    <Compile Include="Client\TvdbClient.cs" />
+    <Compile Include="Common.cs" />
     <Compile Include="Contract\Tvdb\EpisodeListResponse.cs" />
     <Compile Include="Contract\Tvdb\GetSeriesByIdResponse.cs" />
     <Compile Include="Contract\Tvdb\GetSeriesByIdResult.cs" />
@@ -70,10 +71,10 @@
     <Compile Include="Contract\Tvrage\ShowListResult.cs" />
     <Compile Include="Interface\ITvdbResponseMapper.cs" />
     <Compile Include="Interface\ITvrageMapper.cs" />
-    <Compile Include="IRetriever.cs" />
+    <Compile Include="Interface\IRetriever.cs" />
     <Compile Include="Contract\Tvrage\ShowListResponse.cs" />
     <Compile Include="Exceptions.cs" />
-    <Compile Include="Clients\TvrageClient.cs" />
+    <Compile Include="Client\TvrageClient.cs" />
     <Compile Include="Mapper\TvdbMapper.cs" />
     <Compile Include="Mapper\TvrageMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

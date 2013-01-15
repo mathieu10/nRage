@@ -1,4 +1,5 @@
 ﻿using System.Xml.Linq;
+using nRage.Interface;
 
 namespace nRage.Client
 {

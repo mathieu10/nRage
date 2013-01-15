@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 using nRage.Contract.Tvdb;
+using nRage.Interface;
 using nRage.Mapper;
 
 namespace nRage.Client {
