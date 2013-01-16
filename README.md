@@ -33,6 +33,9 @@ Roadmap
 + Intelligent configurable local cache
 + nRage documenation
 
+###Low priority but Would Be Nice
++ Refactor web service clients to properly abstract URL generation and web retriever
+
 ###Very low priority
 + TVRage TV schedule API
 + TVRage API documentation 
