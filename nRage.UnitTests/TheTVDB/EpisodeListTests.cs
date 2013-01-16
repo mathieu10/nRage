@@ -389,7 +389,7 @@ namespace nRage.Tests.Unit.TheTVDB
         public void GetEpisodeListReturnsCorrectSeriesId()
         {
             var response = client.GetEpisodeList(seriesId);
-            Assert.True(response.Series.SeriesId == seriesId.ToString());
+            Assert.True(response.Series.SeriesId == "74713");
         }
 
         [Fact]
