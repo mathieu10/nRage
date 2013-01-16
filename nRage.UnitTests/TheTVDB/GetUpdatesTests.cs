@@ -26,7 +26,7 @@ namespace nRage.Tests.Unit.TheTVDB
         public void GetUpdatesCallsCorrectURL()
         { 
             client.GetUpdates(timeStamp);
-            Assert.True(MockRetriever.GetLastURLCalled() == TheTVDBMockRetriever.UPDATES_1355812429);
+            Assert.True(MockRetriever.GetLastURLCalled() == TvdbMockRetriever.UPDATES_1355812429);
         }
 
         [Fact]

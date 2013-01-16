@@ -2,7 +2,7 @@ using nRage.Tests.Unit.Properties;
 
 namespace nRage.Tests.Unit.TheTVDB
 {
-    public class TheTVDBMockRetriever : MockRetriever
+    public class TvdbMockRetriever : MockRetriever
     {
         #region URL constants
         public static readonly string MIRRORS = @"http://www.thetvdb.com/api/2A7162D6C1E477B0/mirrors.xml";
@@ -19,7 +19,7 @@ namespace nRage.Tests.Unit.TheTVDB
         public static readonly string UPDATES_1355812429 = @"http://www.thetvdb.com/api/Updates.php?type=all&time=1355812429";        
         #endregion
 
-        public TheTVDBMockRetriever() : base(){ }
+        public TvdbMockRetriever() : base(){ }
         
         protected override void FillCache()
         { 

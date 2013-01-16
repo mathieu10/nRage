@@ -18,7 +18,7 @@ namespace nRage.Tests.Unit.TVRage
 
         public virtual void InitialiseIOC(){
             _ioc = new StandardKernel();
-            _ioc.Bind<IRetriever>().To<TVRageMockRetriever>();
+            _ioc.Bind<IRetriever>().To<TvrageMockRetriever>();
         }
 
         public TestBase() { 

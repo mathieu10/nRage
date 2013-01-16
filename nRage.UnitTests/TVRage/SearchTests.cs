@@ -26,7 +26,7 @@ namespace nRage.Tests.Unit.TVRage
         public void GetSearchCallsCorrectURL()
         { 
             client.SearchByTitle(title);
-            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.SEARCH_WILFRED);
+            Assert.True(MockRetriever.GetLastURLCalled() == TvrageMockRetriever.SEARCH_WILFRED);
         }
 
         [Fact]

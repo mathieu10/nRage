@@ -24,7 +24,7 @@ namespace nRage.Tests.Unit.TheTVDB
         public void GetMirrorsCallsCorrectURL()
         { 
             client.GetMirrors();
-            Assert.True(MockRetriever.GetLastURLCalled() == TheTVDBMockRetriever.MIRRORS);
+            Assert.True(MockRetriever.GetLastURLCalled() == TvdbMockRetriever.MIRRORS);
         }
 
         [Fact]

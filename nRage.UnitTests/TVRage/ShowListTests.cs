@@ -23,7 +23,7 @@ namespace nRage.Tests.Unit.TVRage
         public void GetShowListCallsCorrectURL()
         { 
             client.GetShowList();
-            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.SHOWLIST);
+            Assert.True(MockRetriever.GetLastURLCalled() == TvrageMockRetriever.SHOWLIST);
         }
 
         [Fact]

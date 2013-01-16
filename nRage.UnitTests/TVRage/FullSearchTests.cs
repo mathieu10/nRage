@@ -26,7 +26,7 @@ namespace nRage.Tests.Unit.TVRage
         public void GetFullSearchCallsCorrectURL()
         { 
             client.FullSearchByTitle(title);
-            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.SEARCHFULL_BREAKINGBAD);
+            Assert.True(MockRetriever.GetLastURLCalled() == TvrageMockRetriever.SEARCHFULL_BREAKINGBAD);
         }
 
         [Fact]

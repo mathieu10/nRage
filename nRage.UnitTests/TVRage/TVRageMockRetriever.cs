@@ -2,9 +2,9 @@ using nRage.Tests.Unit.Properties;
 
 namespace nRage.Tests.Unit.TVRage
 {
-    public class TVRageMockRetriever : MockRetriever
+    public class TvrageMockRetriever : MockRetriever
     {
-        public TVRageMockRetriever() : base(){}
+        public TvrageMockRetriever() : base(){}
 
         #region URL constants
         private static readonly string APIKEY = @"http://services.tvrage.com/feeds/";

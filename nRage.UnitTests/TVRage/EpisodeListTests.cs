@@ -25,7 +25,7 @@ namespace nRage.Tests.Unit.TVRage
         public void GetEpisodeListCallsCorrectURL()
         { 
             client.GetEpisodeList(showId);
-            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.EPISODELIST_15352);
+            Assert.True(MockRetriever.GetLastURLCalled() == TvrageMockRetriever.EPISODELIST_15352);
         }
 
         [Fact]

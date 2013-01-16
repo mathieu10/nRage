@@ -23,7 +23,7 @@ namespace nRage.Tests.Unit.TheTVDB
         public void GetServerTimeCallsCorrectURL()
         { 
             client.GetServerTime();
-            Assert.True(MockRetriever.GetLastURLCalled() == TheTVDBMockRetriever.SERVERTIME);
+            Assert.True(MockRetriever.GetLastURLCalled() == TvdbMockRetriever.SERVERTIME);
         }
 
         [Fact]

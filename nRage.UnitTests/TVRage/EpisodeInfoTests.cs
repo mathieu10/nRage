@@ -29,14 +29,14 @@ namespace nRage.Tests.Unit.TVRage
         public void GetCallsEpisodeInfoCorrectURL()
         { 
             client.GetEpisodeInfo(showId,episodeLabel);
-            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.EPISODEINFO_5481_2x13);
+            Assert.True(MockRetriever.GetLastURLCalled() == TvrageMockRetriever.EPISODEINFO_5481_2x13);
         }
         
         [Fact]
         public void GetEpisodeInfoBySeasonAndNumberCallsCorrectURL()
         { 
             client.GetEpisodeInfo(showId,seasonNumber,episodeNumber);
-            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.EPISODEINFO_5481_2x13);
+            Assert.True(MockRetriever.GetLastURLCalled() == TvrageMockRetriever.EPISODEINFO_5481_2x13);
         }
 
         [Fact]

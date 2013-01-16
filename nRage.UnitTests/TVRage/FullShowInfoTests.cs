@@ -25,7 +25,7 @@ namespace nRage.Tests.Unit.TVRage
         public void GetFullShowInfoCallsCorrectURL()
         { 
             client.GetFullShowInfo(show_id);
-            Assert.True(MockRetriever.GetLastURLCalled() == TVRageMockRetriever.FULLSHOWINFO_32517);
+            Assert.True(MockRetriever.GetLastURLCalled() == TvrageMockRetriever.FULLSHOWINFO_32517);
         }
 
         [Fact]
