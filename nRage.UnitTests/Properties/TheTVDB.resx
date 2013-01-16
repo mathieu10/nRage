@@ -251,12 +251,12 @@ new Image().src = "/cdn-cgi/ping?cf[location]=404&amp;cf[js]=1";
 &lt;/Episode&gt;
 &lt;/Data&gt;</value>
   </data>
-  <data name="RESPONSE_GETSERIESBYId_1" xml:space="preserve">
+  <data name="RESPONSE_GETSERIESBYID_1" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;Data&gt;
 &lt;/Data&gt;</value>
   </data>
-  <data name="RESPONSE_GETSERIESBYId_TT0290978" xml:space="preserve">
+  <data name="RESPONSE_GETSERIESBYID_TT0290978" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;Data&gt;
 &lt;Series&gt;
